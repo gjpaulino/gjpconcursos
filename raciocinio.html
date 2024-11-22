@@ -1,0 +1,816 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <title>Questões</title>  
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style> 
+body{
+  color: black;
+  background-color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+color: black;
+text-decoration: none;
+}
+.options label { 
+    display: flex; 
+    align-items: center;
+     margin: 5px 0; 
+} 
+.options img { 
+    margin-left: 10px; 
+}
+    </style>  
+</head>  
+<body> 
+    <div class="container">
+        <h1>Questões de Raciocínio Lógico</h1>  
+
+        <div class="question">  
+            <p><strong>1. Em certo dia, Estela afirmou para sua mãe, Marília: <br><br>
+            – Eu não estou doente ou eu fiz a lição de casa. <br><br> Marília sabe que essa afirmação é falsa, logo conclui-se que Estela</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q1" value="a">a- cestá doente se e somente se fez a lição de casa.</label>  
+                <label><input type="radio" name="q1" value="b">b- se não está doente, então fez a lição de casa.</label>  
+                <label><input type="radio" name="q1" value="c">c- está doente ou não fez a lição de casa.</label>  
+                <label><input type="radio" name="q1" value="d">d- está doente e não fez a lição de casa.</label>  
+                <label><input type="radio" name="q1" value="e">e- está doente se e somente se não fez a lição de casa.</label>
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>2. Os elementos de uma sequência são tais que, do segundo elemento em diante, cada um é igual ao anterior somado a uma constante positiva r. Sabendo que essa sequência tem 100 números e que os dois menores elementos são iguais a –21 e –16, o valor da soma de r com o maior termo dessa sequência é igual a</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q2" value="a">a- 479</label>  
+                <label><input type="radio" name="q2" value="b">b- 464</label>  
+                <label><input type="radio" name="q2" value="c">c- 469</label>  
+                <label><input type="radio" name="q2" value="d">d- 484</label>
+                <label><input type="radio" name="q2" value="e">e- 474</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+          
+        <div class="question">  
+            <p><strong>3. Hugo, José e Luiz têm alturas diferentes entre si, de maneira que cada altura pode ser representada por um número inteiro de centímetros. Eles fizeram as seguintes afirmações: <br><br>
+                Hugo: tenho 190 cm de altura.<br>
+                José: sou mais alto que Hugo. <br>
+                Luiz: José está mentindo. <br><br>
+                Sabendo que um desse amigos tem 189 cm de altura e sabendo que Hugo falou a verdade e Luiz mentiu, ordenando esses amigos do mais baixo para o mais alto, têm-se, respectivamente:</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q3" value="a">a- José, Luiz, Hugo.</label>  
+                <label><input type="radio" name="q3" value="b">b- Luiz, Hugo, José.</label>  
+                <label><input type="radio" name="q3" value="c">c- Hugo, José, Luiz</label>  
+                <label><input type="radio" name="q3" value="d">d- José, Hugo, Luiz.</label>
+                <label><input type="radio" name="q3" value="e">e- Luiz, José, Hugo.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>  
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>4. Para o treinamento em uma empresa, todos os 250 funcionários foram divididos em 3 grupos, de maneira que cada funcionário participou de apenas um grupo. O coordenador do treinamento escolheu 80 pessoas para cada grupo e os 10 funcionários restantes foram distribuídos por sorteio da seguinte maneira: em um saco foram colocadas 3 bolas, numeradas de 1 a 3; cada um dos 10 funcionários, um por vez, pegou uma bola do saco e foi para o grupo indicado pelo número da bola, devolvendo em seguida a bola para o saco. Após os grupos estarem formados, é certo que</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q4" value="a">a- pelo menos um grupo ficou com 83 pessoas.</label>  
+                <label><input type="radio" name="q4" value="b">b- o grupo com mais funcionários tinha 84 pessoas.
+                </label>  
+                <label><input type="radio" name="q4" value="c">c- um grupo ficou com mais de 84 pessoas.</label>  
+                <label><input type="radio" name="q4" value="d">d- algum grupo tem, no máximo, 83 pessoas.</label>
+                <label><input type="radio" name="q4" value="e">e- nenhum grupo ficou com 80 pessoas.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+     
+        <div class="question">  
+            <p><strong>5. Os irmãos Alex, Breno e Caio, quando saem todos juntos, seguem as seguintes regras: <br><br>
+                • Se Alex sai de tênis, Breno também sai de tênis; <br>
+                • Alex ou Caio usam óculos escuro; <br>
+                • Breno e Caio usam camisas de cores diferentes;<br>
+                • Se Breno sai de tênis ou Caio usa óculos escuro, então 
+                Alex usa camisa preta. <br><br> Hoje esses três irmãos saíram juntos e Alex não usou camisa preta, logo é correto afirmar que</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q5" value="a">a- Breno não usou óculos escuro.</label>  
+                <label><input type="radio" name="q5" value="b">b- Caio ou Breno usaram camisa preta.</label>  
+                <label><input type="radio" name="q5" value="c">c- Alex e Breno estavam de tênis.</label>  
+                <label><input type="radio" name="q5" value="d">d- Caio não estava de tênis</label>
+                <label><input type="radio" name="q5" value="e">e- Alex usou óculos escuro.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>6. Os funcionários da empresa de João fizeram determinada
+                tarefa em 18 dias. A empresa de Paulo tem 24 funcionários a mais do que a de João. Por isso, os funcionários da empresa de Paulo realizaram uma tarefa exatamente igual à da empresa de João, em 10 dias. Sabe-se que tanto os
+                funcionários de João como os de Paulo possuem a mesma capacidade de trabalho e que trabalharam em condições e horários iguais. Sendo assim, o número de funcionários que realizaram a referida tarefa na empresa de Paulo é igual a
+            </strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q6" value="a">a- 54</label>  
+                <label><input type="radio" name="q6" value="b">b- 64</label>  
+                <label><input type="radio" name="q6" value="c">c- 84</label>  
+                <label><input type="radio" name="q6" value="d">d- 44</label>
+                <label><input type="radio" name="q6" value="e">e- 94</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>7. Adenilza estava vendendo um vestido em sua loja por R$ 100,00. Para atrair a clientela, aumentou o preço em 25% e anunciou, num cartaz, a promoção de oferecer x% de desconto a quem comprasse o vestido. O valor de x para que o preço final do vestido, após o desconto, seja R$ 100,00 deve ser igual a
+            </strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q7" value="a">a- 21,5</label>  
+                <label><input type="radio" name="q7" value="b">b- 25</label>  
+                <label><input type="radio" name="q7" value="c">c- 20</label>  
+                <label><input type="radio" name="q7" value="d">d- 30</label>
+                <label><input type="radio" name="q7" value="e">e- 22,5</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>8. Considere as seguintes afirmações:</p> I. Nenhum rinoceronte é medroso. <br>
+                II. Alguns elefantes são medrosos. <p>
+                    A partir das duas sentenças citadas, pode-se concluir corretamente que
+                </p>
+            </strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q8" value="a">a- se um animal não é medroso, então ele é um rinoceronte.</label>  
+                <label><input type="radio" name="q8" value="b">b- se um animal não é um elefante, então ele não é medroso.</label>  
+                <label><input type="radio" name="q8" value="c">c- se um animal é medroso, então ele é um elefante.
+                </label>  
+                <label><input type="radio" name="q8" value="d">d- todo elefante é também um rinoceronte.</label>
+                <label><input type="radio" name="q8" value="e">e- alguns elefantes não são rinocerontes.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>9. Três mulheres encomendaram documentos em um cartório. Para que o cartório providenciasse tais documentos, elas tiveram de informar os seguintes dados: sua profissão, e como cada uma delas tem um único filho, o nome do menino. As mulheres são Mariana, Neiva e Odila. Uma delas é médica, outra é professora, e outra é advogada, não necessariamente nessa ordem. Os meninos chamam-se Roni, Sérgio e Toti, também não necessariamente nessa ordem. Por alguma confusão no cartório, perderam-se as relações entre os dados, e não se sabia mais quem era filho de quem, nem quem tinha esta ou aquela profissão. Depois de alguns esclarecimentos, descobriu-se que</p> I. Odila é mãe de Roni e não é professora. <br>
+            II. A mãe de Toti é médica e não conhece Neiva.<p>Com base nessas informações, pode-se afirmar corretamente que</p></strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q9" value="a">a- Mariana é advogada e é mãe de Sérgio.</label>  
+                <label><input type="radio" name="q9" value="b">b- Mariana é professora e Odila é médica.</label>  
+                <label><input type="radio" name="q9" value="c">c- Odila é médica e Neiva é advogada.</label>  
+                <label><input type="radio" name="q9" value="d">d- Mariana é médica e Neiva é mãe de Sérgio.</label>
+                <label><input type="radio" name="q9" value="e">e- Neiva é professora e Odila é médica</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>10. Observe a lei de formação da seguinte sequência de números:</p> 4, 41, 141, 1411, 11411, 114111, 1114111, 11141111, ...<br>
+            <p>A soma dos algarismos que compõem o 58.º termo dessa sequência é igual a</p></strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q10" value="a">a- 63</label>  
+                <label><input type="radio" name="q10" value="b">b- 64</label>  
+                <label><input type="radio" name="q10" value="c">c- 65</label>  
+                <label><input type="radio" name="q10" value="d">d- 61</label>
+                <label><input type="radio" name="q10" value="e">e- 62</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>11. A razão entre as capacidades máximas de dois recipientes é 4:3. A capacidade máxima que se obtém enchendo-se ambos os recipientes é de 336 litros. Sendo assim, a diferença entre as capacidades máximas dos dois recipientes é exatamente igual a</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q11" value="a">a- 46 litros.</label>  
+                <label><input type="radio" name="q11" value="b">b- 48 litros.</label>  
+                <label><input type="radio" name="q11" value="c">c- 44 litros.</label>  
+                <label><input type="radio" name="q11" value="d">d- 40 litros.</label>
+                <label><input type="radio" name="q11" value="e">e- 42 litros.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>12. Para fazer 20 docinhos iguais, Olga usou exatamente ¾ de xícara de açúcar. A quantidade de açúcar necessária para fazer 30 unidades desses docinhos é exatamente igual a</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q12" value="a">a- 2 xícaras.</label>  
+                <label><input type="radio" name="q12" value="b">b- 1 xícara + 3/4 xícara.</label>  
+                <label><input type="radio" name="q12" value="c">c- 1 xícara + 1/2 xícara.</label>  
+                <label><input type="radio" name="q12" value="d">d- 1 xícara.</label>
+                <label><input type="radio" name="q12" value="e">e- 1 xícara + 1/8 xícara.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>13. Certa vez, três ladrões assaltaram uma loja de joias. Na ocasião, foram roubados um anel, um colar e um par de brincos. Os ladrões foram presos. Chamavam-se Auro, Ercílio e Ildo. Cada um deles havia roubado uma das joias. No julgamento, Ercílio fez a seguinte afirmação:</p></strong>
+            </p>Ercílio: “ – Ildo roubou o anel.” <p><strong>Mais tarde, descobriu-se que Ercílio disse a verdade e
+            que o ladrão dos brincos sempre mente. Desse modo, pode-se afirmar corretamente que</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q13" value="a">a- Auro roubou o anel e Ildo, o colar.</label>  
+                <label><input type="radio" name="q13" value="b">b- Ildo roubou os brincos e Ercílio, o colar.
+                </label>  
+                <label><input type="radio" name="q13" value="c">c- Ildo roubou o anel e Ercílio, os brincos.
+                </label>  
+                <label><input type="radio" name="q13" value="d">d- Ercílio roubou o colar e Auro, os brincos.</label>
+                <label><input type="radio" name="q13" value="e">e- Auro roubou os brincos e Ercílio, o anel.
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>14. Considere a seguinte sequência de números:</p></strong>
+            </p>(1, 4, 10, 22, 46, 94, 190, ...)<p><strong>O primeiro termo da sequência foi escolhido ao acaso. Já
+                os outros termos da sequência foram obtidos de acordo com uma regra preestabelecida. <br><br> O próximo termo da sequência é igual a </strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q14" value="a">a- 386</label>  
+                <label><input type="radio" name="q14" value="b">b- 382</label>  
+                <label><input type="radio" name="q14" value="c">c- 380</label>  
+                <label><input type="radio" name="q14" value="d">d- 378</label>
+                <label><input type="radio" name="q14" value="e">e- 384</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>15. A diretora de uma creche pediu que todas as 87 crianças que lá frequentavam respondessem um questionário sobre suas frutas preferidas, a fim de melhorar a qualidade da merenda. Todas as perguntas deveriam ser respondidas com uma única alternativa: ou “sim” ou “não”. As duas primeiras perguntas do questionário eram, respectivamente, as seguintes:</p></strong>
+            </p>Pergunta 1 : Você gosta de abacaxi?<p><p>Pergunta 2: Você gosta de mamão?</p><strong>Recolhidos todos os questionários, verificou-se que exatamente 55 deles tinham “sim” como resposta à pergunta 1, exatamente 35 questionários tinham “sim” como resposta à pergunta 2 e exatamente 10 questionários tinham
+            “não” como resposta a ambas as perguntas. Levando-se
+            em conta que cada criança respondeu a um único questionário, conclui-se corretamente que o número de crianças que gostam tanto de abacaxi quanto de mamão é igual a</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q15" value="a">a- 11</label>  
+                <label><input type="radio" name="q15" value="b">b- 14</label>  
+                <label><input type="radio" name="q15" value="c">c- 13</label>  
+                <label><input type="radio" name="q15" value="d">d- 10</label>
+                <label><input type="radio" name="q15" value="e">e- 12</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>16. Considere o diagrama, em que o conjunto retangular representa os pescadores (P), o conjunto triangular os bombeiros (B) e o conjunto circular os mergulhadores (M).</strong></p> 
+            <img src="imag/logica16.jpg" alt="#">
+            <p>Sabendo que as regiões acinzentadas no diagrama indicam ausência de pessoas na região, a análise do diagrama permite concluir que</p>
+            <div class="options">  
+                <label><input type="radio" name="q16" value="a">a- não existe mergulhador que é bombeiro.</label>  
+                <label><input type="radio" name="q16" value="b">b- a maioria dos mergulhadores não são bombeiros.</label>  
+                <label><input type="radio" name="q16" value="c">c- todo bombeiro é pescador.
+                </label>  
+                <label><input type="radio" name="q16" value="d">d- um bombeiro ou é mergulhador ou é pescador.</label>
+                <label><input type="radio" name="q16" value="e">e- pelo menos um pescador é bombeiro e não é mergulhador.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>
+        <div class="question">  
+            <p><strong>17. Considere a sequência de infinitos termos (8, 10, 70, 74,
+                690, 696, 6890, 6898,…), que segue um padrão definido pela posição em que cada elemento, do segundo em diante, se encontra. O décimo segundo elemento dessa
+                sequência é</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q17" value="a">a- 688902.</label>  
+                <label><input type="radio" name="q17" value="b">b- 68992.</label>  
+                <label><input type="radio" name="q17" value="c">c- 69700.</label>  
+                <label><input type="radio" name="q17" value="d">d- 690700.</label>
+                <label><input type="radio" name="q17" value="e">e- 689762.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>18. Dada a afirmação “Rafael teve a promoção ou todos assistiram à final do campeonato”, a sua negação lógica é</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q18" value="a">a- Rafael não teve a promoção e ninguém assistiu à final do campeonato.</label>  
+                <label><input type="radio" name="q18" value="b">b- Rafael assistiu à final do campeonato ou não teve apromoção.</label>  
+                <label><input type="radio" name="q18" value="c">c- Rafael não assistiu à final do campeonato ou teve a promoção.</label>  
+                <label><input type="radio" name="q18" value="d">d- Rafael não teve a promoção e alguém não assistiu à final do campeonato.</label>
+                <label><input type="radio" name="q18" value="e">e- Rafael não teve a promoção ou pelo menos uma pessoa não assistiu à final do campeonato.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>      
+        <div class="question">  
+            <p><strong>19. Se há previsão de chuva, então Aline vai ao teatro. Se Aline está de guarda-chuva, então não há previsão de chuva. No dia de hoje, houve previsão de chuva, portanto,</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q19" value="a">a- se Aline estava de guarda-chuva, então ela foi ao teatro.</label>  
+                <label><input type="radio" name="q19" value="b">b- se Aline estava de guarda-chuva, então ela não foi ao teatro.</label>  
+                <label><input type="radio" name="q19" value="c">c- Aline foi ao teatro sem guarda-chuva.</label>  
+                <label><input type="radio" name="q19" value="d">d- Aline foi ao teatro de guarda-chuva.</label>
+                <label><input type="radio" name="q19" value="e">e- se Aline foi ao teatro, então ela estava de guarda-chuva.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>20. Em uma universidade, acontecem 151 aulas ao mesmo tempo, em 151 salas de aula diferentes. Todas as salas de aula têm mais de 20 alunos e nenhuma sala de aula tem mais de 45 alunos. Nessas condições, há salas de aula com o mesmo número de alunos, e as condições permitem, a princípio, que haja 151 salas de aula todas
+            com o mesmo número de alunos. Considerando que o maior número de salas de aula com o mesmo número de alunos seja N, o menor valor possível para N é
+                </strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q20" value="a">a- 3</label>  
+                <label><input type="radio" name="q20" value="b">b- 6</label>  
+                <label><input type="radio" name="q20" value="c">c- 4</label>  
+                <label><input type="radio" name="q20" value="d">d- 5</label>
+                <label><input type="radio" name="q20" value="e">e- 7</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>21. Em um acampamento, as pessoas foram divididas em 3 grupos. O grupo de crianças, com 44 pessoas, o grupo de jovens, com 37 pessoas, e o grupo de adultos, com 60 pessoas. Para uma atividade todas essas pessoas serão chamadas pelo nome, mas sem uma ordem definida. O menor número de pessoas que devem ser chamadas para garantir que já foram chamadas 2 crianças é</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q21" value="a">a- 4</label>  
+                <label><input type="radio" name="q21" value="b">b- 99</label>  
+                <label><input type="radio" name="q21" value="c">c- 6</label>  
+                <label><input type="radio" name="q21" value="d">d- 49</label>
+                <label><input type="radio" name="q21" value="e">e- 60</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>
+        <div class="question">  
+            <p><strong>22. Considere que seja verdadeiro que:
+            </strong></p> 
+            <p>• os melhores relógios são os suíços; <br>
+               • o relógio de André nunca atrasa;<br>
+               • os relógios que não atrasam são caros.</p>
+               <p><strong>É correto deduzir logicamente, a partir dessas afirmações, que
+            </strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q22" value="a">a- o relógio de André é caro.
+                </label>  
+                <label><input type="radio" name="q22" value="b">b- os relógios suíços não atrasam.</label>  
+                <label><input type="radio" name="q22" value="c">c- o relógio de André é suíço.
+                </label>  
+                <label><input type="radio" name="q22" value="d">d- os relógios suíços são mais caros.</label>
+                <label><input type="radio" name="q22" value="e">e- o relógio de André sempre marca a hora certa.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>23. Considere o padrão de regularidade da sequência, que representa os 7 primeiros termos.</strong></p> 
+            <img src="imag/logica23.jpg" alt="#">
+            <p>Do sétimo termo em diante, a sequência repete o padrão exibido, logo o termo dessa sequência que está na posição 3333 é:</p>
+            <div class="options">  
+                <label><input type="radio" name="q23" value="a">A- <img src="imagresposta/A.jpg" alt="#">
+                </label>  
+                <label><input type="radio" name="q23" value="b">B- <img src="imagresposta/B.jpg" alt="#"></label>  
+                <label><input type="radio" name="q23" value="c">C- <img src="imagresposta/C.jpg" alt="#">
+                </label>  
+                <label><input type="radio" name="q23" value="d">D- <img src="imagresposta/D.jpg" alt="#"></label>
+                <label><input type="radio" name="q23" value="e">E- <img src="imagresposta/E.jpg" alt="#"></label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>24. Considere um grupo formado por 31 skatistas e 27 bateristas. Nesse grupo, 15 pessoas têm mais de 25 anos e 12 bateristas têm 25 anos ou menos. O número de skatistas com 25 anos ou menos é</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q24" value="a">a- 16</label>  
+                <label><input type="radio" name="q24" value="b">b- 31</label>  
+                <label><input type="radio" name="q24" value="c">c- 24</label>  
+                <label><input type="radio" name="q24" value="d">d- 27</label>
+                <label><input type="radio" name="q24" value="e">e- 19</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>25. Em uma livraria, o cliente que usa a poltrona no verão não compra livros. Uma consequência lógica dessa situação indica que, nessa livraria,</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q25" value="a">a- se é verão, então o cliente usa a poltrona ou compra livros.</label>  
+                <label><input type="radio" name="q25" value="b">b- se não é verão e um cliente compra livros, então ele usa a poltrona.</label>  
+                <label><input type="radio" name="q25" value="c">c- se um cliente compra livros, então ele não usa a poltrona ou não é verão.</label>  
+                <label><input type="radio" name="q25" value="d">d- se é inverno e um cliente compra livros, então ele usa a poltrona.</label>
+                <label><input type="radio" name="q25" value="e">e- se um cliente compra livros e usa a poltrona, então é inverno.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>26. Três amigos têm José como primeiro nome e, para distingui-los, um deles usa apelido Zé, outro usa Jô e o terceiro, Zeca. Em uma disputa entre esses amigos para ver quem faz mais flexões, José Roberto fez mais do que José Carlos e José Francisco fez menos do que José Carlos. Camilo, que era o juiz da disputa, fez uma tabela para indicar o resultado, onde se lia: 1o lugar: Zeca, 2o lugar: Jô, 3o
+            lugar: Zé. O apelido de</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q26" value="a">a- José Carlos é Zeca.</label>  
+                <label><input type="radio" name="q26" value="b">b- José Roberto é Zé.</label>  
+                <label><input type="radio" name="q26" value="c">c- José Francisco é Zeca.
+                </label>  
+                <label><input type="radio" name="q26" value="d">d- José Francisco é Jô.</label>
+                <label><input type="radio" name="q26" value="e">e- José Carlos é Jô.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>27. Ao visitar a tradicional ilha, onde parte dos habitantes só
+                falam verdades e os demais habitantes só falam mentiras, um turista encontrou três habitantes, um vestido de verde, outro de vermelho e outro de azul. O turista perguntou ao habitante de azul qual a cor da própria camisa, em seguida pediu para o habitante de vermelho fazer uma afirmação e finalmente pediu ao que estava vestido de verde para repetir o que havia respondido o habitante
+                de azul. O turista obteve, respectivamente, as seguintes respostas: “verde”, “quem está de verde está mentindo”,“verde”.</strong></p> 
+                <p>Os habitantes vestidos de verde, vermelho e azul falam, respectivamente,</p>
+            <div class="options">  
+                <label><input type="radio" name="q27" value="a">a- verdades, mentiras, verdades.</label>  
+                <label><input type="radio" name="q27" value="b">b- mentiras, mentiras, verdades.</label>  
+                <label><input type="radio" name="q27" value="c">c- mentiras, verdades, mentiras.
+                </label>  
+                <label><input type="radio" name="q27" value="d">d- verdades, verdades, mentiras.
+                </label>
+                <label><input type="radio" name="q27" value="e">e- verdades, mentiras, mentiras.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>28. Marília pegou uma folha de papel quadriculado, com 22 linhas e 10 quadrículos por linha. Começando no primeiro quadrículo da primeira linha, ela escreveu várias vezes seguidas a palavra MARÍLIA, colocando uma letra
+            em cada quadrículo, sucessivamente, sem deixar quadrículos em branco, e seguindo com a palavra de uma linha para a outra, sem interromper o processo, até o último
+            quadrículo da última linha. A figura mostra as duas primeiras linhas da folha.
+            </strong></p> 
+            <img src="imag/logica27.jpg" alt="#">
+            <p>Marília continuou escrevendo até chegar ao último quadrículo da última linha, no qual escreveu a letra</p>
+            <div class="options">  
+                <label><input type="radio" name="q28" value="a">a- R</label>  
+                <label><input type="radio" name="q28" value="b">b- A</label>  
+                <label><input type="radio" name="q28" value="c">c- I</label>  
+                <label><input type="radio" name="q28" value="d">d- M</label>
+                <label><input type="radio" name="q28" value="e">e- L</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>29. Uma fazenda tem 14 funcionários e todos sabem cuidar de cavalos ou bois ou cachorros. Apenas um funcionário sabe cuidar de qualquer uma dessas espécies e quem sabe cuidar de boi, também sabe cuidar de cavalo. O número de funcionários que cuidam apenas de cavalos é igual ao número dos que cuidam apenas de cavalos e
+            bois. O funcionário que sabe cuidar de ambos, cavalos e cachorros, também sabe cuidar de bois e 5 funcionários só sabem cuidar de cachorros. O número de funcionários que sabe cuidar apenas de cavalos é</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q29" value="a">a- 3</label>  
+                <label><input type="radio" name="q29" value="b">b- 6</label>  
+                <label><input type="radio" name="q29" value="c">c- 5</label>  
+                <label><input type="radio" name="q29" value="d">d- 7</label>
+                <label><input type="radio" name="q29" value="e">e- 4</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>30. Seis jogadores, vestidos com camisas numeradas de 1 até 6, formaram uma fila. O técnico fez um aquecimento da seguinte maneira: Ele primeiro gritou “três” e, por 3 vezes, quem estava no começo da fila correu até o fim da fila, ou seja, considerando a ordem da fila antes do grito, o primeiro foi para o fim da fila, depois o segundo foi para o fim da fila e finalmente o terceiro foi para o fim
+            da fila; nesse momento, o técnico observou que quem estava no começo da fila era o jogador com a camisa 3 e ele pediu que esse jogador saísse da fila. Em seguida,
+            ele gritou “seis” e, por 6 vezes, quem estava no começo da fila correu até o fim da fila, de maneira que houve jogador que voltou para o fim da fila mais de uma vez. Quando o processo se repetiu as 6 vezes, o técnico observou que quem estava no começo da fila era o jogador com a camisa 6 e ele pediu que esse jogador saísse da fila. O técnico repetiu esse processo todo mais três vezes, tendo gritado “cinco”, depois, “quatro” e depois “dois”, e ao fim de cada comando percebeu que estavam no
+            começo da fila, respectivamente, os jogadores com as camisas 5, 4 e 2 e pediu, a cada vez, que o respectivo jogador saísse da fila. Quando sobrou somente o jogador com a camisa número 1 na fila, o técnico perguntou: “você estava atrás de quem na fila original?”, então esse jogador respondeu corretamente que estava atrás do
+            jogador de número</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q30" value="a">a- 3</label>  
+                <label><input type="radio" name="q30" value="b">b- 4</label>  
+                <label><input type="radio" name="q30" value="c">c- 6</label>  
+                <label><input type="radio" name="q30" value="d">d- 5</label>
+                <label><input type="radio" name="q30" value="e">e- 2</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>31. De acordo com Secretaria de Administração Penitenciária do Estado de São Paulo, atualmente existem, ao todo, 152 unidades prisionais no estado. Essas unidades dividem-se em Centros de Progressão Penitenciária (CPP), Centros de
+            Detenção Provisória (CDP), Centros de Ressocialização, Unidade de Regime Disciplinar Diferenciado (RDD), Penitenciárias e Hospitais. </strong></p><P style="font-size: 12px;">(http://www.sap.sp.gov.br/uni-prisionais/usm.html. Adaptado) <p>Se a razão entre o número de CDPs e o número total de unidades prisionais é <sup>1</sup>&frasl;<sub>4</sub>, então, o número de CDPs no Estado de São Paulo é</p>
+            <div class="options">  
+                <label><input type="radio" name="q31" value="a">a- 25</label>  
+                <label><input type="radio" name="q31" value="b">b- 43</label>  
+                <label><input type="radio" name="q31" value="c">c- 57</label>  
+                <label><input type="radio" name="q31" value="d">d- 19</label>
+                <label><input type="radio" name="q31" value="e">e- 38</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>32. No edital de um Concurso, consta que existirão, ao todo, 80 questões, sendo 24 de Língua Portuguesa, 24 de Noções de Direito, 10 de Noções de Criminologia, 10 de Noções de Lógica e 12 de Noções de Informática. Em relação ao
+            número total de questões, o número de questões de Noções de Lógica corresponde a
+            </strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q32" value="a">a- 11,25%.</label>  
+                <label><input type="radio" name="q32" value="b">b- 10,5%.</label>  
+                <label><input type="radio" name="q32" value="c">c- 10%.</label>  
+                <label><input type="radio" name="q32" value="d">d- 12,5%.</label>
+                <label><input type="radio" name="q32" value="e">e- 12%.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>
+        <div class="question">  
+            <p><strong>33. Um produto foi vendido com desconto de 10% sobre o preço normal de venda. Se ele foi vendido por R$ 54,00, o preço normal de venda desse produto é
+            </strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q33" value="a">a- R$ 59,40.</label>  
+                <label><input type="radio" name="q33" value="b">b- R$ 58,00.</label>  
+                <label><input type="radio" name="q33" value="c">c- R$ 60,00.</label>  
+                <label><input type="radio" name="q33" value="d">d- R$ 59,00.</label>
+                <label><input type="radio" name="q33" value="e">e- R$ 58,40.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>34. Em um concurso de dança, só era permitida a inscrição de grupos formados por 1 menino e 2 meninas ou de grupos formados por 4 meninos e 3 meninas. Sabendo-se que 13 meninos se inscreveram para esse concurso, o número mínimo de meninas inscritas nesse concurso foi de</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q34" value="a">a- 11.</label>  
+                <label><input type="radio" name="q34" value="b">b- 13.</label>  
+                <label><input type="radio" name="q34" value="c">c- 15.</label>  
+                <label><input type="radio" name="q34" value="d">d- 17.</label>
+                <label><input type="radio" name="q34" value="e">e- 9.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>35. O computador que Ricardo quer comprar é R$ 125,00 mais caro na loja A do que na loja B. Ao negociar um preço mais baixo, conseguiu, na loja A, um desconto de 20% para compra à vista, enquanto que, na loja B, conseguiu, para compra à vista, um desconto de 10%. Ao fazer as contas, Ricardo verificou que as propostas nas duas lojas resultavam em um mesmo preço final para o computador, no valor de</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q35" value="a">a- R$ 1.125,00.</label>  
+                <label><input type="radio" name="q35" value="b">b- R$ 1.000,00.</label>  
+                <label><input type="radio" name="q35" value="c">c- R$ 900,00.</label>  
+                <label><input type="radio" name="q35" value="d">d- R$ 1.500,00.</label>
+                <label><input type="radio" name="q35" value="e">e- R$ 1.250,00.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>36. Para pintar um prédio, 7 homens trabalharam por 6 dia. A partir de então, para que o serviço de pintura terminasse mais rapidamente, foram contratados mais 7 homens com a mesma força de trabalho daqueles que já estavam trabalhando. No total, foram necessários 19 dias para completar o serviço de pintura. Se todos os 14 homens estivessem trabalhando juntos desde o primeiro dia de serviço, a pintura do
+            prédio ficaria pronta em</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q36" value="a">a- 12 dias</label>  
+                <label><input type="radio" name="q36" value="b">b- 14 dias.</label>  
+                <label><input type="radio" name="q36" value="c">c- 10 dias.</label>  
+                <label><input type="radio" name="q36" value="d">d- 16 dias.</label>
+                <label><input type="radio" name="q36" value="e">e- 8 dias.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>37. No planeta Babebibo, todos os Bas são Bes e alguns Bes são
+                Bis. Sabendo-se que nenhum Be é Bo, é possível concluir que</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q37" value="a">a- alguns Bis são Bos.</label>  
+                <label><input type="radio" name="q37" value="b">b- nenhum Ba é Bo.</label>  
+                <label><input type="radio" name="q37" value="c">c- nenhum Bi é Bo.</label>  
+                <label><input type="radio" name="q37" value="d">d- alguns Bas são Bis.</label>
+                <label><input type="radio" name="q37" value="e">e- todos os Bis são Bos.
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>38. A caminho de Xapuri, um motorista viu uma placa de sinalização que indicava que a distância até a cidade, em quilômetros, era um número de três dígitos, sendo que apenas o dígito do meio era zero. Após 45 minutos, uma outra placa
+            indicava a distância até Xapuri, sendo essa formada pelos dois dígitos diferentes de zero da primeira placa, mas com a ordem invertida. Quarenta e cinco minutos depois, a distância que uma outra placa indicava era formada pelos mesmos dois dígitos da placa anterior. Sabendo-se que velocidade é definida como a razão entre a distância percorrida e o tempo gasto para percorrer essa distância, e assumindo que esse
+            motorista manteve uma mesma velocidade ao longo de todo o trajeto, o tempo gasto, em minutos, para chegar em Xapuri após a passagem pela terceira placa foi</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q38" value="a">a- 18.</label>  
+                <label><input type="radio" name="q38" value="b">b- 15.</label>  
+                <label><input type="radio" name="q38" value="c">c- 14.</label>  
+                <label><input type="radio" name="q38" value="d">d- 17.</label>
+                <label><input type="radio" name="q38" value="e">e- 16.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>39. Antonio, Bernardo e Caetano são três amigos. Sempre que uma pergunta é feita a eles, dois falam a verdade e um mente. Ao serem questionados sobre quem era o mais velho, responderam:</strong></p>Antonio: Bernardo nasceu primeiro. <br>
+                Bernardo: Eu não sou o mais velho. <br>
+                Caetano: Antonio é o mais velho. <br>
+                <p>O nome de quem mentiu ao responder essa pergunta e o nome do mais velho dos amigos são, respectivamente,</p>
+            <div class="options">  
+                <label><input type="radio" name="q39" value="a">a- Bernardo e Bernardo.</label>  
+                <label><input type="radio" name="q39" value="b">b- Bernardo e Caetano.</label>  
+                <label><input type="radio" name="q39" value="c">c- Antonio e Antonio.</label>  
+                <label><input type="radio" name="q39" value="d">d- Caetano e Caetano.</label>
+                <label><input type="radio" name="q39" value="e">e- Antonio e Bernardo.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>40. Para sair do fundo de um buraco de 1510 centímetros de profundidade, uma minhoca consegue subir 111 cm a cada 5 minutos. A cada 15 minutos, a minhoca precisa parar por um minuto para descansar, porém, durante o descanso, a minhoca escorrega e desce 11 cm. O tempo, em minutos, que a minhoca levará para sair do buraco é</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q40" value="a">a- 64.</label>  
+                <label><input type="radio" name="q40" value="b">b- 59.</label>  
+                <label><input type="radio" name="q40" value="c">c- 79.</label>  
+                <label><input type="radio" name="q40" value="d">d- 74.</label>
+                <label><input type="radio" name="q40" value="e">e- 69.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>41. Gabriel e Giovane são dois irmãos gêmeos que têm o hábito de escolher a mesma cor para os pares de meia que vão calçar. Assim, por exemplo, se um deles, em certo dia, usa meias pretas, o outro também usa meias pretas nesse dia. Eles guardam suas meias em um mesmo saco que está sempre desorganizado, de modo que as meias estão misturadas e não estão arrumadas em pares de mesma cor. Um certo dia,
+            o saco tinha um total de 12 meias marrons, 16 meias pretas e 30 meias brancas. Nesse dia, para decidir qual cor usariam, começaram a tirar uma meia por vez do saco até que fossem tiradas quatro meias da mesma cor. O número máximo de retiradas que eles farão do saco até conseguirem as meias desejadas será</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q41" value="a">a- 16.</label>  
+                <label><input type="radio" name="q41" value="b">b- 10.</label>  
+                <label><input type="radio" name="q41" value="c">c- 8.</label>  
+                <label><input type="radio" name="q41" value="d">d- 4.</label>
+                <label><input type="radio" name="q41" value="e">e- 12.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>42. Um programa de computador inicia com uma tela preta e um
+                ponto branco nessa tela. Após 3 segundos, esse ponto branco
+                tem sua cor trocada para vermelho e um novo ponto branco é
+                exibido em algum lugar da tela que esteja preto. O programa
+                continua de maneira que:</strong></p>• a cada segundo, para cada ponto vermelho, um novo ponto branco é exibido na tela; <br>
+                • cada ponto branco, após 3 segundos de exibição, torna-se vermelho e origina um novo ponto branco, em alguma região preta da tela. <p>Nessas condições, após 15 segundos do início do programa, o número de pontos brancos e vermelhos exibidos na tela é</p>
+            <div class="options">  
+                <label><input type="radio" name="q42" value="a">a- 174.</label>  
+                <label><input type="radio" name="q42" value="b">b- 159.</label>  
+                <label><input type="radio" name="q42" value="c">c- 144.</label>  
+                <label><input type="radio" name="q42" value="d">d- 189.</label>
+                <label><input type="radio" name="q42" value="e">e- 129.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>43. A distância, em linha reta, entre os pontos A e B de uma avenida é 39,2 m. Pedro parte do ponto A em direção ao ponto B e, após dar 35 passos, chega ao ponto C. João parte do ponto B em direção ao ponto A e, após dar 40 passos, chega ao ponto D, conforme mostra a figura, fora de escala.</strong></p>
+            <img src="imag/figuraracio.jpg" alt="#"><p>Sabendo-se que cada passo de Pedro tem 60 cm e cada passo de João tem 65 cm, então a diferença entre o número de passos dados por Pedro e por João no trecho DC é</p>
+            <div class="options">  
+                <label><input type="radio" name="q43" value="a">a- 2.</label>  
+                <label><input type="radio" name="q43" value="b">b- 1.</label>  
+                <label><input type="radio" name="q43" value="c">c- 3.</label>  
+                <label><input type="radio" name="q43" value="d">d- 4.</label>
+                <label><input type="radio" name="q43" value="e">e- 5.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>44. Uma loja recebeu uma caixa com menos de 300 camisetas e irá formar pilhas, todas com o mesmo número de camisetas. O funcionário encarregado pelo serviço, após verificar o número total de camisetas da caixa, percebeu que poderiam ser feitas pilhas com 7 ou com 9 ou com 12 camisetas em cada uma, mas que sempre sobrariam 3 camisetas na caixa. O número de camisetas que havia na caixa era
+            </strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q44" value="a">a- 240.</label>  
+                <label><input type="radio" name="q44" value="b">b- 260.</label>  
+                <label><input type="radio" name="q44" value="c">c- 255.</label>  
+                <label><input type="radio" name="q44" value="d">d- 235.</label>
+                <label><input type="radio" name="q44" value="e">e- 275.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>45. Para a realização de uma atividade física, três turmas, A, B e C, de um colégio, respectivamente com 45, 39 e 42 alunos, serão divididas em grupos, todos com o mesmo número de alunos e no maior número possível, de modo que cada grupo tenha apenas alunos de umamesma turma. O número total de grupos que poderão
+            ser formados é</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q45" value="a">a- 39.</label>  
+                <label><input type="radio" name="q45" value="b">b- 42.</label>  
+                <label><input type="radio" name="q45" value="c">c- 32.</label>  
+                <label><input type="radio" name="q45" value="d">d- 45.</label>
+                <label><input type="radio" name="q45" value="e">e- 28.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>46. Uma oficina mecânica adiciona, a cada 900 mL de óleo para motor, 250 mL de aditivo, e utiliza essa mistura (óleo + aditivo) em carros com muita quilometragem. Se, durante uma semana, essa oficina utilizou 16,1 litros
+            dessa mistura (óleo + aditivo), a quantidade de aditivo, em litros, utilizada foi
+        </strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q46" value="a">a- 1,5.</label>  
+                <label><input type="radio" name="q46" value="b">b- 2.</label>  
+                <label><input type="radio" name="q46" value="c">c- 2,5.</label>  
+                <label><input type="radio" name="q46" value="d">d- 3.</label>
+                <label><input type="radio" name="q46" value="e">e- 3,5.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>    
+        <div class="question">  
+            <p><strong>47. Uma empresa possui, em sua frota, um total de 36 veículos. A razão entre o número de veículos com problemas mecânicos e o número de veículos sem problemas mecânicos é <sup>2</sup>&frasl;<sub>7</sub> . Após o reparo dos problemas mecânicos de</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q47" value="a">a- <sup>2</sup>&frasl;<sub>9</sub>.</label>  
+                <label><input type="radio" name="q47" value="b">b- <sup>2</sup>&frasl;<sub>3</sub>.</label>  
+                <label><input type="radio" name="q47" value="c">c- <sup>1</sup>&frasl;<sub>5</sub>.</label>  
+                <label><input type="radio" name="q47" value="d">d- <sup>1</sup>&frasl;<sub>6</sub>.</label>
+                <label><input type="radio" name="q47" value="e">e- <sup>2</sup>&frasl;<sub>5</sub>.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>48. Em um colégio, 80 professores precisam fazer o exame
+                médico anual. Sabendo-se que 65% deles fizeram o exame no próprio colégio e que 75% dos demais fizeram o exame em outro local, então, em relação ao número
+                total de professores que precisam fazer o exame médico, o número de professores que ainda não fizeram esse exame representa uma porcentagem de</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q48" value="a">a- 10,35%.</label>  
+                <label><input type="radio" name="q48" value="b">b- 9,25%.</label>  
+                <label><input type="radio" name="q48" value="c">c- 11,25%.</label>  
+                <label><input type="radio" name="q48" value="d">d- 8,75%.</label>
+                <label><input type="radio" name="q48" value="e">e- 12,75%.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>49. Em um restaurante por quilo, uma das opções de sobre- R ascunho
+                mesa é gelatina, servida diariamente em potinhos, todos com a mesma quantidade. Esse restaurante prepara, por dia, determinada quantidade de gelatina líquida e coloca 350 mL em cada potinho. Porém, se fossem colocados 300 mL em cada potinho, com a mesma quantidade de gelatina líquida, seria possível preparar 8 potinhos a mais por dia. A quantidade de gelatina líquida, em litros, preparada diariamente por esse restaurante é</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q49" value="a">a- 16,8.</label>  
+                <label><input type="radio" name="q49" value="b">b- 16,2.</label>  
+                <label><input type="radio" name="q49" value="c">c- 17,7.</label>  
+                <label><input type="radio" name="q49" value="d">d- 17,3.</label>
+                <label><input type="radio" name="q49" value="e">e- 18,5.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>51. Uma sorveteria vende sorvetes de palito (picolés) de diferentes preços. A tabela mostra a quantidade de picolés comprados por uma pessoa, e seus respectivos preços unitários.</strong></p> <img src="imag/figura geom.jpg" alt="#"> <p>Considerando-se o número total de picolés comprados, na média, o preço de um picolé saiu por R$ 2,80. O valor unitário do picolé do tipo D é</p>
+            <div class="options">  
+                <label><input type="radio" name="q51" value="a">a- R$ 4,00.</label>  
+                <label><input type="radio" name="q51" value="b">b- R$ 4,25.</label>  
+                <label><input type="radio" name="q51" value="c">c- R$ 3,90.</label>  
+                <label><input type="radio" name="q51" value="d">d- R$ 3,75.</label>
+                <label><input type="radio" name="q51" value="e">e- R$ 4,10.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>
+        <div class="question">  
+            <p><strong>52. Uma empresa encomendou determinada quantidade de blocos de rascunho, personalizados com o seu logotipo, para distribuir entre funcionários e clientes. Do total encomendado, 500 blocos foram separados para os clientes; ao se distribuírem os demais blocos entre os funcionários, percebeu-se que, se cada funcionário recebesse 3 blocos, sobrariam 140, mas, se cada um recebesse 5 blocos, sobrariam 20. Então, o número total de blocos encomendados foi</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q52" value="a">a- R$ 680.</label>  
+                <label><input type="radio" name="q52" value="b">b- R$ 570.</label>  
+                <label><input type="radio" name="q52" value="c">c- R$ 540.</label>  
+                <label><input type="radio" name="q52" value="d">d- R$ 820.</label>
+                <label><input type="radio" name="q52" value="e">e- R$ 750.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>    
+        <div class="question">  
+            <p><strong>53. Uma empresa encomendou determinada quantidade de blocos de rascunho, personalizados com o seu logotipo, para distribuir entre funcionários e clientes. Do total encomendado, 500 blocos foram separados para os clientes; ao se distribuírem os demais blocos entre os funcionários, percebeu-se que, se cada funcionário recebesse 3 blocos, sobrariam 140, mas, se cada um recebesse 5 blocos, sobrariam 20. Então, o número total de blocos encomendados foi</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q53" value="a">a- 6.</label>  
+                <label><input type="radio" name="q53" value="b">b- 7.</label>  
+                <label><input type="radio" name="q53" value="c">c- 5.</label>  
+                <label><input type="radio" name="q53" value="d">d- 8.</label>
+                <label><input type="radio" name="q53" value="e">e- 9.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>54. Uma empresa com 150 funcionários mandou confeccionar 150 camisetas promocionais, uma para cada um, nos tamanhos P, M, G e GG. A tabela mostra a quantidade de camisetas de cada tamanho.</strong></p><img src="imagresposta/figuraperg.jpg" alt="#"><p>Em relação ao número total de camisetas confeccionadas, o gráfico que representa a porcentagem correta de cada tamanho é</p>
+            <div class="options">  
+                <label><input type="radio" name="q54" value="a">a- <img src="imagresposta/ra.jpg" alt="#"></label>  
+                <label><input type="radio" name="q54" value="b">b- <img src="imagresposta/rb.jpg" alt="#"></label>  
+                <label><input type="radio" name="q54" value="c">c- <img src="imagresposta/rc.jpg" alt="#"></label>  
+                <label><input type="radio" name="q54" value="d">d- <img src="imagresposta/rd.jpg" alt="#"></label>
+                <label><input type="radio" name="q54" value="e">e- <img src="imagresposta/re.jpg" alt="#"></label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>                                    
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"> Voltar</a>
+            </li>
+        </ul>
+    </nav> 
+
+     
+    <script>  
+        function checkAnswers() {  
+    // Respostas corretas  
+    const correctAnswers = {  
+        q1: 'a', // 479  
+        q2: 'e', // delito, delinquente, vítima e controle social.
+        q3: 'b', // Luiz, Hugo, José.
+        q4: 'd', // algum grupo tem, no máximo, 83 pessoas.
+        q5: 'e', // Alex usou óculos escuro.
+        q6: 'a', // 54
+        q7: 'c', // 20
+        q8: 'e', // alguns elefantes não são rinocerontes.
+        q9: 'd', // Mariana é médica e Neiva é mãe de Sérgio.
+        q10: 'd', // 61
+        q11: 'b', // 48 litros.
+        q12: 'e', // 1 xícara + 1/8 xícara.
+        q13: 'd', // Ercílio roubou o colar e Auro, os brincos.
+        q14: 'b', // 382
+        q15: 'c', // 13
+        q16: 'c', // todo bombeiro é pescador
+        q17: 'a', // 688902.
+        q18: 'd', // Rafael não teve a promoção e alguém não assistiu à final do campeonato.
+        q19: 'c', // Aline foi ao teatro sem guarda-chuva.
+        q20: 'e', // 7
+        q21: 'b', // 99
+        q22: 'a', // o relógio de André é caro.
+        q23: 'd', // imagem D
+        q24: 'b', // 31
+        q25: 'c', // se um cliente compra livros, então ele não usa a poltrona ou não é verão.
+        q26: 'e', // José Carlos é Jô.
+        q27: 'e', // verdades, mentiras, mentiras.
+        q28: 'a', // R
+        q29: 'e', // 4
+        q30: 'd', // 5
+        q31: 'e', // 38
+        q32: 'd', // 12,5%.
+        q33: 'c', // R$ 60,00.
+        q34: 'a', // 11
+        q35: 'c', // R$ 900,00.
+        q36: 'd', // 16 dias.
+        q37: 'b', // nenhum Ba é Bo.
+        q38: 'e', // 16
+        q39: 'c', // Antonio e Antonio.
+        q40: 'd', // 74
+        q41: 'b', // 10
+        q42: 'd', // 189
+        q43: 'a', // 2.
+        q44: 'd', // 235.
+        q45: 'c', // 32.
+        q46: 'e', // 3,5.
+        q47: 'b', // 2/3
+        q48: 'c', // 11,25%.
+        q49: 'd', // 17,3.
+        q50: 'a', // 8
+        q51: 'd', // R$ 3,75.
+        q52: 'e', // 750.
+        q53: 'c', // 5.
+        q54: 'b', // figura b
+    };  
+
+    // Verificar cada pergunta  
+    for (let question in correctAnswers) {  
+        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);  
+        const options = document.querySelectorAll(`input[name="${question}"]`);  
+
+        options.forEach(option => {  
+            option.parentNode.classList.remove('correct', 'incorrect');  
+        });  
+
+        if (selectedOption) {  
+            if (selectedOption.value === correctAnswers[question]) {  
+                selectedOption.parentNode.classList.add('correct');  
+            } else {  
+                selectedOption.parentNode.classList.add('incorrect');  
+                const correctOption = Array.from(options).find(option => option.value === correctAnswers[question]);  
+                if (correctOption) {  
+                    correctOption.parentNode.classList.add('correct');  
+                }  
+            }  
+        }  
+    }  
+}  
+document.getElementById('search-button').addEventListener('click', function() {  
+const query = document.getElementById('search-input').value;  
+if (query) {  
+// Redirecione para uma página de busca, ou faça uma busca em sua aplicação  
+window.location.href = `search_results.html?q=${encodeURIComponent(query)}`;  
+}  
+});
+    </script>  
+
+</body>  
+</html>

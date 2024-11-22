@@ -1,0 +1,631 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <title>Questões</title>  
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style> 
+body{
+  color: black;
+  background-color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}    
+a {
+color: black;
+text-decoration: none;
+} 
+.options label { 
+    display: flex; 
+    align-items: center;
+     margin: 5px 0; 
+} 
+.options img { 
+    margin-left: 10px; 
+}
+
+    </style>  
+</head>  
+<body> 
+    <div class="container">
+        <h1>Questões de Informática</h1>  
+
+        <div class="question">  
+            <p><strong>1. A Área de Transferência é um recurso presente em
+                diversos sistemas operacionais, como o Windows 10. <br>
+                Nesse sistema operacional, a Área de Transferência</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q1" value="a">a- permite que ela seja utilizada em nuvem, possibilitando que se copie imagens e textos de um computador para outro.    </label>  
+                <label><input type="radio" name="q1" value="b">b- permite que ela seja limpa por completo pelo usuário,não sendo possível a escolha de apenas alguns itens que não serão apagados.</label>  
+                <label><input type="radio" name="q1" value="c">c- permite armazenar apenas textos simples, com poucos caracteres e sem formatação.</label>  
+                <label><input type="radio" name="q1" value="d">d- possui o recurso de fixar itens, que cria uma tecla de atalho para esses itens.</label>  
+                <label><input type="radio" name="q1" value="e">e- é destinada à transferência exclusivamente entre programas da Microsoft, como o MS-Office,<br> não podendo ser utilizada para transferência com outros programas.</label>
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>2.Em um computador com mouse e o sistema operacional
+                Windows 10, ambos em suas configurações padrão, colocou-se em <br> uma pasta três arquivos, de nomes A.txt, B.txt
+                e C.txt. Em seguida foram realizados os seguintes procedimentos: <br> <br>1. Os três artigos foram selecionados. <br> <br>2. Pressionou-se o botão direito do mouse, com o cursor do mouse sobre A.txt. <br> <br>3. Na lista de opções que surge na tela, selecionou-se Renomear. <br> <br>4. O nome A.txt é selecionado para permitir a sua alteração, e, em seguida, digitou-se X seguido da tecla Enter. <br>Após a digitação realizada em 4), os arquivos A.txt, B.txt e C.txt passarão a ter, respectivamente, os nomes: </strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q2" value="a">a- X.txt, X - Copia.txt e X - Copia (2).txt.</label>  
+                <label><input type="radio" name="q2" value="b">b- X1.txt, X2.txt e X3.txt</label>  
+                <label><input type="radio" name="q2" value="c">c- X.txt, B.txt e C.txt.</label>  
+                <label><input type="radio" name="q2" value="d">d- XA.txt, XB.txt e XC.txt</label>
+                <label><input type="radio" name="q2" value="e">e- X (1).txt, X (2).txt e X (3).txt.</label>
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>  
+            </div>  
+        </div>  
+      
+        <div class="question">  
+            <p><strong>3. Um usuário de um computador com o sistema operacional Windows 10 pretende nomear alguns de seus arquivos. <br> A alternativa que apresenta apenas nomes que podem ser utilizados é:</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q3" value="a">a- ?Dúvidas.doc e “Perguntas:a fazer”.docx</label>  
+                <label><input type="radio" name="q3" value="b">b- Relação*fotos.txt e Relação*vídeos.txt</label>  
+                <label><input type="radio" name="q3" value="c">c- Contas a pagar/receber.xls e Pagamentos a fazer|Janeiro.xlsx</label>  
+                <label><input type="radio" name="q3" value="d">d- @e-mails.txt e %chats.txt</label>
+                <label><input type="radio" name="q3" value="e">e- <documentos>.txt e \cópias.txt
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>4. O Editor de texto MS-Word 2016, em português e em
+                sua configuração padrão, permite a inserção de Caixa de
+                Texto, sobre <br>a qual é correto afirmar que ela</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q4" value="a">a- destina-se exclusivamente ao armazenamento de comentários inseridos no documento por meio da guia Revisão
+                </label>  
+                <label><input type="radio" name="q4" value="b">b- é também conhecida como SmartArt, permitindo a inserção de textos dentro de quaisquer tipos de formas, como quadrados, triângulos <br> e círculos.</label>  
+                <label><input type="radio" name="q4" value="c">c- possibilita dar uma maior atenção ao texto digitado, deixando-o em evidência, como no caso de <br> títulos ou citações.
+                </label>  
+                <label><input type="radio" name="q4" value="d">d- só existe de forma associada ao WordArt.</label>
+                <label><input type="radio" name="q4" value="e">e- tem sua aplicação exclusivamente nos cabeçalhos e rodapés dos documentos, locais nos quais se costuma ter textos apresentados <br> de forma diferenciada.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+    
+        <div class="question">  
+            <p><strong>5. No editor de texto MS-Word 2016, em português e em sua
+                configuração padrão, foi digitado um parágrafo, conforme
+                mostrado <br> a seguir, seguido da tecla ENTER. <br> <br> Comprou-se um microcomputador de cor preta, com dois discos <br> rígidos e com quatro entradas
+                USB. <br>  <br>Posteriormente, deu-se um duplo-clique no meio da palavra <br>
+                microcomputador e, a seguir, clicou-se sobre o botão Itálico <br>
+                (do grupo Fonte da guia Página Inicial). Como resultado,</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q5" value="a">a- todas as palavras da linha na qual estava a palavra microcomputador ficaram com o estilo de fonte itálico.
+              </label>  
+                <label><input type="radio" name="q5" value="b">b- a palavra microcomputador ficou com o estilo de fonte itálico.</label>  
+                <label><input type="radio" name="q5" value="c">c- duas letras da palavra microcomputador ficaram como estilo de fonte itálico, a que estava imediatamente à esquerda <br> e a que estava imediatamente à direita do ponto do clique.</label>  
+                <label><input type="radio" name="q5" value="d">d- nada ocorreu.</label>
+                <label><input type="radio" name="q5" value="e">e- todas as palavras do parágrafo no qual estava apalavra microcomputador ficaram com o estilo de fonte itálico.
+                </label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>6. No MS-Windows 7, na sua configuração padrão, para se
+                criar um atalho da pasta Testando na área de trabalho, de
+                acordo com a disposição da figura a seguir,</strong></p>
+                <img src="imag/informatica.jpg" alt="#"> 
+                <p><strong>bastou arrastar a pasta com o mouse e manter pressionada(s) a(s) tecla(s)</strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q6" value="a">a- Shift.</label>  
+                <label><input type="radio" name="q6" value="b">b- Ctrl.</label>  
+                <label><input type="radio" name="q6" value="c">c- Ctrl + Esc.</label>  
+                <label><input type="radio" name="q6" value="d">d- Alt + Tab.</label>
+                <label><input type="radio" name="q6" value="e">e- Alt.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>7. Para alterar a forma como arquivos e pastas funcionam e como itens são exibidos no computador, o MS-Windows 7, na sua configuração padrão, disponibiliza esse recurso por meio do seguinte caminho:</strong></p> 
+        <div class="options">  
+                <label><input type="radio" name="q7" value="a">a- Iniciar; Todos os Programas; e Opções de Pasta.</label>  
+                <label><input type="radio" name="q7" value="b">b- Iniciar; Computador; Aparência e Personalização; e Opções de Pasta.</label>  
+                <label><input type="radio" name="q7" value="c">c- Todos os Programas; Painel de Controle; e Opções de Pasta.</label>  
+                <label><input type="radio" name="q7" value="d">d- Computador; Painel de Controle; e Opções de Pasta.</label>
+                <label><input type="radio" name="q7" value="e">e-  Iniciar; Painel de Controle; Aparência e Personalização; e Opções de Pasta.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>8. A tabela a seguir foi criada no MS-Excel 2010, na sua configuração padrão.</strong></p> 
+            <img src="imag/Planilha.jpg" alt="#">
+            <p><strong>A fórmula da célula C8, que determina o total de candidatos inscritos para o cargo de Aux. Papiloscopista, é</strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q8" value="a">a- =PROCV("AUX. PAPILOSCOPISTA";C3:C7)</label>  
+                <label><input type="radio" name="q8" value="b">b- =CONT.SE(C3:C7;"AUX. PAPILOSCOPISTA")</label>  
+                <label><input type="radio" name="q8" value="c">c- =CONT.VALORES(C3:C7;"AUX.PAPILOSCOPISTA")</label>  
+                <label><input type="radio" name="q8" value="d">d- =SOMASE(C3:C7;"AUX. PAPILOSCOPISTA")</label>
+                <label><input type="radio" name="q8" value="e">e- =CONT.NÚM(C3:C7;"AUX. PAPILOSCOPISTA")</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>9. O número de questões da prova preambular de um concurso público foi distribuído conforme mostra a tabela a seguir, criada no MS-Excel 2010, na sua configuração padrão.</strong></p> 
+            <img src="imag/img de informatica.jpg" alt="#">
+            <p><strong>Para calcular o percentual de questões de Língua Portuguesa no concurso, a fórmula correta da célula C3, que está no formato de número, é</strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q9" value="a">a- =SOMA(B4*B8*100)</label>  
+                <label><input type="radio" name="q9" value="b">b- =B7/B8*100</label>  
+                <label><input type="radio" name="q9" value="c">c- =B3/$B$8*100</label>  
+                <label><input type="radio" name="q9" value="d">d- =B3/SOMA(B3;B8)/100</label>
+                <label><input type="radio" name="q9" value="e">e- =B3*80*100</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>10. A planilha a seguir foi criada no MS-Excel 2010, na sua configuração padrão, e apresenta uma lista de candidatos aprovados em uma prova de seleção para um concurso.</strong></p> 
+            <img src="imag/tabela.jpg" alt="#">
+            <p><strong>As fórmulas que identificam a maior pontuação (célula C8) e a menor pontuação (célula C9) são, respectivamente,</strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q10" value="a">a- =MAIOR(C3:C7;1) e =MÍNIMO(C3:C7)</label>  
+                <label><input type="radio" name="q10" value="b">b- =MÁXIMO(C3:C7) e =MENOR(C3:C7)</label>  
+                <label><input type="radio" name="q10" value="c">c- =MÁXIMO(B3:B7) e =MÍNIMO(B3:B7)</label>  
+                <label><input type="radio" name="q10" value="d">d- =MAIOR(B3:B7) e =MENOR(B3:B7)</label>
+                <label><input type="radio" name="q10" value="e">e- =MAIOR(B3:C7,1) e =MÍNIMO(B3:C7,5)</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>11. A tela a seguir mostra o sumário com a estrutura do arquivo Trabalho doc, criado no MS-Word 2010, na sua configuração padrão.</strong></p> 
+            <img src="imag/figura1.jpg" alt="#">
+            <p><strong>A seguir, tem-se a tela de impressão do arquivo Trabalho.doc</strong></p>
+            <img src="imag/figura2.jpg" alt="#">
+            <p><strong>De acordo com a configuração da tela, serão impressas, respectivamente,
+            </strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q11" value="a">a- todas as páginas dos Capítulos 1 e 2, todas as páginas do Capítulo 3 e todas as páginas do Capítulo 5.</label>  
+                <label><input type="radio" name="q11" value="b">b- todas as páginas dos Capítulos 1 ao Capítulo 5</label>  
+                <label><input type="radio" name="q11" value="c">c- a página inicial do Capítulo 1, a página inicial do Capítulo 3 e todas as páginas do Capítulo 5.</label>  
+                <label><input type="radio" name="q11" value="d">d- somente as páginas iniciais dos Capítulos 1, 2, 3 e 5.</label>
+                <label><input type="radio" name="q11" value="e">e- a página inicial do Capítulo 1, todas as páginas do Capítulo 3 e a página inicial do Capítulo 5.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>12. Um estudante desatento teve seus dados bancários, financeiros e informações sobre seus hábitos na internet transmitidos de seu notebook para uma empresa localizada na Ásia – sem o seu conhecimento ou consentimento – por um programa que se alojou no seu computador. Esse programa é classificado como
+            </strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q12" value="a">a- Uploader.</label>  
+                <label><input type="radio" name="q12" value="b">b- Spyware.</label>  
+                <label><input type="radio" name="q12" value="c">c- Hacker.</label>  
+                <label><input type="radio" name="q12" value="d">d- Browser</label>
+                <label><input type="radio" name="q12" value="e">e- Cracker.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>
+        <div class="question">  
+            <p><strong>13. O MS-Internet Explorer 8, na sua configuração padrão, permite que o usuário insira um URL padrão, ou seja, ao abrir o navegador o endereço será acessado automaticamente, conforme mostra a figura a seguir.
+            </strong></p>
+            <img src="imag/figura3.jpg" alt="#">
+            <p>Para usar o recurso, é necessário acessar o menu</p>
+        <div class="options">  
+                <label><input type="radio" name="q13" value="a">a- Exibir; guia Conexões; e digitar o endereço no espaço Home page.</label>  
+                <label><input type="radio" name="q13" value="b">b- Arquivo; guia Privacidade; e digitar o endereço no espaço Home page.</label>  
+                <label><input type="radio" name="q13" value="c">c- Favoritos; Opções da Internet; guia Conexões; e digitar o endereço no espaço Home page.</label>  
+                <label><input type="radio" name="q13" value="d">d- Editar; Opções da Internet; guia Segurança; e digitar o endereço no espaço Home page.</label>
+                <label><input type="radio" name="q13" value="e">e- Ferramentas; Opções da Internet; guia Geral; e digitar o endereço no espaço Home page.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>14. Um vendedor de uma empresa precisa enviar uma mensagem para um cliente por meio do MS-Outlook 2010, na sua configuração padrão. Para que o remetente possa fazer o acompanhamento do e-mail, antes de enviá-lo, deve acessar a guia</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q14" value="a">a- Opções; e clicar em <img src="imag/um.jpg" alt="#"></label>  
+                <label><input type="radio" name="q14" value="b">b- Inserir; e clicar em <img src="imag/dois.jpg" alt="#"></label>  
+                <label><input type="radio" name="q14" value="c">c- Opções; e clicar em <img src="imag/tres.jpg" alt="#"></label>  
+                <label><input type="radio" name="q14" value="d">d- Mensagem; e clicar em <img src="imag/quatro.jpg" alt="#"> </label>
+                <label><input type="radio" name="q14" value="e">e- Mensagem; e clicar em <img src="imag/cinco.jpg" alt="#">Verificar Nomes</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>15. No MS-Windows 7, quando se pressiona a tecla PrtScr ou similar,  exemplos: <br> PrtScrn, PrtSc, PrtScn, PrintScreen, Prt/Sysreq,
+                entre outros, uma imagem da tela é copiada para a _______.
+                Isso se chama captura de tela. <br>
+                <p>Assinale a alternativa que preenche corretamente a lacuna do texto.
+            </p></strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q15" value="a">a- Área de trabalho</label>  
+                <label><input type="radio" name="q15" value="b">b- Biblioteca Imagens</label>  
+                <label><input type="radio" name="q15" value="c">c- Área de transferência
+                </label>  
+                <label><input type="radio" name="q15" value="d">d- Biblioteca Downloads</label>
+                <label><input type="radio" name="q15" value="e">e- Biblioteca Documentos</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>16. Considere os itens a seguir: <br>
+                <p>I. Clock do processador</p> 
+                <p>II. Memória RAM</p> 
+                <p>III. Espaço livre no disco rígido</p> 
+                Com relação aos itens apresentados, assinale a alternativa que contém os requisitos mínimos necessários do computador para se instalar e executar o MS-Windows 7, versão 64 bits.</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q16" value="a">a- I. 1GHz; II. 2GB; III. 20GB.
+                </label>  
+                <label><input type="radio" name="q16" value="b">b- I. 3GHz; II. 1GB; III. 16GB
+                </label>  
+                <label><input type="radio" name="q16" value="c">c- I. 2GHz; II. 2GB; III. 36GB.
+                </label>  
+                <label><input type="radio" name="q16" value="d">d- I. 2GHz; II. 1GB; III. 24GB.
+                </label>
+                <label><input type="radio" name="q16" value="e">e- I. 1GHz; II. 1GB; III. 16GB.
+                </label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>17. Na figura a seguir, é exibida uma janela do MS-Windows 7,
+                na sua configuração original:</strong></p>
+                <img src="imag/figura17.jpg" alt="#">
+                <p>Com base nos objetos exibidos na janela e considerando que um dos objetos está selecionado, pode-se afirmar que</p>
+            <div class="options">  
+                <label><input type="radio" name="q17" value="a">a- Provas é uma pasta que possui arquivos.</label>  
+                <label><input type="radio" name="q17" value="b">b- Agente e Escrivão são arquivos do WordPad.</label>  
+                <label><input type="radio" name="q17" value="c">c- Aulas é um arquivo que contém gráficos e documentos.</label>  
+                <label><input type="radio" name="q17" value="d">d- ao pressionar CTRL+X e, em seguida, CTRL+V, será criado o objeto Concursos – Cópia.</label>
+                <label><input type="radio" name="q17" value="e">e- ao pressionar CTRL+X e, em seguida, CTRL+V, o objeto será mantido com o mesmo nome, mesmo após a exibição de uma janela de aviso.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>18. Observe, na figura a seguir, os parâmetros de impressão
+                de um documento do MS-Word 2010, na sua configuração
+                padrão.</strong></p>
+                <img src="imag/figura18.jpg" alt="#">
+                <p>Assinale a alternativa que contém o que será impresso.</p>
+            <div class="options">  
+                <label><input type="radio" name="q18" value="a">a- Seção 2 e seção 5.</label>  
+                <label><input type="radio" name="q18" value="b">b- Seção 2 até seção 5.</label>  
+                <label><input type="radio" name="q18" value="c">c- Páginas 2 e 5.</label>  
+                <label><input type="radio" name="q18" value="d">d- Seção 2 ou seção 5.</label>
+                <label><input type="radio" name="q18" value="e">e- Páginas 2, 3, 4 e 5.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>     
+        <div class="question">  
+            <p><strong>19. Assinale a alternativa que contém o tipo de quebra indicado
+            </strong></p>
+            pelo ícone, <img src="imag/figura19.jpg" alt="#"> encontrado no menu Layout da Página
+            do MS-Word 2010.
+            <div class="options">  
+                <label><input type="radio" name="q19" value="a">a- Próxima Página.</label>  
+                <label><input type="radio" name="q19" value="b">b- Página.</label>  
+                <label><input type="radio" name="q19" value="c">c- Quebra Automática de Texto.
+                </label>  
+                <label><input type="radio" name="q19" value="d">d- Coluna.</label>
+                <label><input type="radio" name="q19" value="e">e- Contínuo.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>20. Observe o gráfico construído no MS-Excel 2010.</strong></p>
+             <img src="imag/figura20.jpg" alt="#">
+             <p>Com relação ao gráfico, assinale a alternativa correta.</p>
+            <div class="options">  
+                <label><input type="radio" name="q20" value="a">a- O valor do imóvel está no eixo de categoria.</label>  
+                <label><input type="radio" name="q20" value="b">b- Os tipos de imóvel estão no eixo de categoria.</label>  
+                <label><input type="radio" name="q20" value="c">c- Trata-se de um gráfico de superfície.</label>  
+                <label><input type="radio" name="q20" value="d">d- Nesse tipo de gráfico, a entrada de legenda considera o cabeçalho do eixo de categoria.</label>
+                <label><input type="radio" name="q20" value="e">e- Os rótulos estão visíveis.
+                </label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>    
+        <div class="question">  
+            <p><strong>21. Observe o documento do MS-Word 2010, apresentado parcialmente na figura a seguir. </strong></p>
+             <img src="imag/figura 21.jpg" alt="#"> 
+            <p>A figura foi disposta no texto da seguinte forma:</p>
+            <div class="options">  
+                <label><input type="radio" name="q21" value="a">a- <img src="imag/figuraA 21.jpg" alt="#"> </label>  
+                <label><input type="radio" name="q21" value="b">b- <img src="imag/figuraB 21.jpg" alt="#"> </label>  
+                <label><input type="radio" name="q21" value="c">c- <img src="imag/figuraC 21.jpg" alt="#"> </label>  
+                <label><input type="radio" name="q21" value="d">d- <img src="imag/figuraD 21.jpg" alt="#"> </label>
+                <label><input type="radio" name="q21" value="e">e- <img src="imag/figuraE 21.jpg" alt="#"> </label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div> 
+
+        <div class="question">  
+            <p><strong>22. No editor de planilha eletrônica MS-Excel 2016 (em português e em sua configuração padrão), a seguinte planilha foi elaborada, apresentando as cores dos itens na coluna A e as quantidades dos itens A, B e C, conforme suas cores, nas colunas B, C e D.</strong></p>
+             <img src="imag/figura 22.jpg" alt="#">
+             <p>Nessa planilha, as células da coluna E apresentam fórmulas para calcular automaticamente, as quantidades de itens de cada cor, enquanto as células da linha 6
+            contêm fórmulas para calcular, de forma automática, as quantidades de cada item.</p>
+            <p>Em particular, fórmulas corretas para as células <strong>E3</strong> e <strong>C6</strong>, compatíveis com o apresentado são, respectivamente:</p>
+            <div class="options">  
+                <label><input type="radio" name="q22" value="a">a- <strong>E3:</strong> =SOMA(B3:D3) ; <strong>C6:</strong> =SOMA(C2:C5)</label>  
+                <label><input type="radio" name="q22" value="b">b- <strong>E3:</strong> =SOMA(B3 a D3) ; <strong>C6:</strong> =SOMA(C2 a C5)</label>  
+                <label><input type="radio" name="q22" value="c">c- <strong>E3:</strong> =SOMA(B3-D3) ; <strong>C6:</strong> =SOMA(C2-C5)</label>  
+                <label><input type="radio" name="q22" value="d">d- <strong>E3:</strong> =SOMA(B3+D3) ; <strong>C6:</strong> =SOMA(C2+C5)</label>
+                <label><input type="radio" name="q22" value="e">e- <strong>E3:</strong> =SOMA(B3...D3) ; <strong>C6:</strong> =SOMA(C2...C5)
+                </label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div> 
+
+        <div class="question">  
+            <p><strong>23. No editor de planilha eletrônica MS-Excel 2016 (em português e em sua configuração padrão), uma planilha estava sendo editada quando o usuário decidiu alterar o layout de página dessa planilha, visando uma impressão futura na
+            forma desejada. As opções disponíveis para orientação de página de uma planilha no MS-Excel 2016 são</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q23" value="a">a- larga e estreita.</label>  
+                <label><input type="radio" name="q23" value="b">b- ofício e carta.</label>  
+                <label><input type="radio" name="q23" value="c">c- normal e reverso.</label>  
+                <label><input type="radio" name="q23" value="d">d- plana e 3D.</label>
+                <label><input type="radio" name="q23" value="e">e- retrato e paisagem.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+         </div>
+            <div class="question">  
+            <p><strong>24.Assinale a alternativa que contém um endereço válido de correio eletrônico:</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q24" value="a">a- pedro@serv@com</label>  
+                <label><input type="radio" name="q24" value="b">b- pedro@serv.com</label>  
+                <label><input type="radio" name="q24" value="c">c- pedro&serv.com</label>  
+                <label><input type="radio" name="q24" value="d">d- pedro.serv.com</label>
+                <label><input type="radio" name="q24" value="e">e- (pedro@serv.com</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+         </div>      
+            <div class="question">  
+                <p><strong>25. Considere que um usuário de correio eletrônico escreveu uma mensagem com dois destinatários, um no campo <u>Para</u>  e outro no campo <br> <u>Com Cópia Para.</u> Além disso, anexou dois arquivos à mensagem. Nesse caso,</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q25" value="a">a-  apenas o destinatário inserido no campo Para receberá os dois arquivos anexos.  
+                    </label>  
+                    <label><input type="radio" name="q25" value="b">b- apenas destinatário inserido no campo Com Cópia Para receberá os dois arquivos anexos.</label>  
+                    <label><input type="radio" name="q25" value="c">c- ambos os destinatários receberão a mensagem e os dois arquivos anexos.</label>  
+                    <label><input type="radio" name="q25" value="d">d- nenhum dos destinatários receberá qualquer dos dois arquivos anexos.</label>
+                    <label><input type="radio" name="q25" value="e">e- cada um dos destinatários receberá apenas um dos arquivos anexos.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>    
+            <div class="question">  
+                <p><strong>26. A tecnologia VoIP (Voz sobre IP) vem sendo amplamente
+                    utilizada, e tem como sua principal finalidade</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q26" value="a">a-  trafegar, por meio da Internet, sinais de voz convertidos em sinais digitais. 
+                    </label>  
+                    <label><input type="radio" name="q26" value="b">b- servir como meio alternativo para aplicações de jogos eletrônicos.</label>  
+                    <label><input type="radio" name="q26" value="c">c- trafegar dados referentes a cirurgias feitas remotamente.</label>  
+                    <label><input type="radio" name="q26" value="d">d- servir como meio alternativo para o streaming de vídeos de filmes.</label>
+                    <label><input type="radio" name="q26" value="e">e- trafegar, exclusivamente, dados referentes a operações de instituições financeiras.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>
+            <div class="question">  
+                <p><strong>27. Por meio do botão Quebras, presente no grupo Configurar
+                    Páginas da guia Layout do editor de texto MS-Word 2016 (em português e em sua configuração padrão), pode-se selecionar diversas opções de quebra, categorizadas em</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q27" value="a">a- Quebras de Cabeçalho e Quebras de Rodapé.</label>  
+                    <label><input type="radio" name="q27" value="b">b- Quebras de Documento e Quebras de Arquivo.</label>  
+                    <label><input type="radio" name="q27" value="c">c- Quebras de Figura e Quebras de Texto.</label>  
+                    <label><input type="radio" name="q27" value="d">d- Quebras de Página e Quebras de Seção.</label>
+                    <label><input type="radio" name="q27" value="e">e- Quebras de Palavra e Quebras de Parágrafo.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>    
+            <div class="question">  
+                <p><strong>28. Diante da necessidade de selecionar e avaliar aplicativos
+                    voltados à realização de videoconferências, um responsável pelo setor de informática da empresa pode recomendar os seguintes aplicativos:</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q28" value="a">a- Zoom e QuickTime Player.
+                    </label>  
+                    <label><input type="radio" name="q28" value="b">b- Firefox e Google Drive.
+                    </label>  
+                    <label><input type="radio" name="q28" value="c">c- Microsoft Teams e McAfee.</label>  
+                    <label><input type="radio" name="q28" value="d">d- Google Meet e Microsoft Teams.</label>
+                    <label><input type="radio" name="q28" value="e">e- Safari e Google Meet.
+                    </label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div> 
+            <div class="question">  
+                <p><strong>29. O URL (Uniform Resource Locator) possui algumas partes, como a que indica o protocolo utilizado. Essaparte é denominada</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q29" value="a">a- Esquema.
+                    </label>  
+                    <label><input type="radio" name="q29" value="b">b- Programa.
+                    </label>  
+                    <label><input type="radio" name="q29" value="c">c- Parâmentro.</label>  
+                    <label><input type="radio" name="q29" value="d">d- Caminho.</label>
+                    <label><input type="radio" name="q29" value="e">e- Dominio.
+                    </label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>  
+            <div class="question">  
+                <p><strong>30. Um dispositivo de segurança muito utilizado para proteger um computador contra acessos não autorizados vindos da Internet é o firewall pessoal. Quando esse dispositivo é configurado adequadamente, ele é capaz
+                de alguns tipos de proteção, como</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q30" value="a">a- bloquear todo o tráfego de saída e liberar todo o tráfego de entrada do computador, bloqueando o
+                     acesso a outros computadores e serviços, e permitindo que o computador seja acessado por outros computadores e serviços, o que é uma prática de alta segurança.</label>  
+                    <label><input type="radio" name="q30" value="b">b- analisar continuamente o conteúdo das conexões, filtrando diversos tipos de códigos maliciosos e
+                    barrando a comunicação entre um invasor e um código malicioso já instalado.
+                    </label>  
+                    <label><input type="radio" name="q30" value="c">c- impedir a execução de programas maliciosos baixados pelo usuário.</label>  
+                    <label><input type="radio" name="q30" value="d">d- impedir que vírus ainda não conhecidos pelo programa antivírus contaminem o computador.</label>
+                    <label><input type="radio" name="q30" value="e">e- impedir que programas de e-mail baixem spam.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>  
+            <div class="question">  
+                <p><strong>31. Existe uma parte da Internet considerada como uma Internet invisível, também chamada de deep web. Assinale a afirmação correta relacionada com a deep web.</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q31" value="a">a- A deep web tem como sinônimo dark web, não existindo diferenças entre esses termos.</label>  
+                    <label><input type="radio" name="q31" value="b">b- Ela é acessível pelos mecanismos de busca tradicionais, e é composta de sites e conteúdos que não são públicos por serem todos ilegais.</label>  
+                    <label><input type="radio" name="q31" value="c">c- Ela é uma zona da internet que pode ser detectada e acessada facilmente por qualquer motor de busca tradicional, como o Google ou o Bing.</label>  
+                    <label><input type="radio" name="q31" value="d">d- Na deep web, o conteúdo invisível é sempre mais inseguro e ilegal.</label>
+                    <label><input type="radio" name="q31" value="e">e- A maioria das páginas presentes na deep web é mantida oculta do navegador de Internet para proteger informações e privacidade do usuário.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>                                
+            <div class="question">  
+                <p><strong>32. Deseja-se adquirir um dispositivo de armazenamento externo para um microcomputador. Com relação a esses dispositivos, é correto afirmar que quando comparado ao disco HD externo, o dispositivo SSD externo</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q32" value="a">a- possui partes mecânicas para a escrita e leitura de dados, ao contrário do HD externo.</label>  
+                    <label><input type="radio" name="q32" value="b">b- tem mais chance de ter um problema de natureza mecânica do que um HD externo.</label>  
+                    <label><input type="radio" name="q32" value="c">c- proporciona transferência de arquivos mais rápida do que o HD externo.</label>  
+                    <label><input type="radio" name="q32" value="d">d- costuma possuir um menor custo para um mesmo espaço de armazenamento.</label>
+                    <label><input type="radio" name="q32" value="e">e- costuma ser mais pesado do que um HD externo de mesma capacidade.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>     
+            <div class="question">  
+                <p><strong>33. Um usuário de um microcomputador do tipo PC, com o sistema operacional Windows 10 instalado na sua configuração padrão, deseja saber as configurações de <i>hardware</i> desse PC, como o processador presente e a quantidade de memória instalada. Para isso, basta</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q33" value="a">a- pressionar as teclas Ctlr+Alt+Del e, no menu que se abre, escolher a opção Configurações.</label>  
+                    <label><input type="radio" name="q33" value="b">b- clicar com o botão esquerdo do mouse na barra de Tarefas e escolher a opção Configurações no menu que se abre.</label>  
+                    <label><input type="radio" name="q33" value="c">c- clicar com o botão direito do mouse Área de Trabalho e escolher a opção Configurações no menu que se abre.</label>  
+                    <label><input type="radio" name="q33" value="d">d- pressionar as teclas Ctlr+Alt e, no menu que se abre, escolher a opção Configurações.</label>
+                    <label><input type="radio" name="q33" value="e">e- clicar com o botão direito do mouse no ícone do menu Iniciar e escolher a opção Sistema, na janela Configurações se abre.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>  
+            <div class="question">  
+                <p><strong>34. Um tipo de fraude que ocorre na Internet denomina-se phishing, que possui como característica</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q34" value="a">a- a interceptação de mensagens recebidas com a finalidade de furtar dados pessoais e bancários.
+                    </label>  
+                    <label><input type="radio" name="q34" value="b">b- a tentativa de descobrir, por tentativa e/ou erro, nomes de usuários e senhas de sites e serviços.
+                    </label>  
+                    <label><input type="radio" name="q34" value="c">c- a interceptação de tráfego de dados em redes de computadores.</label>  
+                    <label><input type="radio" name="q34" value="d">d- o recebimento de uma mensagem não solicitada, simulando uma instituição conhecida, que visa induzir o destinatário a fornecer dados pessoais.</label>
+                    <label><input type="radio" name="q34" value="e">e- o envio de mensagem com conteúdo do tipo alarmante ou falso, visando comprometer a credibilidade
+                     de entidades citadas/envolvidas na mensagem.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div> 
+            <div class="question">  
+                <p><strong>35. Um tipo de <i>softwares</i> maliciosos denomina-se <i>ransomware,</i> que tem como principal forma de atuação</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q35" value="a">a- excluir da máquina invadida todos arquivos com extensões .pdf e .doc.</label>  
+                    <label><input type="radio" name="q35" value="b">b- criptografar arquivos na máquina invadida e posteriormente fazer pedido de “resgate” para liberação
+                    desses arquivos.</label>  
+                    <label><input type="radio" name="q35" value="c">c- enviar mensagens ameaçando o usuário do computador de denúncia às autoridades, por prática de
+                    pedofilia.</label>  
+                    <label><input type="radio" name="q35" value="d">d- inserir na máquina invadida arquivos com conteúdo sexual.</label>
+                    <label><input type="radio" name="q35" value="e">e- enviar milhares de mensagens a usuários desconhecidos, tendo com remetente o e-mail do usuário da máquina invadida.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>     
+            <div class="question">  
+                <p><strong>36. No MS-Windows 7, em sua configuração padrão, existem aplicativos acessórios para manipulação de alguns tipos de arquivos. Assinale a alternativa que apresenta o nome de um aplicativo acessório do MS-Windows 7 utilizado
+                para editar arquivos de imagem.</strong></p>
+                <div class="options">  
+                    <label><input type="radio" name="q36" value="a">a- Gerenciador de Arquivos.
+                    </label>  
+                    <label><input type="radio" name="q36" value="b">b- Visualizador de PDF.
+                    </label>  
+                    <label><input type="radio" name="q36" value="c">c- Bloco de Notas.</label>  
+                    <label><input type="radio" name="q36" value="d">d- Manipulator.</label>
+                    <label><input type="radio" name="q36" value="e">e- Paint.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>       
+            <div class="question">  
+                <p><strong>37. Um agente de escolta e vigilância penitenciária que queira procurar informações em páginas na internet precisará, entre outras coisas, utilizar um aplicativo do tipo_______.</strong></p>Assinale a alternativa que preenche corretamente a lacuna.
+                <div class="options">  
+                    <label><input type="radio" name="q37" value="a">a- Gerenciador de Arquivos.
+                    </label>  
+                    <label><input type="radio" name="q37" value="b">b- navegador web.
+                    </label>  
+                    <label><input type="radio" name="q37" value="c">c- Windows Explorer.
+                    </label>  
+                    <label><input type="radio" name="q37" value="d">d- editor de texto.</label>
+                    <label><input type="radio" name="q37" value="e">e- web design.</label> 
+                    <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+                </div>  
+            </div>           
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"> Voltar</a>
+            </li>
+        </ul>
+    </nav> 
+ <script>  
+function checkAnswers() {  
+    // Respostas corretas  
+    const correctAnswers = {  
+        q1: 'a', // permite que ela seja utilizada em nuvem, possibilitando que se copie imagens e textos de um computador para outro.  
+        q2: 'e', // X (1).txt, X (2).txt e X (3).txt.
+        q3: 'd', // @e-mails.txt e %chats.txt
+        q4: 'c', // possibilita dar uma maior atenção ao texto digitado,deixando-o em evidência, como no caso de títulos ou citações.
+        q5: 'b', // a palavra microcomputador ficou com o estilo de fonte itálico.
+        q6: 'e', // Alt.
+        q7: 'e', // Iniciar; Painel de Controle; Aparência e Personalização; e Opções de Pasta.
+        q8: 'b', // =CONT.SE(C3:C7;"AUX. PAPILOSCOPISTA")
+        q9: 'c', // =B3/$B$8*100
+        q10: 'a', // =MAIOR(C3:C7;1) e =MÍNIMO(C3:C7)
+        q11: 'c', // a página inicial do Capítulo 1, a página inicial do Capítulo 3 e todas as páginas do Capítulo 5.
+        q12: 'b', // Spyware.
+        q13: 'e', // Ferramentas; Opções da Internet; guia Geral; e digitar o endereço no espaço Home page.
+        q14: 'd', // Mensagem; e clicar em 
+        q15: 'c', // Área de transferência
+        q16: 'a', // I. 1GHz; II. 2GB; III. 20GB.
+        q17: 'e', // ao pressionar CTRL+X e, em seguida, CTRL+V, o objeto será mantido com o mesmo nome, mesmo após a exibição de uma janela de aviso.
+        q18: 'a', // Seção 2 e seção 5.
+        q19: 'd', // Coluna.
+        q20: 'b', // Os tipos de imóvel estão no eixo de categoria.
+        q21: 'c', // imagem C
+        q22: 'a', // E3: =SOMA(B3:D3) ; C6: =SOMA(C2:C5)
+        q23: 'e', // retrato e paisagem.
+        q24: 'b', // pedro@serv.com
+        q25: 'c', // ambos os destinatários receberão a mensagem e os dois arquivos anexos.
+        q26: 'a', // trafegar, por meio da Internet, sinais de voz convertidos em sinais digitais.
+        q27: 'd', // Quebras de Página e Quebras de Seção.
+        q28: 'd', // Google Meet e Microsoft Teams.
+        q29: 'a', // Esquema.
+        q30: 'b', // analisar continuamente o conteúdo das conexões, filtrando diversos tipos de códigos maliciosos e barrando a comunicação entre um invasor e um código malicioso já instalado
+        q31: 'e', // A maioria das páginas presentes na deep web é mantida oculta do navegador de Internet para proteger informações e privacidade do usuário.
+        q32: 'c', // proporciona transferência de arquivos mais rápida do que o HD externo.
+        q33: 'e', // clicar com o botão direito do mouse no ícone do menu Iniciar e escolher a opção Sistema, na janela Configurações se abre.
+        q34: 'd', // o recebimento de uma mensagem não solicitada, simulando uma instituição conhecida, que visa induzir o destinatário a fornecer dados pessoais.
+        q35: 'b', // criptografar arquivos na máquina invadida e posteriormente fazer pedido de “resgate” para liberação desses arquivos.
+        q36: 'a', // Gerenciador de Arquivos.
+        q37: 'c', // Windows Explorer
+        q38: '',
+        q39: '',
+        q40: '',
+
+    };  
+
+    // Verificar cada pergunta  
+    for (let question in correctAnswers) {  
+        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);  
+        const options = document.querySelectorAll(`input[name="${question}"]`);  
+
+        options.forEach(option => {  
+            option.parentNode.classList.remove('correct', 'incorrect');  
+        });  
+
+        if (selectedOption) {  
+            if (selectedOption.value === correctAnswers[question]) {  
+                selectedOption.parentNode.classList.add('correct');  
+            } else {  
+                selectedOption.parentNode.classList.add('incorrect');  
+                const correctOption = Array.from(options).find(option => option.value === correctAnswers[question]);  
+                if (correctOption) {  
+                    correctOption.parentNode.classList.add('correct');  
+                }  
+            }  
+        }  
+    }  
+}  
+document.getElementById('search-button').addEventListener('click', function() {  
+const query = document.getElementById('search-input').value;  
+if (query) {  
+// Redirecione para uma página de busca, ou faça uma busca em sua aplicação  
+window.location.href = `search_results.html?q=${encodeURIComponent(query)}`;  
+}  
+});
+ </script>
+</body>  
+</html>

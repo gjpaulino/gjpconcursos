@@ -1,0 +1,154 @@
+body{
+  color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+}
+ a {
+  color: white;
+  text-decoration: none;
+}
+ header img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 10px solid white;
+  }
+.center {
+    text-align: center;
+  }
+  
+  header h1 {
+    color: green;
+  }
+  h3 {
+    color: green;
+  }
+  footer{
+    color: white;
+    text-align: center;
+  }
+  nav a:hover {
+    color: greenyellow;
+    
+  }
+  .container {
+    padding: 0px 50px;
+  }
+  header {
+    background: rgb(59, 58, 58);
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+}
+
+main {
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.pdf-img {
+    width: 10%;
+    height: 80px;
+    border: none;
+    margin-top: 1rem;
+}
+
+.download-link {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.download-link:hover {
+    background: #0056b3;
+}
+
+.question {  
+  margin: 20px 0;  
+}  
+.options label {  
+  display: block;  
+  margin: 7px 0;  
+  cursor: pointer;  
+}  
+.correct {  
+  color: green;  
+}  
+.incorrect {  
+  color: red;  
+}  
+ul {
+display: flex;
+justify-content: space-between;
+list-style-type: none;
+align-items: center;
+padding: 16px;            
+}
+
+nav a:hover {
+color: greenyellow; 
+}
+
+.question {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #b7b1b1;
+  text-align: justify; /* Adiciona justificação ao texto */
+}
+
+.options label {
+  display: block;
+  margin: 10px 0;
+  text-align: justify; /* Adiciona justificação ao texto */
+}
+
+button {
+  display: block;
+  background-color:gray;
+  color: green;
+  padding: 8px 20px;
+  border: 1px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: greenyellow;
+}
+.blinking-button {
+   animation: blink-animation 1s steps(5, start) infinite;
+   -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+to {
+  visibility: hidden;
+}
+}
+
+@-webkit-keyframes blink-animation {
+to {
+    visibility: hidden;
+}
+}
+
