@@ -1,0 +1,766 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <title>Questões Biologia</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <script defer src="script.js"></script>
+    <style>  
+body {
+     color: black;
+     background-color: gray;
+     font-family: Arial, Helvetica, sans-serif;
+} 
+a {
+    color: black;
+    text-decoration: none;
+}
+    .question {  
+        margin: 20px 0;  
+    }  
+    .options label {  
+        display: block;  
+        margin: 7px 0;  
+        cursor: pointer;  
+    }  
+    .correct {  
+        color: green;  
+    }  
+    .incorrect {  
+        color: red;  
+    }  
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        padding: 16px;            
+    }
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: greenyellow; 
+    }
+    button {
+        background-color: rgb(20, 20, 20);
+        color: green;
+        padding: 5px 20px; 
+    }
+    .question {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #b7b1b1;
+      text-align: justify; /* Adiciona justificação ao texto */
+    }
+    .container{
+      padding: 0px 50px;
+    }
+</style>  
+</head>  
+<body> 
+    <div class="container">
+        <h1><span class="highlight">X</span>DaQuestão</h1>
+        <h1>Questões de Biologia</h1>  
+
+        <div class="question">  
+            <p><strong>1. A figura ilustra uma possível sequência no processo evolutivo celular, a partir de um procarionte ancestral.</strong></p>
+            <img src="imag/biologia_.jpg" alt="#">
+            <P style="font-size: 11px;">(www.cientic.com. Adaptado)</P>
+            <P style="font-size: 16px;">Tendo em vista o processo ilustrado e as características das células mais evoluídas atuais, é correto afirmar que, ao longo do tempo, houve
+            </P>  
+            <div class="options">  
+                <label><input type="radio" name="q1" value="a">(A) surgimento espontâneo e abrupto de estruturas internas mais complexas, tais como o núcleo e as
+                organelas.</label>  
+                <label><input type="radio" name="q1" value="b">(B) modificações de estruturas já existentes, relacionadas à captação de luz, tais como as mitocôndrias.</label>  
+                <label><input type="radio" name="q1" value="c">(C) a fagocitose e a pinocitose de organelas relacionadas à respiração, tais como os cloroplastos.</label>  
+                <label><input type="radio" name="q1" value="d">(D) mutações genéticas responsáveis pela formação imediata dos cloroplastos e mitocôndrias.</label>  
+                <label><input type="radio" name="q1" value="e">(E) desenvolvimento de membranas internas, assim como a internalização de estruturas energéticas.</label>
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>2. Uma das semelhanças entre os processos de divisão celular mitótico e meiótico corresponde à existência da etapa anáfase em ambos. Porém, na meiose, ocorrem duas etapas anáfases, enquanto na mitose ocorre apenas uma etapa anáfase. Tal diferença é decorrente da</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q2" value="a">(A) existência de duas divisões consecutivas na meiose e de apenas uma divisão na mitose.</label>  
+                <label><input type="radio" name="q2" value="b">(B) duplicação da ploidia celular ao final do processo meiótico, enquanto na mitose tal ploidia se reduz.
+                </label>  
+                <label><input type="radio" name="q2" value="c">(C) formação de duas células filhas diploides na meiose e de quatro células filhas haploides na mitose.</label>  
+                <label><input type="radio" name="q2" value="d">(D) condensação cromossômica no início do processo que ocorre apenas na mitose.</label>
+                <label><input type="radio" name="q2" value="e">(E) duplicação cromossômica no início do processo que ocorre apenas na meiose.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+    
+          
+        <div class="question">  
+            <p><strong>3. As leveduras Saccharomyces cerevisiae são amplamente utilizadas na fabricação de pães e de bebidas alcoólicas. Esses microrganismos promovem a fermentação, realizada por diversos tipos de fungos para obtenção de energia.
+            No entanto, para que ocorra a via metabólica da fermentação, é necessário que a levedura</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q3" value="a">(A) libere gás oxigênio, o qual é responsável pela oxidação das moléculas de açúcares que serão metabolizadas em álcool e gás carbônico.</label>  
+                <label><input type="radio" name="q3" value="b">(B) consuma no interior de suas mitocôndrias moléculas de glicose e de gás oxigênio para produção de ATP.
+                </label>  
+                <label><input type="radio" name="q3" value="c">(C) produza inicialmente o gás carbônico, molécula que será utilizada como reagente no processo fermentativo</label>  
+                <label><input type="radio" name="q3" value="d">(D) sintetize aminoácidos essenciais os quais serão polimerizados durante a síntese proteica da fermentação.</label>
+                <label><input type="radio" name="q3" value="e">(E) realize inicialmente a hidrólise das moléculas de açúcares por meio de enzimas específicas.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>4. As fotografias mostram nove etapas do desenvolvimento embrionário humano, desde o óvulo não fecundado (1) até o estágio (9) em que ocorre a nidação no útero materno.</strong></p>
+            <img src="imag/biologia1_.jpg" alt="#">
+            <p style="font-size: 11px;">(www.laifi.com)</p>
+            <p>Com relação ao desenvolvimento ilustrado, é correto afirmar que, na etapa</p>
+            <div class="options">  
+                <label><input type="radio" name="q4" value="a">(A) 2, ocorre a fecundação com união dos 46 cromossomos maternos com os 46 cromossomos paternos.</label>  
+                <label><input type="radio" name="q4" value="b">(B) 4, ocorre a formação de dois blastômeros, classificados como células-tronco totipotentes.</label>  
+                <label><input type="radio" name="q4" value="c">(C) 6, ocorre a formação do blastocisto, etapa caracterizada pela presença de uma cavidade embrionária.
+                </label>  
+                <label><input type="radio" name="q4" value="d">(D) 8, ocorre a formação dos três tecidos embrionários: a endoderme, a mesoderme e a ectoderme.</label>
+                <label><input type="radio" name="q4" value="e">(E) 9, ocorre a formação do tubo neural e do sistema nervoso, sendo por isso classificada como etapa de
+                nêurula.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>5. Nas cobaias, existem dois pares de alelos com segregação independente, que condicionam, respectivamente, o comprimento e a cor da pelagem. A pelagem longa e
+            marrom é condicionada pelo genótipo duplo recessivo, enquanto as pelagens curta e preta são dominantes para esses fenótipos. O cruzamento entre um macho duplo
+            heterozigoto e uma fêmea dupla recessiva, para esses alelos citados, deverá gerar
+            </strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q5" value="a">(A) 1/16 de filhotes com pelagem longa e marrom.</label>  
+                <label><input type="radio" name="q5" value="b">(B) 1/8 de filhotes com pelagem curta e marrom.</label>  
+                <label><input type="radio" name="q5" value="c">(C) 1/4 de filhotes com pelagem longa e preta.</label>  
+                <label><input type="radio" name="q5" value="d">(D) 1/2 de filhotes com pelagem curta e preta.</label>
+                <label><input type="radio" name="q5" value="e">(E) 1/3 de filhotes com pelagem curta e marrom.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>6. As moscas das espécies <i>Hemilucilia semidiaphana</i> e <i>Hemilucilia segmentaria</i>  são necrófagas e de comportamento e morfologia muito similares, porém diferem em suas taxas de crescimento e maturação. Ambas as espécies podem se apresentar em simpatria, em ambientes florestais naturais, e desse modo ambas podem colonizar um mesmo corpo em decomposição.</strong></p><p>Considerando a entomologia forense, pode-se afirmar corretamente que essas espécies serão úteis para</p> 
+            <div class="options">  
+                <label><input type="radio" name="q6" value="a">(A) se caracterizar o local onde o corpo foi encontrado, mas não o intervalo pós-morte, pois a semelhança
+                morfológica e comportamental entre as espécies implica apresentarem, ao mesmo tempo, a mesma sequência de estágios imaturos até que cheguem à fase adulta, o que não permite estimar o intervalo de tempo transcorrido entre a morte e o encontro do corpo.</label>  
+                <label><input type="radio" name="q6" value="b">(B) a investigação, quando se puder identificar a qual ou quais espécies pertencem as formas imaturas presentes no corpo em decomposição, condição na qual se poderá estimar o intervalo pós-morte.</label>  
+                <label><input type="radio" name="q6" value="c">(C) a investigação, quando ambas as espécies forem encontradas no mesmo corpo em decomposição, pois, ainda que não se identifiquem as espécies, a presença de diferentes estágios imaturos desse gênero permitirá estimar o intervalo pós-morte.</label>  
+                <label><input type="radio" name="q6" value="d">(D) se caracterizar o local onde o corpo foi encontrado, mas não o intervalo pós-morte, pois as diferenças nas
+                taxas de crescimento entre as espécies não permitem que se façam estimativas sobre o intervalo de tempo transcorrido entre a morte e o encontro do corpo.
+                </label>
+                <label><input type="radio" name="q6" value="e">(E) a investigação, se no corpo em decomposição estiver se desenvolvendo somente uma das espécies do gênero, situação na qual as formas imaturas se apresentarão no mesmo estágio de desenvolvimento, permitindo estimar o intervalo pós-morte.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>7. Considere a figura a seguir, a qual mostra duas fases da divisão celular mitótica, representadas em A e B.</strong></p> <img src="imag/bilog.jpg" alt=""><p style="font-size: 11px;">(Molecular Biology of the Cell. Alberts e cols, Garland Science, 5.ª ed. 2008)</p>
+            <p>Com base na figura, é correto afirmar que</p>
+            <div class="options">  
+                <label><input type="radio" name="q7" value="a">(A) os cinetocoros formam estruturas complexas e organizadas na fase de prófase, representada em A, e se
+                separam na fase de anáfase, representada em B.</label>  
+                <label><input type="radio" name="q7" value="b">(B) as fibras do fuso mitótico começam a se separar no início da fase S, ou de duplicação do DNA, como representado em A, e movem os cromossomos homólogos para polos opostos da célula, como representado em B.</label>  
+                <label><input type="radio" name="q7" value="c">(C) durante a fase G2, ocorre síntese do DNA e os cromossomos se concentram na placa metafásica, como
+                representado em A, seguida da separação dos cromossomos homólogos, como representado em B.</label>  
+                <label><input type="radio" name="q7" value="d">(D) na transição da fase de anáfase, representada em A, para telófase, representada em B, os nucléolos estão
+                dissociados e as cromátides irmãs se separam para polos opostos da célula.
+                </label>
+                <label><input type="radio" name="q7" value="e">(E) na transição da fase de metáfase, representada em A, para anáfase, representada em B, as cromátides irmãs
+                se separam e se movem para polos opostos do fuso mitótico.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>8. Considere uma folha de uma planta heliófila e seus diferentes pigmentos fotossintetizantes.</strong></p> 
+            <p>Pode-se afirmar corretamente que a taxa de fotossíntese nessa folha será maior quando iluminada com luz</p>
+            <div class="options">  
+                <label><input type="radio" name="q8" value="a">(A) amarelo-laranja.</label>  
+                <label><input type="radio" name="q8" value="b">(B) verde.</label>  
+                <label><input type="radio" name="q8" value="c">(C) azul-violeta.</label>  
+                <label><input type="radio" name="q8" value="d">(D) branca.</label>
+                <label><input type="radio" name="q8" value="e">(E) vermelha.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>9. Considere o trecho a seguir.</strong></p> 
+            <p>Em se tratando de ossadas, as perícias buscam identificar <br>
+                a espécie, o sexo, a idade, a estatura e o tipo racial. <br>
+                O presente trabalho teve por objetivo a determinação do <br>
+                sexo de esqueletos humanos, através de um estudo quantitativo,<br>
+                em que foram realizadas medições de algumas grandezas <br>
+                lineares dos ossos da pelve, (...). Através dos intervalos <br>
+                de confiança, os resultados revelaram que as variáveis: <br>
+                primeira vértebra sacral (largura), diâmetro vertical do <br>
+                acetábulo, dimensão do forame obturador (comprimento) <br>
+                e incisura isquiática maior (profundidade) são boas discriminadoras (...).</p>
+                <p style="font-size: 11px;">(Determinação do sexo através de medições em ossos da pelve de esqueletos humanos. Romildo Rabbi. Unicamp, 2000)</p> <img src="imag/biol-osso.jpg" alt="#"><p style="font-size: 11px;">(www.medicinadoquadril.com.br. Adaptado)</p><p>As vertebras sacrais, o acetábulo e o forame obturador, aos
+                quais o texto se refere, estão indicados, respectivamente, pelos números</p>
+            <div class="options">  
+                <label><input type="radio" name="q9" value="a">(A) 1, 4 e 3.</label>  
+                <label><input type="radio" name="q9" value="b">(B) 2, 5 e 3.</label>  
+                <label><input type="radio" name="q9" value="c">(C) 1, 2 e 3.</label>  
+                <label><input type="radio" name="q9" value="d">(D) 2, 3 e 4.</label>
+                <label><input type="radio" name="q9" value="e">(E) 6, 4 e 3.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>10. Considere o trecho a seguir.</strong></p> 
+            <p style="font-size: 15px;"><i>A engrenagem da farsa</i></p><p>Lance Armstrong, além de usar substâncias proibidas, <br> forneceu a seus companheiros de equipe ampolas de EPO <br>(...). Foi o arquiteto do esquema de contrafação.</p><p style="font-size: 11px;">(Veja, edição 2293, outubro, 2012. Adaptado)</p><p>A reportagem trata do caso de Lance Armstrong, ciclista <br>recordista norte-americano pego em exame antidoping.<br> O atleta fazia uso da EPO, uma versão sintética do hormônio <br> eritropoietina, naturalmente produzido nas glândulas suprarrenais.</p>
+            <p style="font-size: 16px;">Em situações como a descrita, a versão sintética do hormônio eritropoietina é usada para</p>
+            <div class="options">  
+                <label><input type="radio" name="q10" value="a">(A) retardar a produção de glóbulos vermelhos.</label>  
+                <label><input type="radio" name="q10" value="b">(B) aliviar a dor provocada pelo esforço físico.</label>  
+                <label><input type="radio" name="q10" value="c">(C) aumentar a capacidade respiratória.</label>  
+                <label><input type="radio" name="q10" value="d">(D) reduzir a oxigenação das fibras musculares.</label>
+                <label><input type="radio" name="q10" value="e">(E) manter inalterados os níveis de ácido lático.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>11. Analise a figura.</strong></p><img src="imag/biol_figura.jpg" alt="#">
+            <p style="font-size: 11px;">(Molecular Biology of the Cell. Alberts e outros, Garland Science, 5.ª ed. 2008. Adaptado)</p><p>Pode-se afirmar corretamente que a figura representa o mecanismo de</p>
+            <div class="options">  
+                <label><input type="radio" name="q11" value="a">(A) metilação do DNA.</label>  
+                <label><input type="radio" name="q11" value="b">(B) translocação cromossômica.
+                </label>  
+                <label><input type="radio" name="q11" value="c">(C) <i>splicing</i> alternativo
+                </label>  
+                <label><input type="radio" name="q11" value="d">(D) recombinação homóloga.
+                </label>
+                <label><input type="radio" name="q11" value="e">(E) tradução.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>12. A figura apresentada a seguir é um esquema representativo da herança de um gene que causa uma doença genética, ligado a um polimorfismo no DNA.
+            </strong></p><img src="imag/biolo_figura.jpg" alt="#">
+            <p style="font-size: 11px;">(Molecular Biology of the Cell. Alberts e outros, Garland Science, 5.ª ed. 2008. Adaptado)</p><p>Analisando a figura, pode-se chegar corretamente à conclusão de que</p>
+            <div class="options">  
+                <label><input type="radio" name="q12" value="a">(A) o polimorfismo está localizado distante do gene que causa a doença, o que justifica este ter sido co-herdado por 75% da descendência.</label>  
+                <label><input type="radio" name="q12" value="b">(B) o gene que causa a doença é co-herdado com o marcador polimórfico da mãe, em 75% da descendência afetada.
+                </label>  
+                <label><input type="radio" name="q12" value="c">(C) o gene que causa a doença pode sofrer recombinação não homóloga com o polimorfismo, o que justifica a
+                distribuição da doença na descendência.</label>  
+                <label><input type="radio" name="q12" value="d">(D) a detecção do polimorfismo indica a presença do gene da doença em 100% da descendência afetada.</label>
+                <label><input type="radio" name="q12" value="e">(E) o gene que causa a doença é co-herdado por 50% da descendência.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>13. Sequências herdadas no genoma humano podem ser utilizadas na identificação de indivíduos em ciência forense. A figura mostra sequências (representadas por locus 1, locus 2 e locus 3) que foram amplificadas, pela reação em
+            cadeia da polimerase (PCR), em diferentes cromossomos homólogos. As amostras foram em seguida submetidas à eletroforese em gel de agarose e obteve-se o padrão de
+            bandas observado no esquema. As amostras A, B e C são amostras de sangue encontradas nas roupas de três suspeitos de um crime. A amostra F é uma amostra de sangue
+            da vítima.</strong></p> <img src="imag/biology_.jpg" alt="#">
+            <p style="font-size: 11px;">(Molecular Biology of the Cell. Alberts e outros, Garland Science, 5.ª ed. 2008)</p><p>Pode-se afirmar corretamente que as sequências utilizadas nessa análise são</p>
+            <div class="options">  
+                <label><input type="radio" name="q13" value="a">(A) sequências genômicas codantes, e portanto permitem excluir os suspeitos A e C, mas não permitem afirmar que o indivíduo B esteja associado ao crime em questão.</label>  
+                <label><input type="radio" name="q13" value="b">(B) sítios de metilação ou ilhas CpG, que permitem afirmar que qualquer um dos suspeitos pode ser associado ao crime em questão, uma vez que bandas no sangue da vítima coincidem com algumas bandas das amostras recolhidas nos três suspeitos</label>  
+                <label><input type="radio" name="q13" value="c">(C) regiões não repetitivas ou intrônicas, as quais não permitem identificar o sangue nas roupas dos suspeitos como sendo da vítima em questão.</label>  
+                <label><input type="radio" name="q13" value="d">(D) número variável de repetições <i>em tandem</i> , que permitem afirmar que o sangue na roupa do suspeito B é da vítima, assim como o sangue nas roupas dos demais suspeitos não é da vítima em questão.</label>
+                <label><input type="radio" name="q13" value="e">(E) regiões de perda de heterozigose, as quais permitem afirmar que o sangue na roupa do suspeito B é da vítima, mas não permite excluir a possibilidade de as outras amostras de sangue também o serem.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>
+        <div class="question">  
+            <p><strong>14. Considere a figura.</strong></p><img src="imag/biofigura.jpg" alt="#">
+            <p style="font-size: 11px;">(http:///darwinismo.files.wordpress.com.br. Adaptado)
+            </p><p>Sobre a adequação da figura para representar a evolução humana, é correto afirmar que é</p>
+            <div class="options">  
+                <label><input type="radio" name="q14" value="a">(A) adequada, pois apresenta as diferentes espécies em sequência cronológica, indicando que cada espécie é
+                a ancestral da espécie seguinte, caracterizando a evolução linear e progressiva característica da evolução dos hominídeos.</label>  
+                <label><input type="radio" name="q14" value="b">(B) inadequada, uma vez que não representa a cronologia correta de aquisição de algumas características próprias da linhagem dos hominídeos, como o aumento da caixa craniana, que precedeu a aquisição da postura ereta.</label>  
+                <label><input type="radio" name="q14" value="c">(C) adequada, uma vez que representa a aquisição da postura ereta gradualmente e concomitantemente à aquisição de caixa craniana de maior volume, tal como ocorreu ao longo da evolução dos hominídeos.</label>  
+                <label><input type="radio" name="q14" value="d">(D) adequada, pois apresenta cada espécie como sendo a única espécie de hominídeo vivente à época, indicando que ao longo da evolução dos hominídeos não houve a situação de espécies contemporâneas do mesmo gênero.</label>
+                <label><input type="radio" name="q14" value="e">(E) inadequada, uma vez que cada espécie representada pode não ser a antecessora ou a ancestral da espécie
+                seguinte, mas sim representantes de suas respectivas linhagens evolutivas.
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>15. A figura a seguir apresenta um Vórtice de Extinção, representação gráfica de uma situação na qual uma população pequena está sujeita a fatores que a conduzem a tamanhos populacionais cada vez menores, até que não existam mais
+            indivíduos na população, agora extinta.</strong></p><img src="imag/biolfig.jpg" alt="#">
+            <p style="font-size: 11px;">(Campbell & Reece, Biologia. Artmed, 8.ª edição, 2010. Adaptado)</p><p>Sobre os blocos numerados da figura, os quais representam os fatores que contribuem para levar a população à extinção, pode-se afirmar corretamente que se</p>
+            <div class="options">  
+                <label><input type="radio" name="q15" value="a">(A) o bloco 3 representa a perda de variabilidade genética, então o bloco 4 representa a redução na adaptabilidade
+                média da população e os blocos 5 e 6 representam redução na reprodução e aumento na mortalidade.</label>  
+                <label><input type="radio" name="q15" value="b">(B) os blocos 1 e 2 representam a redução no valor adaptativo individual e a redução no valor adaptativo médio da população, então o bloco 3 representa a deriva genética e o bloco 4 representa aumento da taxa de endocruzamentos.</label>  
+                <label><input type="radio" name="q15" value="c">(C) o bloco 4 representa perda de variabilidade genética, então os blocos 5 e 6 representam deriva genética e
+                aumento da taxa de endocruzamentos.</label>  
+                <label><input type="radio" name="q15" value="d">(D) o bloco 3 representa deriva genética, então o bloco 4 representa aumento na mortalidade e os blocos 5 e 6
+                representam redução do valor adaptativo individual e redução do valor adaptativo médio da população.</label>
+                <label><input type="radio" name="q15" value="e">(E) os blocos 1 e 2 representam a redução na reprodução e o aumento na mortalidade, então o bloco 3 representa a perda de variabilidade genética e o bloco 4 representa a endogamia.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>16. As figuras 1 e 2 ilustram, respectivamente, os fenômenos ambientais: inversão térmica e tsunami.
+                </strong></p><img src="imag/biol_figura.jpg" alt="#">
+            <p style="font-size: 11px;">Figura 1 (http://ambiente.hsw.uol.com.br)</p><p style="font-size: 11px;">Figura 2 (http://www.educadores.diaadia.pr.gov.br)     
+            </p><p>Sobre tais fenômenos ambientais, é correto afirmar que</p>
+            <div class="options">  
+                <label><input type="radio" name="q16" value="a">(A) ambos estão relacionados ao desenvolvimento antrópico não sustentável.</label>  
+                <label><input type="radio" name="q16" value="b">(B) os efeitos dos tsunamis podem ser minimizados acompanhando as oscilações das temperaturas das águas
+                oceânicas.</label>  
+                <label><input type="radio" name="q16" value="c">(C) a inversão térmica ocorre frequentemente nas estações quentes e chuvosas, tanto no meio urbano como rural.
+                </label>  
+                <label><input type="radio" name="q16" value="d">(D) os efeitos da inversão térmica podem ser minimizados controlando a emissão de poluentes particulados atmosféricos urbanos.</label>
+                <label><input type="radio" name="q16" value="e">(E) os tsunamis ocorrem frequentemente nas estações do ano em que são formados os furacões oceânicos.
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>17. O processo de evolução dos seres vivos ocorre por meio da seleção e da transmissão hereditária de características anatômicas, fisiológicas ou bioquímicas, que se mostram mais aptas à sobrevivência dos indivíduos em seu habitat.
+            </strong></p><p>Tendo em vista o neodarwinismo (teoria sintética da evolução), é correto afirmar que as características hereditárias, transmitidas sexuadamente ao longo das gerações de organismos eucariontes, são</p>
+            <div class="options">  
+                <label><input type="radio" name="q17" value="a">(A) protegidas biologicamente para que não sofram qualquer alteração.</label>  
+                <label><input type="radio" name="q17" value="b">(B) misturadas por meio da meiose, formação de gametas e fecundação.</label>  
+                <label><input type="radio" name="q17" value="c">(C) expressadas sob um código genético que varia para cada espécie.</label>  
+                <label><input type="radio" name="q17" value="d">(D) moléculas de proteínas contidas nos núcleos das células sexuais.</label>
+                <label><input type="radio" name="q17" value="e">(E) trechos de cromossomos formados por moléculas de DNA ou RNA.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>18. A figura ilustra uma tipagem sanguínea humana, na qual três
+                gotas de sangue foram colocadas em contato com anticorpos anti-A, anti-B e anti-Rh, posicionados da esquerda para a direita na lâmina, conforme a figura.
+            </strong></p><img src="imag/qbiolo2.jpg" alt=""><p style="font-size: 11px;">(http://www.joseferreira.com.br)</p><p>Foi verificada reação apenas com o anticorpo anti-A, o que confere à pessoa testada sangue tipo A Rh-.</p><p>A reação observada durante a tipagem sanguínea é uma reação de _________ de hemácias, em que _________ da membrana celular da hemácia reagem especificamente com _________ presentes na lâmina teste.</p><p>Assinale a alterativa que completa, correta e respectivamente, as lacunas do parágrafo anterior.</p>
+            <div class="options">  
+                <label><input type="radio" name="q18" value="a">(A) aglutinação … os aglutinogênios … as aglutininas</label>  
+                <label><input type="radio" name="q18" value="b">(B) lise celular … as proteínas e lipídeos … enzimas</label>  
+                <label><input type="radio" name="q18" value="c">(C) coagulação … as plaquetas … soros coagulantes</label>  
+                <label><input type="radio" name="q18" value="d">(D)digestão … os componentes … ácidos</label>
+                <label><input type="radio" name="q18" value="e">(E) rompimento … os antígenos … leucócitos específicos</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>19. Uma determinada raça de cães apresenta pelagem negra ou branca. Cruzando entre si indivíduos de pelagem branca, a prole será sempre branca. Cruzando entre si indivíduos de pelagem negra, pode ocorrer o nascimento de cães de pelagem negra ou branca.</strong></p><p>Sabendo que essa característica é determinada por apenas um par de genes alelos autossômicos, é correto afirmar que o nascimento de filhotes brancos, a partir de parentais negros,ocorre</p>
+            <div class="options">  
+                <label><input type="radio" name="q19" value="a">(A) pois a pelagem negra é recessiva.</label>  
+                <label><input type="radio" name="q19" value="b">(B) quando os parentais são homozigotos.</label>  
+                <label><input type="radio" name="q19" value="c">(C) quando os parentais são heterozigotos.</label>  
+                <label><input type="radio" name="q19" value="d">(D) pois a pelagem branca é dominante.</label>
+                <label><input type="radio" name="q19" value="e">(E) pois os filhotes brancos são heterozigotos.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>20. A figura ilustra parte do sistema cardiovascular humano. Podem ser visualizados o coração e os vasos sanguíneos de grosso calibre, estando as artérias em cinza claro e as veias em cinza escuro.</strong></p><img src="imag/qbiolo3.jpg" alt="#"><p style="font-size: 11px;">(http://www.natureduca.com)</p><p>Tendo em vista a fisiologia dos vasos sanguíneos, é correto  afirmar que a função exercida pelas</p>
+            <div class="options">  
+                <label><input type="radio" name="q20" value="a">(A) veias é conduzir sangue dos tecidos corpóreos de volta às cavidades inferiores do coração, sob baixa pressão.</label>  
+                <label><input type="radio" name="q20" value="b">(B) artérias é conduzir sangue bombeado pelas cavidades inferiores do coração em direção aos tecidos corpóreos,
+                sob alta pressão.</label>  
+                <label><input type="radio" name="q20" value="c">(C) artérias é conduzir sangue dos tecidos corpóreos de volta às cavidades superiores do coração, sob baixa
+                pressão.</label>  
+                <label><input type="radio" name="q20" value="d">(D) veias é conduzir sangue bombeado pelas cavidades superiores do coração em direção aos tecidos corpóreos, sob alta pressão.</label>
+                <label><input type="radio" name="q20" value="e">(E) artérias e pelas veias é conduzir sangue, tanto para os tecidos corpóreos, como de volta ao coração, independente da pressão ou das cavidades.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>21. No processo de garimpagem em rios brasileiros é utilizado o mercúrio para a formação de amálgamas com o ouro, facilitando assim a identificação desse metal precioso, junto às demais partículas de sedimentos existentes no rio.
+            </strong></p><p>Como o ponto de liquefação do mercúrio é menor que o do ouro, basta um maçarico para separar estes dois minerais, obtendo assim o ouro puro.</p><p>Tais processos contaminam com esse metal pesado, tóxico para a maioria dos seres vivos, tanto a água dos rios como a atmosfera.</p><p>Uma maneira de se constatar uma eventual contaminação ambiental por mercúrio é a análise bioquímica de pelos e
+            penas de predadores de topo dos ecossistemas, em função desse metal apresentar propriedade</p>
+            <div class="options">  
+                <label><input type="radio" name="q21" value="a">(A) biodegradável durante sua passagem pelo trato digestório.</label>  
+                <label><input type="radio" name="q21" value="b">(B) neurotóxica, afetando o funcionamento do sistema nervoso.</label>  
+                <label><input type="radio" name="q21" value="c">(C) catalisadora de divisões mitóticas cancerígenas.</label>  
+                <label><input type="radio" name="q21" value="d">(D) cumulativa nas células e tecidos dos organismos.</label>
+                <label><input type="radio" name="q21" value="e">(E) bloqueadora do processo da respiração celular.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>22. Observe a figura de uma célula eucariótica.</strong></p><img src="imag/qbiolo4.jpg" alt="#"><p style="font-size: 11px;">(http://recursostic.educacion.es)</p><p>As características presentes que permitem sua classificação
+            como pertencente a um vegetal é a presença de</p>
+            <div class="options">  
+                <label><input type="radio" name="q22" value="a">(A) parede celular e cloroplasto.</label>  
+                <label><input type="radio" name="q22" value="b">(B) mitocôndrias e vacúolo.
+                </label>  
+                <label><input type="radio" name="q22" value="c">(C) núcleo e nucléolo.</label>  
+                <label><input type="radio" name="q22" value="d">(D) membrana celular e membrana nuclear.</label>
+                <label><input type="radio" name="q22" value="e">(E) complexo golgiense e ribossomos.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>23. Leia a notícia a seguir e responda:</strong></p><p>“Traficante é preso em aeroporto com cápsulas de cocaína no estômago. Ele foi detido no Aeroporto de Foz do Iguaçu tentando embarcar para a Espanha. A droga estava dividida em 74 cápsulas, conforme ilustra a figura, as quais foram expelidas em hospital.”</p><img src="imag/qbiolo5.jpg" alt="#"><p style="font-size: 11px;">(http://g1.globo.com – modificado)</p><p>Tendo em vista a fisiologia e a anatomia do sistema digestório humano, assinale a alternativa que apresenta um erro conceitual cometido na redação da notícia.</p>
+            <div class="options">  
+                <label><input type="radio" name="q23" value="a">(A) O peristaltismo impede que tais cápsulas sejam transportadas em tempo superior ao da viagem à Espanha.
+                </label>  
+                <label><input type="radio" name="q23" value="b">(B) As cápsulas estão posicionadas nos intestinos, delgado e grosso, e não no estômago do traficante.
+                </label>  
+                <label><input type="radio" name="q23" value="c">(C) As enzimas e ácidos gástricos são capazes de digerir tais cápsulas, causando overdose no traficante.</label>  
+                <label><input type="radio" name="q23" value="d">(D) Cápsulas deste calibre não podem ter sido ingeridas sem causar lesões no tubo digestório do traficante.
+                </label>
+                <label><input type="radio" name="q23" value="e">(E) Tais cápsulas não podem ser simplesmente expelidas, necessitando ser retiradas em procedimento cirúrgico.
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>    
+        <div class="question">  
+            <p><strong>24. A coloração da pele humana é bastante variável, apresentando inúmeras classificações com relação às muitas tonalidades manifestadas.</strong></p><p>Tendo em vista os fatores relacionados à manifestação dos fenótipos existentes para a coloração da pele humana, é correto afirmar que</p>
+            <div class="options">  
+                <label><input type="radio" name="q24" value="a">(A) a coloração da pele humana é um exemplo da interação de fatores ambientais, fisiológicos e genotípicos.
+                </label>  
+                <label><input type="radio" name="q24" value="b">(B) a luz solar altera o genótipo responsável pela produção de pigmentos cutâneos, alterando portanto o fenótipo manifestado.</label>  
+                <label><input type="radio" name="q24" value="c">(C) a exposição ao sol estimula a produção do pigmento queratina, responsável pela coloração mais escura da
+                pele.</label>  
+                <label><input type="radio" name="q24" value="d">(D) o ambiente é um fator determinante no fenótipo manifestado apenas nas regiões intertropicais, mais expostas à incidência solar.</label>
+                <label><input type="radio" name="q24" value="e">(E) o albinismo é uma evidência do fenótipo branco ser condicionado por um genótipo dominante, independente do
+                ambiente.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>25. Analise a teia alimentar.</strong></p><img src="imag/qbio_.jpg" alt="#"><p style="font-size: 11px;">(http://zyndteldesigngraphics.blogspot.com.br. Adaptado)</p><p>Em relação aos níveis tróficos ocupados pelos seres vivos
+            contidos na teia, é correto afirmar que</p>
+            <div class="options">  
+                <label><input type="radio" name="q25" value="a">(A) existem três animais que ocupam a posição de consumidores terciários.</label>  
+                <label><input type="radio" name="q25" value="b">(B) o rato e o coelho são consumidores secundários.</label>  
+                <label><input type="radio" name="q25" value="c">(C) o pássaro ocupa o nível de consumidor secundário ou terciário.</label>  
+                <label><input type="radio" name="q25" value="d">(D) as plantas ocupam a posição de consumidores primários.</label>
+                <label><input type="radio" name="q25" value="e">(E) a cobra e o pássaro ocupam a posição de consumidores quaternários.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>    
+        <div class="question">  
+            <p><strong>26. O núcleo é considerado uma das principais estruturas de uma
+                célula eucariótica. Nele estão contidos os cromossomos, que são formados por
+                </strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q26" value="a">(A) vitaminas cujo papel é regular a hereditariedade.</label>  
+                <label><input type="radio" name="q26" value="b">(B) RNA cujo papel é realizar a respiração celular.</label>  
+                <label><input type="radio" name="q26" value="c">(C) lipídios cujo papel é realizar a transmissão genética.</label>  
+                <label><input type="radio" name="q26" value="d">(D) açúcares cujo papel é impedir a entrada de substâncias.</label>
+                <label><input type="radio" name="q26" value="e">(E) DNA cujo papel é controlar as atividades celulares.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>
+        <div class="question">  
+            <p><strong>27. A figura ilustra possíveis trocas gasosas que caracterizam dois fenômenos biológicos (A e B) que ocorrem nos vegetais em ambientes naturais.
+            </strong></p><img src="imag/qbiol1_.jpg" alt="#"><p style="font-size: 16px;">Considerando os dois fenômenos biológicos, é correto afirmar que</p>
+            <div class="options">  
+                <label><input type="radio" name="q27" value="a">(A) A ocorre durante o dia e durante a noite.</label>  
+                <label><input type="radio" name="q27" value="b">(B) ambos ocorrem durante o dia e durante a noite.</label>  
+                <label><input type="radio" name="q27" value="c">(C) B depende da luz para ocorrer.</label>  
+                <label><input type="radio" name="q27" value="d">(D) A ocorre apenas durante o dia</label>
+                <label><input type="radio" name="q27" value="e">(E) B ocorre apenas durante a noite.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>28. A epidemia de dengue em Campinas (SP) chegou a 5016 casos e outras seis mortes são investigadas, segundo balanço divulgado pela Prefeitura nesta segunda-feira (14.04.2014). Desses, 173 são considerados graves e os pacientes inspiram mais cuidados.</strong></p><p style="font-size: 11px;">(http://g1.globo.com/sp/campinas-regiao/noticia. Adaptado)</p><p>A doença citada no texto é causada por um tipo de</p>
+            <div class="options">  
+                <label><input type="radio" name="q28" value="a">(A) vírus e é transmitida pela picada do mosquito <i>Aedes aegypti.</i></label>  
+                <label><input type="radio" name="q28" value="b">(B) bactéria e é transmitida pela picada do mosquito <i>Aedes aegypti.</i></label>  
+                <label><input type="radio" name="q28" value="c">(C) vírus e é transmitida pela picada do barbeiro <i>Triatoma</i>.</label>  
+                <label><input type="radio" name="q28" value="d">(D) protozoário e é transmitida pela picada do mosquito <i>Anopheles</i>.</label>
+                <label><input type="radio" name="q28" value="e">(E) protozoário e é transmitida pela picada do barbeiro <i>Anopheles</i>.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>29. A falta de higiene pessoal também pode facilitar o contágio e a permanência de certos fungos. É importante lavar bem as mãos e os pés, com água e sabonete, especialmente entre os dedos, as virilhas e as axilas. Quando uma pessoa transpira muito e permanece com sapatos fechados por muitas horas do dia, é aconselhável o uso de talco medicinal nos pés e entre os dedos.</strong></p><p style="font-size: 11px;">(Ciências Entendendo a natureza, 7.º ano, César, Sezar e Bedaque. Adaptado)</p><p>O texto refere-se a uma doença conhecida como</p>
+            <div class="options">  
+                <label><input type="radio" name="q29" value="a">(A) rubéola.</label>  
+                <label><input type="radio" name="q29" value="b">(B) micose.</label>  
+                <label><input type="radio" name="q29" value="c">(C) herpes.</label>  
+                <label><input type="radio" name="q29" value="d">(D) leishmaniose.</label>
+                <label><input type="radio" name="q29" value="e">(E) bicho-geográfico.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>30. A planária pertence ao filo dos platelmintos, e a lombriga pertence ao filo dos nematódeos, antigamente classificados como asquelmintos. Analisando a anatomia desses animais, é correto afirmar que a planária e a lombriga</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q30" value="a">(A) são cilíndricos.</label>  
+                <label><input type="radio" name="q30" value="b">(B) possuem simetria bilateral.
+                </label>  
+                <label><input type="radio" name="q30" value="c">(C) são achatados.</label>  
+                <label><input type="radio" name="q30" value="d">(D) possuem sistema circulatório.</label>
+                <label><input type="radio" name="q30" value="e">(E) possuem boca e ânus.     
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>31. Baleias, cachalotes, orcas, golfinhos e botos são os principais exemplos de mamíferos aquáticos. Embora estejam nesse ambiente, possuem muitas semelhanças com os mamíferos terrestres. Dentre essas semelhanças, é correto citar:
+            </strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q31" value="a">(A) respiração pulmonar e glândulas mamárias.</label>  
+                <label><input type="radio" name="q31" value="b">(B) nadadeiras e respiração cutânea.</label>  
+                <label><input type="radio" name="q31" value="c">(C) moela e osso esterno em quilha.</label>  
+                <label><input type="radio" name="q31" value="d">(D) respiração branquial e glândulas mamárias.</label>
+                <label><input type="radio" name="q31" value="e">(E) respiração branquial e placenta.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>32. Considere a sequência que indica os níveis de organização
+                biológica:</strong></p><p style="font-size: 16px;">molécula → organela → <strong>X</strong> → tecido → órgão → <strong>Y</strong> → organismo.</p><p style="font-size: 16px;">Os níveis de organização indicados por <strong>X</strong> e <strong>Y</strong> são, respectivamente,</p>
+            <div class="options">  
+                <label><input type="radio" name="q32" value="a">(A) sistema e átomo.</label>  
+                <label><input type="radio" name="q32" value="b">(B) população e comunidade.
+                </label>  
+                <label><input type="radio" name="q32" value="c">(C) átomo e população.</label>  
+                <label><input type="radio" name="q32" value="d">(D) comunidade e célula.</label>
+                <label><input type="radio" name="q32" value="e">(E) célula e sistema.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>33. A figura representa um tipo de plano de divisão do corpo
+            humano.</strong></p> <img src="imag/qbiolo2_.jpg" alt="#" class=><p>O plano de divisão é o
+            </p>
+            <div class="options">  
+                <label><input type="radio" name="q33" value="a">(A) transverso.</label>  
+                <label><input type="radio" name="q33" value="b">(B) sagital.
+                </label>  
+                <label><input type="radio" name="q33" value="c">(C) dorsal.</label>  
+                <label><input type="radio" name="q33" value="d">(D) ventral.</label>
+                <label><input type="radio" name="q33" value="e">(E) frontal.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>34. A pele é formada pela epiderme e derme. A epiderme é a região mais externa da pele e é formada por células achatadas, sendo que as mais superficiais, quando morrem, formam camadas de queratina, que atuam</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q34" value="a">(A) como barreira elétrica.
+                </label>  
+                <label><input type="radio" name="q34" value="b">(B) como lubrificante.
+                </label>  
+                <label><input type="radio" name="q34" value="c">(C) reduzindo a desidratação.
+                </label>  
+                <label><input type="radio" name="q34" value="d">(D) na captação de sensações de pressão.</label>
+                <label><input type="radio" name="q34" value="e">(E) na reserva de energia.
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>    
+        <div class="question">  
+            <p><strong>35. Escoliose, lordose e cifose são alguns tipos de problemas que podem ocorrer</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q35" value="a">(A) nas articulações dos braços.
+                </label>  
+                <label><input type="radio" name="q35" value="b">(B) no intestino delgado.
+                </label>  
+                <label><input type="radio" name="q35" value="c">(C) no coração.</label>  
+                <label><input type="radio" name="q35" value="d">(D) na coluna vertebral.</label>
+                <label><input type="radio" name="q35" value="e">(E) na pele.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>36. A respeito da circulação humana, é correto afirmar que</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q36" value="a">(A) as contrações e relaxamentos do coração são originados por suas valvas internas.</label>  
+                <label><input type="radio" name="q36" value="b">(B) o sangue que sai do ventrículo direito segue diretamente para a artéria aorta.</label>  
+                <label><input type="radio" name="q36" value="c">(C) o sangue contido nas veias cavas desemboca diretamente no ventrículo esquerdo.</label>  
+                <label><input type="radio" name="q36" value="d">(D) nas câmaras cardíacas localizadas no lado esquerdo circula apenas sangue arterial.</label>
+                <label><input type="radio" name="q36" value="e">(E) no interior das veias circula apenas sangue venoso, e nas artérias, apenas sangue arterial.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>37. A ureia, um tipo de excreta nitrogenada, é produzida e lançada no sangue e passa por uma sequência de órgãos até sair do corpo humano. A sequência de órgãos do sistema urinário pelos quais a ureia deve passar é:</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q37" value="a">(A) rim → ureter → bexiga → uretra.</label>  
+                <label><input type="radio" name="q37" value="b">(B) uretra → bexiga → rim → ureter.</label>  
+                <label><input type="radio" name="q37" value="c">(C) rim → uretra → ureter → bexiga.</label>  
+                <label><input type="radio" name="q37" value="d">(D) bexiga → ureter → rim → uretra.</label>
+                <label><input type="radio" name="q37" value="e">(E) bexiga → ureter → uretra → rim.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>38. São exemplos de doenças passíveis de vacinação:</strong></p> 
+            <div class="options">  
+                <label><input type="radio" name="q38" value="a">(A) doença de Chagas e amarelão.</label>  
+                <label><input type="radio" name="q38" value="b">(B) malária e conjuntivite.
+                </label>  
+                <label><input type="radio" name="q38" value="c">(C) dengue e teníase.</label>  
+                <label><input type="radio" name="q38" value="d">(D) aids e catapora.</label>
+                <label><input type="radio" name="q38" value="e">(E) febre amarela e gripe.
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>39. A figura representa, de forma simplificada, o olho humano.</strong></p><img src="imag/qbiolo3_.jpg" alt="#"><p style="font-size: 11px;">(www.netce.com/coursecontent.php?courseid=788. Adaptado)</p><p style="font-size: 16px;">A respeito da fisiologia da visão, é correto afirmar que</p> 
+            <div class="options">  
+                <label><input type="radio" name="q39" value="a">(A) a córnea capta imagens e as transmite ao nervo óptico.</label>  
+                <label><input type="radio" name="q39" value="b">(B) a retina controla a intensidade luminosa que entra no olho.</label>  
+                <label><input type="radio" name="q39" value="c">(C) alterações na forma do cristalino levam à acomodação visual.</label>  
+                <label><input type="radio" name="q39" value="d">(D) a íris é sensível à luz mais intensa e ela permite a visão de cores.</label>
+                <label><input type="radio" name="q39" value="e">(E) a imagem de um objeto se forma invertida na pupila.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>40. O corpo humano é coordenado pelos diversos hormônios secretados por glândulas endócrinas. Uma delas é a suprarrenal, que produz e secreta a adrenalina. Esse hormônio pode provocar no corpo</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q40" value="a">(A) dilatação dos vasos sanguíneos da pele.</label>  
+                <label><input type="radio" name="q40" value="b">(B) aumento no ritmo cardíaco.
+                </label>  
+                <label><input type="radio" name="q40" value="c">(C) aumento no estado de sonolência.</label>  
+                <label><input type="radio" name="q40" value="d">(D) redução da concentração de glicose no sangue.</label>
+                <label><input type="radio" name="q40" value="e">(E) redução na frequência dos movimentos respiratórios.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>41. O sistema genital feminino é formado pelos seguintes componentes:
+            </strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q41" value="a">(A) ovários, tubas uterinas, útero e vagina.</label>  
+                <label><input type="radio" name="q41" value="b">(B) epidídimo, útero, ovários e próstata.</label>  
+                <label><input type="radio" name="q41" value="c">(C) epidídimo, útero, tubas uterinas e próstata.</label>  
+                <label><input type="radio" name="q41" value="d">(D) ovários, canais deferentes, vagina e epidídimo.</label>
+                <label><input type="radio" name="q41" value="e">(E) vesícula seminal, vagina, ovários e útero.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>42. Os movimentos respiratórios de inspiração e expiração são
+            controlados por uma região do sistema nervoso chamada</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q42" value="a">(A) cerebelo.</label>  
+                <label><input type="radio" name="q42" value="b">(B) substância branca.</label>  
+                <label><input type="radio" name="q42" value="c">(C) bulbo.</label>  
+                <label><input type="radio" name="q42" value="d">(D) córtex cerebral.</label>
+                <label><input type="radio" name="q42" value="e">(E) hipotálamo.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>   
+        <div class="question">  
+            <p><strong>43. A figura representa um importante órgão que atua na digestão
+                humana.</strong></p><img src="imag/qbiolo4_.jpg" alt="#"><p style="font-size: 11px;">(http://www.webmd.com)</p><p style="font-size: 16px;">A respeito do órgão destacado, é correto afirmar que ele</p>
+            <div class="options">  
+                <label><input type="radio" name="q43" value="a">(A) possui microvilosidades</label>  
+                <label><input type="radio" name="q43" value="b">(B) absorve todos os nutrientes.</label>  
+                <label><input type="radio" name="q43" value="c">(C) digere principalmente o amido.</label>  
+                <label><input type="radio" name="q43" value="d">(D) forma as fezes.</label>
+                <label><input type="radio" name="q43" value="e">(E) produz e secreta um ácido.
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>44. Assinale a alternativa que apresenta, correta e respectivamente, uma forma considerada segura, que permite evitar doenças sexualmente transmissíveis, e duas dessas doenças.</strong></p>
+            <div class="options">  
+                <label><input type="radio" name="q44" value="a">(A) Diafragma; gonorreia e HPV.
+                </label>  
+                <label><input type="radio" name="q44" value="b">(B) Vasectomia; cancro mole e hepatite B.</label>  
+                <label><input type="radio" name="q44" value="c">(C) Laqueadura; herpes e HPV.
+                </label>  
+                <label><input type="radio" name="q44" value="d">(D) Camisinha; sífilis e aids.
+                </label>
+                <label><input type="radio" name="q44" value="e">(E) DIU; hepatite e gonorreia.
+                </label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>                                         
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"> Voltar</a>
+            </li>
+        </ul>
+    </nav> 
+
+    <script>  
+        function checkAnswers() {  
+    // Respostas corretas  
+    const correctAnswers = {  
+        q1: 'e', // desenvolvimento de membranas internas, assim como a internalização de estruturas energéticas.
+        q2: 'a', // existência de duas divisões consecutivas na meiose e de apenas uma divisão na mitose.
+        q3: 'e', // realize inicialmente a hidrólise das moléculas de açúcares por meio de enzimas específicas.
+        q4: 'b', // 4, ocorre a formação de dois blastômeros, classificados como células-tronco totipotentes.
+        q5: 'c', // componentes dentais como esmalte, dentina e cemento podem resistir a altas temperaturas.
+        q6: 'b', // a investigação, quando se puder identificar a qual ou quais espécies pertencem as formas imaturas presentes no corpo em decomposição, condição na qual se poderá estimar o intervalo pós-morte.
+        q7: 'e', // na transição da fase de metáfase, representada em A, para anáfase, representada em B, as cromátides irmãs se separam e se movem para polos opostos do fuso mitótico.
+        q8: 'd', // branca
+        q9: 'd', // 2, 3 e 4.
+        q10: 'c', // aumentar a capacidade respiratória.
+        q11: 'c', // splicing alternativo.
+        q12: 'b', // o gene que causa a doença é co-herdado com o marcador polimórfico da mãe, em 75% da descendência afetada.
+        q13: 'd', // número variável de repetições em tandem, que permitem afirmar que o sangue na roupa do suspeito B é da vítima, assim como o sangue nas roupas dos demais suspeitos não é da vítima em questão.
+        q14: 'e', // inadequada, uma vez que cada espécie representada pode não ser a antecessora ou a ancestral da espécie seguinte, mas sim representantes de suas respectivas linhagens evolutivas.
+        q15: 'a', // o bloco 3 representa a perda de variabilidade genética, então o bloco 4 representa a redução na adaptabilidade média da população e os blocos 5 e 6 representam redução na reprodução e aumento na mortalidade.
+        q16: 'd', // os efeitos da inversão térmica podem ser minimizados controlando a emissão de poluentes particulados atmosféricos urbanos.
+        q17: 'b', // misturadas por meio da meiose, formação de gametas e fecundação.
+        q18: 'a', // aglutinação … os aglutinogênios … as aglutininas
+        q19: 'c', // quando os parentais são heterozigotos.
+        q20: 'b', // artérias é conduzir sangue bombeado pelas cavidades inferiores do coração em direção aos tecidos corpóreos, sob alta pressão.
+        q21: 'd', // cumulativa nas células e tecidos dos organismos.
+        q22: 'a', // parede celular e cloroplasto.
+        q23: 'b', // As cápsulas estão posicionadas nos intestinos, delgado e grosso, e não no estômago do traficante.
+        q24: 'a', // a coloração da pele humana é um exemplo da interação de fatores ambientais, fisiológicos e genotípicos.
+        q25: 'c', // o pássaro ocupa o nível de consumidor secundário ou terciário.
+        q26: 'e', // DNA cujo papel é controlar as atividades celulares.
+        q27: 'd', // A ocorre apenas durante o dia.
+        q28: 'a', // vírus e é transmitida pela picada do mosquito Aedes aegypti.
+        q29: 'b', // micose.
+        q30: 'b', // possuem simetria bilateral.
+        q31: 'a', // respiração pulmonar e glândulas mamárias.
+        q32: 'e', // célula e sistema.
+        q33: 'b', // sagital.
+        q34: 'c', // reduzindo a desidratação.
+        q35: 'd', // na coluna vertebral.
+        q36: 'd', // nas câmaras cardíacas localizadas no lado esquerdo circula apenas sangue arterial.
+        q37: 'a', // rim → ureter → bexiga → uretra.
+        q38: 'e', // febre amarela e gripe.
+        q39: 'c', // alterações na forma do cristalino levam à acomodação visual.
+        q40: 'b', // aumento no ritmo cardíaco.
+        q41: 'a', // ovários, tubas uterinas, útero e vagina.
+        q42: 'c', // bulbo.
+        q43: 'e', // produz e secreta um ácido.
+        q44: 'd', // Camisinha; sífilis e aids.
+        q45: '', //
+
+        
+    };  
+
+    // Verificar cada pergunta  
+    for (let question in correctAnswers) {  
+        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);  
+        const options = document.querySelectorAll(`input[name="${question}"]`);  
+
+        options.forEach(option => {  
+            option.parentNode.classList.remove('correct', 'incorrect');  
+        });  
+
+        if (selectedOption) {  
+            if (selectedOption.value === correctAnswers[question]) {  
+                selectedOption.parentNode.classList.add('correct');  
+            } else {  
+                selectedOption.parentNode.classList.add('incorrect');  
+                const correctOption = Array.from(options).find(option => option.value === correctAnswers[question]);  
+                if (correctOption) {  
+                    correctOption.parentNode.classList.add('correct');  
+                }  
+            }  
+        }  
+    }  
+}  
+document.getElementById('search-button').addEventListener('click', function() {  
+const query = document.getElementById('search-input').value;  
+if (query) {  
+// Redirecione para uma página de busca, ou faça uma busca em sua aplicação  
+window.location.href = `search_results.html?q=${encodeURIComponent(query)}`;  
+}  
+});
+    </script>  
+
+</body>  
+</html>

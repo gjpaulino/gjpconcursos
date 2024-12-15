@@ -4,14 +4,14 @@
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
-    <title>Questões</title>  
+    <title>Questões Português</title>  
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <style>   
 body {
-    color: black;
-    background-color: gray;
-    font-family: Arial, Helvetica, sans-serif;
+     color: black;
+     background-color: gray;
+     font-family: Arial, Helvetica, sans-serif;
 } 
 a {
     color: black;
@@ -61,7 +61,16 @@ a {
     .container{
       padding: 0px 50px;
     }
-    </style>  
+    .oculto { 
+        display: none; /* Inicialmente oculto */ 
+} 
+    .mostrar { 
+        display: block; 
+        } 
+.texto-colorido { 
+    color: blue; /* Altere 'red' para a cor desejada */ 
+    }  
+</style>  
 </head>  
 <body> 
     <div class="container">
@@ -71,11 +80,11 @@ a {
         <div class="question">  
             <p><strong>1. Considere a passagem do segundo parágrafo: <br><br> O turismo representa para muitos um modo de se reapropriar do mundo. Só que antes a experiência da viagem era decisiva, voltávamos diferentes do que éramos ao partir... <br><br> No contexto, a expressão destacada introduz uma oração que estabelece com a anterior relação cujo sentido é de</strong></p>  
             <div class="options">  
-                <label><input type="radio" name="q1" value="a">a- tempo, e pode ser corretamente substituída por “Enquanto”.</label>  
-                <label><input type="radio" name="q1" value="b">b- contraste, e pode ser corretamente substituída por “No entanto”. </label>  
-                <label><input type="radio" name="q1" value="c">c- causa, e pode ser corretamente substituída por “Uma vez que”.</label>  
-                <label><input type="radio" name="q1" value="d">d- consequência, e pode ser corretamente substituída por “De modo que”.</label>  
-                <label><input type="radio" name="q1" value="e">e- condição, e pode ser corretamente substituída por “A menos que”.</label>
+                <label><input type="radio" name="q1" value="a">(A) tempo, e pode ser corretamente substituída por “Enquanto”.</label>  
+                <label><input type="radio" name="q1" value="b">(B) contraste, e pode ser corretamente substituída por “No entanto”. </label>  
+                <label><input type="radio" name="q1" value="c">(C) causa, e pode ser corretamente substituída por “Uma vez que”.</label>  
+                <label><input type="radio" name="q1" value="d">(D) consequência, e pode ser corretamente substituída por “De modo que”.</label>  
+                <label><input type="radio" name="q1" value="e">(E) condição, e pode ser corretamente substituída por “A menos que”.</label>
                 <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
           </div>   
         </div>
@@ -84,11 +93,11 @@ a {
             <p>2. A frase do segundo parágrafo – ... visitou lugares com os quais eu (...) ainda me limito a <strong>sonhar.</strong>  – permanece em conformidade com a norma-padrão de regência verbal e com sentido compatível ao do texto original com o verbo
             destacado substituído por:</p>  
             <div class="options">  
-                <label><input type="radio" name="q2" value="a">a- ... visitou lugares nos quais eu (...) ainda me limito a almejar.</label>  
-                <label><input type="radio" name="q2" value="b">b- ... visitou lugares dos quais eu (...) ainda me limito a pensar.</label>  
-                <label><input type="radio" name="q2" value="c">c- ... visitou lugares os quais eu (...) ainda me limito a fantasiar.</label>  
-                <label><input type="radio" name="q2" value="d">d- ... visitou lugares com os quais eu (...) ainda me limito a imaginar.</label>
-                <label><input type="radio" name="q2" value="e">e- ... visitou lugares dos quais eu (...) ainda me limito a idealizar.</label>  
+                <label><input type="radio" name="q2" value="a">(A) ... visitou lugares nos quais eu (...) ainda me limito a almejar.</label>  
+                <label><input type="radio" name="q2" value="b">(B) ... visitou lugares dos quais eu (...) ainda me limito a pensar.</label>  
+                <label><input type="radio" name="q2" value="c">(C) ... visitou lugares os quais eu (...) ainda me limito a fantasiar.</label>  
+                <label><input type="radio" name="q2" value="d">(D) ... visitou lugares com os quais eu (...) ainda me limito a imaginar.</label>
+                <label><input type="radio" name="q2" value="e">(E) ... visitou lugares dos quais eu (...) ainda me limito a idealizar.</label>  
                 <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
             </div>  
         </div>  
@@ -96,13 +105,13 @@ a {
         <div class="question">  
             <p><strong>3. Assinale a alternativa em que, com a inserção da vírgula na passagem do texto, a redação atende à norma-padrão de pontuação.</strong></p>  
             <div class="options">  
-                <label><input type="radio" name="q3" value="a">a- As principais ruas das grandes cidades, se parecem cada vez mais umas com as outras...</label>  
-                <label><input type="radio" name="q3" value="b">b- ... agora só se encontra gente que volta sem ter sido tocada, minimamente pela fascinação do Outro Lugar.
+                <label><input type="radio" name="q3" value="a">(A) As principais ruas das grandes cidades, se parecem cada vez mais umas com as outras...</label>  
+                <label><input type="radio" name="q3" value="b">(B) ... agora só se encontra gente que volta sem ter sido tocada, minimamente pela fascinação do Outro Lugar.
                 </label>  
-                <label><input type="radio" name="q3" value="c">c- ... hoje os locais de peregrinação real, fazem o possível para ficarem parecidos com os locais de peregrinação virtual.</label>  
-                <label><input type="radio" name="q3" value="d">d- Ocorre também que todos os locais tendem a se parecer, e dessa vez a globalização tem tudo a ver
+                <label><input type="radio" name="q3" value="c">(C) ... hoje os locais de peregrinação real, fazem o possível para ficarem parecidos com os locais de peregrinação virtual.</label>  
+                <label><input type="radio" name="q3" value="d">(D) Ocorre também que todos os locais tendem a se parecer, e dessa vez a globalização tem tudo a ver
                 com a história.</label>
-                <label><input type="radio" name="q3" value="e">e- O turismo representa, para muitos um modo de se reapropriar do mundo.</label> 
+                <label><input type="radio" name="q3" value="e">(E) O turismo representa, para muitos um modo de se reapropriar do mundo.</label> 
                 <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
             </div>  
         </div>  
@@ -110,11 +119,11 @@ a {
         <div class="question">  
             <p><strong>4. São todas acentuadas em atendimento à mesma regra de acentuação gráfica as seguintes palavras extraídas do texto:</strong></p>  
             <div class="options">  
-                <label><input type="radio" name="q4" value="a">a- obrigatória; experiência; sábios.</label>  
-                <label><input type="radio" name="q4" value="b">b- possível; hábito; ciência.    </label>  
-                <label><input type="radio" name="q4" value="c">c- fé; obrigatória; possível.    </label>  
-                <label><input type="radio" name="q4" value="d">d- você; competência; sábios     </label>
-                <label><input type="radio" name="q4" value="e">e- fé; física; competência.
+                <label><input type="radio" name="q4" value="a">(A) obrigatória; experiência; sábios.</label>  
+                <label><input type="radio" name="q4" value="b">(B) possível; hábito; ciência.    </label>  
+                <label><input type="radio" name="q4" value="c">(C) fé; obrigatória; possível.    </label>  
+                <label><input type="radio" name="q4" value="d">(D) você; competência; sábios     </label>
+                <label><input type="radio" name="q4" value="e">(E) fé; física; competência.
                 </label> 
                 <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
             </div>  
@@ -128,45 +137,46 @@ a {
                 seu diploma. (2o parágrafo) <br><br>
                 • Em outras palavras, os especialistas deveriam se impor <strong>por</strong>  sua competência... (4oparágrafo) <br><br> No contexto em que estão inseridos, os termos destacados expressam, respectivamente, sentidos de</p>  
             <div class="options">  
-                <label><input type="radio" name="q5" value="a">a- dúvida; modo; ausência
+                <label><input type="radio" name="q5" value="a">(A) dúvida; modo; ausência
                 </label>  
-                <label><input type="radio" name="q5" value="b">b- afirmação; oposição; posse.
+                <label><input type="radio" name="q5" value="b">(B) afirmação; oposição; posse.
                 </label>  
-                <label><input type="radio" name="q5" value="c">c- intensidade; origem finalidade.</label>  
-                <label><input type="radio" name="q5" value="d">d- negação; causa; oposição.
+                <label><input type="radio" name="q5" value="c">(C) intensidade; origem finalidade.</label>  
+                <label><input type="radio" name="q5" value="d">(D) negação; causa; oposição.
                 </label>
-                <label><input type="radio" name="q5" value="e">e- modo; finalidade; causa.     
+                <label><input type="radio" name="q5" value="e">(E) modo; finalidade; causa.     
                 </label>  
                 <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
             </div>  
         </div>  
         
     <div class="question">  
-        <p><strong>6. Leia o texto para responder à questão.
-            Mundo arriscado
+        <p><strong>6. Leia o texto para responder à questão. <p>Mundo arriscado</strong></p>
+            <P>
             O próximo governo não encontrará um ambiente econômico internacional sereno. Dúvidas sobre a continuidade do crescimento do Produto Interno Bruto global, juros em alta nos EUA, riscos de conflitos comerciais e de queda do fluxo de capitais para países emergentes são apenas alguns dos itens de um cardápio de problemas potenciais.
             Tudo indica, assim, que o governo brasileiro terá de lidar de pronto com as fragilidades domésticas, em especial o rombo das contas públicas. Não tardará até que investidores hoje aparentemente otimistas comecem a cobrar resultados concretos.
             As projeções para o avanço do PIB mundial têm sido reduzidas nos últimos meses. O Fundo Mo netário Internacional cortou sua previsão para 2018 e 2019 em 0,2 ponto percentual – 3,7% em ambos os anos – e apontou um cenário de menor sincronia entre os principais motores regionais. Se até o início deste ano EUA, Europa e China davam sinais de vigor, agora acumulam-se decep ções nos dois últimos casos.
             Mesmo com juros ainda perto de zero, a zona do euro não deverá crescer mais que 1,5% neste ano. Há crescente insegurança no âmbito político, neste momento centrada na Itália e seu governo de direita populista, que propõe expansão do déficit de um setor público já endividado em excesso. Não é animador que a Comissão Europeia tenha tomado a decisão inédita de rejeitar a proposta orçamentária da administração italiana. Embora o país ainda conserve o selo de bom pagador, os juros cobrados no mercado para financiar sua dívida dispararam.
             Quanto à China, sua economia mostra menos vigor, e as autoridades precisam tomar decisões difíceis entre conter as dívidas já exageradas e estimular o crescimento. O risco de escalada nos conflitos comerciais também é concreto, dado que o governo americano ameaça impor uma terceira rodada de tarifas, desta vez sobre os US$ 270 bilhões em vendas anuais chinesas que ainda não foram taxadas.
-            Nos EUA, a alta dos juros, num contexto de emprego elevado e inflação perto da meta, já leva parte do mercado a temer uma desaceleração abrupta do PIB em 2019. A vantagem do Brasil, hoje, é que há ampla ociosidade nas empresas, baixa inflação e, portanto, espaço para uma retomada mais forte. <br><br>
+            Nos EUA, a alta dos juros, num contexto de emprego elevado e inflação perto da meta, já leva parte do mercado a temer uma desaceleração abrupta do PIB em 2019. A vantagem do Brasil, hoje, é que há ampla ociosidade nas empresas, baixa inflação e, portanto, espaço para uma retomada mais forte.</p>
             (Editorial. Folha de S.Paulo, 01.11.2018. Adaptado) <br><br>
-            _________________dúvidas sobre a continuidade do crescimento do Produto Interno Bruto global. Como se ____________ as suas projeções nos últimos meses, o FMI cortou a previsão para 2018 e 2019 em 0,2 ponto percentual. Em alguns países, os juros cobrados para o financiamento de suas dívidas ______________ <br><br>
-            De acordo com a norma-padrão, as lacunas dos enunciados devem ser preenchidas, respectiva mente, com:</strong></p>  
+            <p>_________ sobre a continuidade do crescimento do Produto Interno Bruto global. Como se _______ suas projeções nos últimos meses, o FMI cortou a previsão para 2018 e 2019 em 0,2 ponto percentual. Em alguns países, os juros cobrados para o financiamento de suas dívidas ______________ 
+                De acordo com a norma-padrão, as lacunas dos enunciados devem ser preenchidas, respectiva mente, com:
+            </p>  
         <div class="options">  
-            <label><input type="radio" name="q6" value="a">a- Surgem ... reduziram ... têm sido exagerados</label>  
-            <label><input type="radio" name="q6" value="b">b- Ocorre ... reduziram ... têm sido exagerados</label>  
-            <label><input type="radio" name="q6" value="c">c- Existem ... reduziu ... tem sido exagerado</label>  
-            <label><input type="radio" name="q6" value="d">d- Aparece ... reduziu ... tem sido exagerados</label>
-            <label><input type="radio" name="q6" value="e">e- Há ... reduziram ... têm sido exagerado</label>  
+            <label><input type="radio" name="q6" value="a">(A) Surgem ... reduziram ... têm sido exagerados</label>  
+            <label><input type="radio" name="q6" value="b">(B) Ocorre ... reduziram ... têm sido exagerados</label>  
+            <label><input type="radio" name="q6" value="c">(C) Existem ... reduziu ... tem sido exagerado</label>  
+            <label><input type="radio" name="q6" value="d">(D) Aparece ... reduziu ... tem sido exagerados</label>
+            <label><input type="radio" name="q6" value="e">(E) Há ... reduziram ... têm sido exagerado</label>  
             <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
         </div>  
     </div>  
 
        <div class="question">  
         <p><strong>7. Leia o texto e responda à questão. <br><br>
-        Assassinos culturais <br><br>
-        Sou um assassino cultural, e você também é. Sei que é romântico chorar quando uma livraria fe cha as portas. Mas convém não abusar do romantismo – e da hipocrisia. Fomos nós que matamos aquela livraria e o crime não nos pesa muito na consciência. Falo por mim. Os livros físicos que entram lá em casa são cada vez mais ofertas – de amigos ou editoras.
+        Assassinos culturais </strong></p>
+       <p>Sou um assassino cultural, e você também é. Sei que é romântico chorar quando uma livraria fe cha as portas. Mas convém não abusar do romantismo – e da hipocrisia. Fomos nós que matamos aquela livraria e o crime não nos pesa muito na consciência. Falo por mim. Os livros físicos que entram lá em casa são cada vez mais ofertas – de amigos ou editoras.
         Aos 20, quando viajava por territórios estranhos, entrava nas livrarias locais como um faminto na capoeira. Comprava tanto e carregava tanto que desconfio que o meu problema de ciática é, na sua essência, um problema livresco.
         Hoje? Gosto da flânerie*. Mas depois, fotografo as capas com o meu celular antes de regressar para o psicanalista – o famoso dr. Kindle. Culpado? Um pouco. E em afirmar que pago pelos meus vícios.
         E quem fala em livrarias, fala em todo o resto. Eu também ajudei a matar a Tower Records e a Virgin Megastore. Havia lá dentro uma bizarria chamada CD – você se lembra?
@@ -176,29 +186,29 @@ a {
         Já as empresas que sobreviveram e as novas que entraram na lista souberam se adaptar à econo mia digital, vendendo serviços (ou, de forma mais precisa, acessos).
         Claro que na mudança algo se perde. O desaparecimento das livrarias não acredito que seja total no futuro (e ainda bem). Além disso, ler no papel não é o mesmo que ler na tela.
         Mas o interesse do livro de Tzuo não está apenas nos números; está no retrato de uma nova gera ção para quem a experiência cultural é mais importante do que a mera posse de objetos.
-        Há quem veja aqui um retrocesso, mas também é possível ver um avanço – ou, para sermos bem f ilosóficos, o triunfo do espírito sobre a matéria. E não será essa, no fim das contas, a vocação mais autêntica da cultura? <br><br>
+        Há quem veja aqui um retrocesso, mas também é possível ver um avanço – ou, para sermos bem f ilosóficos, o triunfo do espírito sobre a matéria. E não será essa, no fim das contas, a vocação mais autêntica da cultura?</p>  
         (João Pereira Coutinho. Folha de S.Paulo, 28.08.2018. Adaptado) <br><br>
-        * Flânerie: ato de passear, de caminhar sem compromisso.
+        <p>* Flânerie: ato de passear, de caminhar sem compromisso.
         Assinale a alternativa redigida em conformidade com a norma-padrão de concordância.
-        </strong></p>  
+        </p>  
         <div class="options">  
-        <label><input type="radio" name="q7" value="a">a- O autor tem registrada, em seu celular, capas de livros que lhe interessam, os quais prefere ler em formato e-book.
+        <label><input type="radio" name="q7" value="a">(A) O autor tem registrada, em seu celular, capas de livros que lhe interessam, os quais prefere ler em formato e-book.
         </label>  
-        <label><input type="radio" name="q7" value="b">b- O livro de Tien Tzuo, além dos dados numéricos, expõem reflexões a respeito do comportamen to das novas gerações.</label>  
-        <label><input type="radio" name="q7" value="c">c- As empresas que, hoje, em lugar de coisas vende serviços, moldaram-se à economia digital.</label>  
-        <label><input type="radio" name="q7" value="d">d- Presenteado, em sua maioria, são os livros que hoje fazem parte da biblioteca do escritor.</label>
-        <label><input type="radio" name="q7" value="e">e- Não faz tantos anos que redes de lojas como Tower Records e Virgin Megastore eram referência no mercado musical.</label>  
+        <label><input type="radio" name="q7" value="b">(B) O livro de Tien Tzuo, além dos dados numéricos, expõem reflexões a respeito do comportamen to das novas gerações.</label>  
+        <label><input type="radio" name="q7" value="c">(C) As empresas que, hoje, em lugar de coisas vende serviços, moldaram-se à economia digital.</label>  
+        <label><input type="radio" name="q7" value="d">(D) Presenteado, em sua maioria, são os livros que hoje fazem parte da biblioteca do escritor.</label>
+        <label><input type="radio" name="q7" value="e">(E) Não faz tantos anos que redes de lojas como Tower Records e Virgin Megastore eram referência no mercado musical.</label>  
         <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
     </div>   
 </div> 
 <div class="question">  
     <p>8. A expressão <strong>“ou seja”</strong>, em destaque na passagem, introduz, em relação ao trecho que a antecede,</p>  
     <div class="options">  
-        <label><input type="radio" name="q8" value="a">a- uma alternativa.</label>  
-        <label><input type="radio" name="q8" value="b">b- uma correção.</label>  
-        <label><input type="radio" name="q8" value="c">c- um testemunho.</label>  
-        <label><input type="radio" name="q8" value="d">d- um esclarecimento.</label>  
-        <label><input type="radio" name="q8" value="e">e- uma contradição.</label>
+        <label><input type="radio" name="q8" value="a">(A) uma alternativa.</label>  
+        <label><input type="radio" name="q8" value="b">(B) uma correção.</label>  
+        <label><input type="radio" name="q8" value="c">(C) um testemunho.</label>  
+        <label><input type="radio" name="q8" value="d">(D) um esclarecimento.</label>  
+        <label><input type="radio" name="q8" value="e">(E) uma contradição.</label>
         <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
   </div>   
   </div>
@@ -206,12 +216,12 @@ a {
     <p><strong>9. Assinale a alternativa em que as palavras estão acentuadas obedecendo à mesma regra que determina a acentuação, respectivamente, das palavras “vários” e “análogas”.
     </strong></p>  
     <div class="options">  
-        <label><input type="radio" name="q9" value="a">a- Dívidas; há.</label>  
-        <label><input type="radio" name="q9" value="b">b- Josés; água.</label>  
-        <label><input type="radio" name="q9" value="c">c- Antônios; multiétnica.</label>  
-        <label><input type="radio" name="q9" value="d">d- Deploráveis; inclassificável.
+        <label><input type="radio" name="q9" value="a">(A) Dívidas; há.</label>  
+        <label><input type="radio" name="q9" value="b">(B) Josés; água.</label>  
+        <label><input type="radio" name="q9" value="c">(C) Antônios; multiétnica.</label>  
+        <label><input type="radio" name="q9" value="d">(D) Deploráveis; inclassificável.
         </label>  
-        <label><input type="radio" name="q9" value="e">e- País; máxima.</label>
+        <label><input type="radio" name="q9" value="e">(E) País; máxima.</label>
         <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
   </div>   
   </div>
@@ -220,11 +230,11 @@ a {
     <p><strong>10. Assinale a alternativa que substitui a expressão em destaque na passagem “ ... ainda hoje, a escravidão persiste,</strong> <u>só</u> <u>que</u> <strong>agora é multiétnica.”, preservando a relação de
     sentido do original.</strong></p>  
     <div class="options">  
-        <label><input type="radio" name="q10" value="a">a- Mas</label>  
-        <label><input type="radio" name="q10" value="b">b- Desde que.</label>  
-        <label><input type="radio" name="q10" value="c">c- Até.</label>  
-        <label><input type="radio" name="q10" value="d">d- Pois.</label>  
-        <label><input type="radio" name="q10" value="e">e- Como.</label>
+        <label><input type="radio" name="q10" value="a">(A) Mas</label>  
+        <label><input type="radio" name="q10" value="b">(B) Desde que.</label>  
+        <label><input type="radio" name="q10" value="c">(C) Até.</label>  
+        <label><input type="radio" name="q10" value="d">(D) Pois.</label>  
+        <label><input type="radio" name="q10" value="e">(E) Como.</label>
         <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
   </div>   
   </div>
@@ -265,8 +275,8 @@ a {
   <div class="question">  
     <p><strong>Leia a tira, para responder às questões de números 14 e 15. <br><br>14. O comentário do garoto Calvin, no último quadrinho, sugere que</strong></p> 
     <img src="imag/calvin.jpg" alt="Descrição da imagem"> 
-    <p><strong>(Bill Watterson. Calvin e Haroldo. Disponível em:
-        &lt;http://tiras-do-calvin.tumblr.com.&gt; <br> Acesso em: 09 de maio de 2018)</strong></p>
+    <p style="font-size: 11px;">(Bill Watterson. Calvin e Haroldo. Disponível em:
+        &lt;http://tiras-do-calvin.tumblr.com.&gt; <br> Acesso em: 09 de maio de 2018)</p>
     <div class="options">  
         <label><input type="radio" name="q14" value="a">a- o tigre costuma lhe dar respostas apreciadas pelos professores.</label>  
         <label><input type="radio" name="q14" value="b">b- tanto o garoto quanto o tigre apreciam tarefas que desafiam a criatividade.</label>  
@@ -390,7 +400,7 @@ a {
   <div class="question">  
     <p><strong>Leia o texto, para responder às questões de números 24 a 28. <br><br>
         O exorcismo <br> </strong></p>
-        Rosário, a feiticeira andaluza, estava há muitos anos <br>
+       <p style="font-size: 14px;"> Rosário, a feiticeira andaluza, estava há muitos anos <br>
         lutando contra os demônios. O pior dos satanases tinha sido <br>
         seu sogro. Aquele malvado tinha morrido estendido na cama,<br>
         na noite em que blasfemou*, e o crucifixo de bronze soltou-se <br>
@@ -403,9 +413,9 @@ a {
         de sal e montões de fé. <br> 
         – Ao mau tempo, cara boa, e para a fome, viola – disse. <br>
         E disse que dali para a frente era conosco, porque a <br>
-        sorte não ajuda quem não a ajuda a ajudar. <br><br>
-        (Eduardo Galeano, O livro dos abraços. Adaptado) <br>
-        *Proferiu palavras ofensivas à divindade.
+        sorte não ajuda quem não a ajuda a ajudar.</p>
+        <p style="font-size: 11px;">(Eduardo Galeano, O livro dos abraços. Adaptado) <br>
+            *Proferiu palavras ofensivas à divindade.</p>
         <p><strong>24. É correto afirmar que o termo “a”, no trecho “não a ajuda”, é
         </strong></p>  
     <div class="options">  
@@ -461,10 +471,9 @@ a {
   </div>   
   </div>
   <div class="question">  
-    <p><strong>28. Assinale a alternativa que preenche as lacunas do enunciado a seguir, de acordo com a norma-padrão de concordância. <br><br> ____________ proporções do acidente,____________ as vias da
+    <p><strong>28. Assinale a alternativa que preenche as lacunas do enunciado a seguir, de acordo com a norma-padrão de concordância.</strong></p> <p style="font-size: 14px;"><strong>____________ proporções do acidente,____________ as vias da
         redondeza, ficando____________às pessoas trafegar pelo
-        local, pois ainda____________focos de incêndio____________.
-        </strong></p>  
+        local, pois ainda____________focos de incêndio____________.</strong></p> 
     <div class="options">  
         <label><input type="radio" name="q28" value="a">a- Dado … foram interditadas … proibidas … haviam … disperso.</label>  
         <label><input type="radio" name="q28" value="b">b- Dadas … foram interditadas … proibido … havia … dispersos.</label>  
@@ -683,7 +692,7 @@ a {
   <div class="question">  
     <p><strong>Leia a tirinha para responder às questões de números 45 e 46. <br></strong>
     </p> 
-    <img src="imag/tirinha.jpg" alt="Descrição da imagem"><p>(Quino, Toda Mafalda. São Paulo: Martins Fontes, 2010)<strong> <br><br> 45. Em – ... “Responder <u>com</u> simplicidade e clareza às perguntas dos filhos”.... – a palavra em destaque expressa, no contexto em que é empregada, ideia de</strong></p>
+    <img src="imag/tirinha.jpg" alt="Descrição da imagem"><p style="font-size: 11px;">(Quino, Toda Mafalda. São Paulo: Martins Fontes, 2010) <p><strong>45. Em – ... “Responder <u>com</u> simplicidade e clareza às perguntas dos filhos”.... – a palavra em destaque expressa, no contexto em que é empregada, ideia de</strong></p>
     <div class="options">  
         <label><input type="radio" name="q45" value="a">a- Finalidade.</label>  
         <label><input type="radio" name="q45" value="b">b- Causa.</label>  
@@ -775,15 +784,15 @@ a {
     <p><strong>Leia o texto a seguir para responder às questões de números 53 a 55.
     </strong>
        <p>Falsários praticavam golpes do seguro desemprego</p>
-       Policiais civis da capital prenderam dois falsários com grande quantidade de carteiras profissionais,<br> cédulas de identidades do Estado da Bahia e material para produção de documentos falsos. <br>
+       <p>Policiais civis da capital prenderam dois falsários com grande quantidade de carteiras profissionais,<br> cédulas de identidades do Estado da Bahia e material para produção de documentos falsos. <br>
         Os policiais receberam a informação de que um homem 
         iria embarcar para o nordeste portando drogas. <br> Ao chegarem
         ao Terminal Rodoviário, na plataforma de embarque para o
         nordeste, suspeitaram de <br> um rapaz e resolveram abordá-lo.<br>
         Na sua bolsa, em vez de drogas, encontraram 36 carteiras
         com um kit de <br> saque de seguro desemprego com foto e ticket
-        dos valores que seriam sacados. <br><br>
-        (www2.policiacivil.sp.gov.br, 07.04.2013. Adaptado) <br><br></p> 
+        dos valores que seriam sacados.</p>
+        <p style="font-size: 11px;">(www2.policiacivil.sp.gov.br, 07.04.2013. Adaptado)</p>
        <p><strong> 53. De acordo com o texto, a informação recebida pelos policiais não coincidiu com os fatos porque o rapaz suspeito</strong></p>  
     <div class="options">  
         <label><input type="radio" name="q53" value="a">a- viajaria para a região sul do país.
@@ -832,7 +841,7 @@ a {
   </div>
   <div class="question">  
     <p><strong>Considere o texto da figura a seguir para responder às questões de números 57 e 58.</strong></p> 
-    <img src="imag/imagem.jpg" alt="Descrição da imagem"><p><strong>Polícia Civil prende dois falsários que praticavam <br> golpes do seguro desemprego.</strong></p>(www2.policiacivil.sp.gov.br. Acesso em 07.04.2013) <br><p><strong>57. O adjetivo <u>falsários</u> pode ser substituído, sem alteração de sentido, por</strong></p> 
+    <img src="imag/imagem.jpg" alt="Descrição da imagem"><p><strong>Polícia Civil prende dois falsários que praticavam <br> golpes do seguro desemprego.</strong></p> <p style="font-size: 11px;">(www2.policiacivil.sp.gov.br. Acesso em 07.04.2013)</p> <p><strong>57. O adjetivo <u>falsários</u> pode ser substituído, sem alteração de sentido, por</strong></p> 
     <div class="options">  
         <label><input type="radio" name="q57" value="a">a- contrabandistas.</label>  
         <label><input type="radio" name="q57" value="b">b- interceptadores.</label>  
@@ -872,14 +881,14 @@ a {
             Combatendo sempre o mal<br>
             Batalhando por nosso Brasil.<br>
             (...)</p>
-            Com justiça venceremos<br>
+           <p>Com justiça venceremos<br>
             E jamais vamos esmorecer<br>
             Se preciso, morreremos<br>
             Mas cumprindo o nosso dever.<br>
             (...) </strong></p>
-            (Composição: Ayrton de Freitas Gonçalves, Vilma Daniel Freitas<br>
-Gonçalves, Valdete Daniel Rosa Souza – www2.policiacivil.sp.gov.br – <br>
-Acesso em 07.04.2013) 
+           <p style="font-size: 11px;">(Composição: Ayrton de Freitas Gonçalves, Vilma Daniel Freitas
+            Gonçalves, Valdete Daniel Rosa Souza – www2.policiacivil.sp.gov.br – <br>
+            Acesso em 07.04.2013)</p>  
         <p><strong>60. Os versos da primeira parte do Hino expressam a ideia de estímulo
         </strong></p> 
     <div class="options">  
@@ -933,7 +942,7 @@ Acesso em 07.04.2013)
 </div>
 <div class="question">  
     <p><strong>64. Assinale a alternativa que preenche, correta e respectivamente, as lacunas da frase, considerando a norma-padrão da língua portuguesa.</strong></p>
-    ____________ programas de computador ____________ desenhar rostos com perfeição. 
+    <p>____________ programas de computador ____________ desenhar rostos com perfeição.</p> 
 <div class="options">  
     <label><input type="radio" name="q64" value="a">a- Haverá ... apto com </label>  
     <label><input type="radio" name="q64" value="b">b- Haverão ... apto por</label>  
@@ -945,7 +954,7 @@ Acesso em 07.04.2013)
 </div>
 <div class="question">  
     <p><strong>65. Assinale a alternativa que preenche, correta e respectivamente, as lacunas da frase, considerando a norma-padrão da língua portuguesa.</strong></p>
-    Os delegados jamais ____________ alertaram sobre uma lei ____________ nunca ____________. 
+    <p>Os delegados jamais ____________ alertaram sobre uma lei ____________ nunca ____________.</p> 
 <div class="options">  
     <label><input type="radio" name="q65" value="a">a- os ... por que ... duvidaram</label>  
     <label><input type="radio" name="q65" value="b">b- os ... com que ... duvidou</label>  
@@ -1038,7 +1047,7 @@ Acesso em 07.04.2013)
 </div>   
 </div>
 <div class="question">  
-    <p><strong>73. Considerando as regras de regência verbal, assinale a alternativa que completa, correta e respectivamente, as lacunas da frase.</strong></p> A ONG Anjos do Verão colabora ____________ trabalho do Corpo de Bombeiros, empenhando-se ____________ encontrar crianças perdidas.
+    <p><strong>73. Considerando as regras de regência verbal, assinale a alternativa que completa, correta e respectivamente, as lacunas da frase.</strong></p><p style="font-size: 14px;">A ONG Anjos do Verão colabora ____________ trabalho do Corpo de Bombeiros, empenhando-se ____________ encontrar crianças perdidas.</p> 
 <div class="options">  
     <label><input type="radio" name="q73" value="a">a- do ... sobre</label>  
     <label><input type="radio" name="q73" value="b">b- pelo ... de</label>  
@@ -1050,7 +1059,7 @@ Acesso em 07.04.2013)
 </div>
 <div class="question">  
     <p><strong>74. Assinale a alternativa que completa corretamente a lacuna do texto.
-</strong></p> O fato de a menina saber que havia o desenho de um índio na porta do prédio     mostrou-se ____________ para que ela soubesse voltar para casa sozinha.
+</strong></p> <p style="font-size: 14px;">O fato de a menina saber que havia o desenho de um índio na porta do prédio     mostrou-se ____________ para que ela soubesse voltar para casa sozinha.</p>
 <div class="options">  
     <label><input type="radio" name="q74" value="a">a- indispensável</label>  
     <label><input type="radio" name="q74" value="b">b- inútil</label>  
@@ -1062,7 +1071,7 @@ Acesso em 07.04.2013)
 </div>
 <div class="question">  
     <p><strong>75. Observe a passagem do penúltimo parágrafo.
-</strong></p> <p> <strong>Lá pelos anos 70</strong>, sem celular, iPhone, iPad ou outras tantas muletas, a estratégia foi cada integrante da família se dividire fixar um tempo para voltar à porta do prédio. <strong>Estavam todos lá</strong>, minha mãe, primos, tia, o sorveteiro, as duas mulheres e eu – ainda muda.</p>O termo lá, nas expressões <strong>Lá pelos anos 70</strong> e <strong>Estavam todos lá</strong>, expressa ideia de
+</strong></p> <p> <strong>Lá pelos anos 70</strong>, sem celular, iPhone, iPad ou outras tantas muletas, a estratégia foi cada integrante da família se dividire fixar um tempo para voltar à porta do prédio. <strong>Estavam todos lá</strong>, minha mãe, primos, tia, o sorveteiro, as duas mulheres e eu – ainda muda.</p><p style="font-size: 14px;">O termo lá, nas expressões <strong>Lá pelos anos 70</strong> e <strong>Estavam todos lá</strong>, expressa ideia de</p>
 <div class="options">  
     <label><input type="radio" name="q75" value="a">a- dúvida e modo, respectivamente.
     </label>  
@@ -1100,7 +1109,7 @@ Acesso em 07.04.2013)
 </div>   
 </div>
 <div class="question">  
-    <p><strong>78. Assinale a alternativa em que a frase está reescrita corretamente, em conformidade com a norma-padrão da língua.</strong></p>Encontram-se na praia, todos os anos, centenas de crianças perdidas da família. 
+    <p><strong>78. Assinale a alternativa em que a frase está reescrita corretamente, em conformidade com a norma-padrão da língua.</strong></p><p style="font-size: 14px;">Encontram-se na praia, todos os anos, centenas de crianças perdidas da família.</p>
 <div class="options">  
     <label><input type="radio" name="q78" value="a">a- Têm sido encontradas na praia, todos os anos, centenas
         de crianças perdidas da família.</label>  
@@ -1137,7 +1146,7 @@ Acesso em 07.04.2013)
 </div>
 <div class="question">  
     <p><strong>81. Leia a charge.</strong></p>
-    <img src="imag/português.jpg" alt="#"> <p style="font-size: 10px;">(Pancho. Gazeta do Povo, 28.09.2014)</p>Ao dizer que o papo “não tem pé nem cabeça”, a personagem sugere que a conversa do amigo está sendo
+    <img src="imag/português.jpg" alt="#"> <p style="font-size: 10px;">(Pancho. Gazeta do Povo, 28.09.2014)</p><p style="font-size: 14px;">Ao dizer que o papo “não tem pé nem cabeça”, a personagem sugere que a conversa do amigo está sendo</p>
 <div class="options">  
     <label><input type="radio" name="q81" value="a">a- incoerente.</label>  
     <label><input type="radio" name="q81" value="b">b- concisa.</label>  
@@ -1182,7 +1191,7 @@ Acesso em 07.04.2013)
 </div>
 <div class="question">  
     <p><strong>85. Leia a tira.</strong></p>
-    <img src="imag/portugues.jpg" alt="#"> <p style="font-size: 9px;">(Dik Browne. “Hagar”. Folha de S.Paulo, 20.12.2014. Adaptado)</p><p>Assinale a alternativa em que a frase preenche corretamente o balão da fala da personagem no primeiro <br> quadrinho, em conformidade com a norma-padrão da língua portuguesa.</p>
+    <img src="imag/hangar.jpg" alt="#"> <p style="font-size: 9px;">(Dik Browne. “Hagar”. Folha de S.Paulo, 20.12.2014. Adaptado)</p><p>Assinale a alternativa em que a frase preenche corretamente o balão da fala da personagem no primeiro <br> quadrinho, em conformidade com a norma-padrão da língua portuguesa.</p>
 <div class="options">  
     <label><input type="radio" name="q85" value="a">a- Irmão Hagar deponha sua espada e pega esta pena.</label>  
     <label><input type="radio" name="q85" value="b">b- Irmão Hagar deponha sua espada e pegue aquela pena.</label>  
@@ -1215,7 +1224,7 @@ Acesso em 07.04.2013)
 </div>   
 </div>
 <div class="question">  
-    <p><strong>88. Não há dúvida _____ a televisão pode prejudicar o movimento da pracinha Jerônimo Monteiro. Ela pode, até mesmo, causar prejuízo _____ uma boa conversa ou impedir um menino de ir _____ rua jogar bola.</strong></p>De acordo com a norma-padrão da língua portuguesa, as lacunas das frases devem ser preenchidas, respectivamente, com:
+    <p><strong>88. Não há dúvida _____ a televisão pode prejudicar o movimento da pracinha Jerônimo Monteiro. Ela pode, até mesmo, causar prejuízo _____ uma boa conversa ou impedir um menino de ir _____ rua jogar bola.</strong></p><p style="font-size: 14px;">De acordo com a norma-padrão da língua portuguesa, as lacunas das frases devem ser preenchidas, respectivamente, com:</p>
 <div class="options">  
     <label><input type="radio" name="q88" value="a">a- que ... à ... a</label>  
     <label><input type="radio" name="q88" value="b">b- de que ... a ... à</label>  
@@ -1239,7 +1248,7 @@ Acesso em 07.04.2013)
 </div>   
 </div>
 <div class="question">  
-    <p><strong>Para responder às questões de números 20 e 21, considere o período do terceiro parágrafo: <br> Rádio, a gente pode ouvir baixinho, enquanto está lendo um livro. Televisão é incompatível com livro...</strong></p><strong>90. No período, a conjunção em destaque estabelece relação entre as orações cujo sentido é de</strong> 
+    <p><strong>Para responder às questões de números 20 e 21, considere o período do terceiro parágrafo: <br> Rádio, a gente pode ouvir baixinho, enquanto está lendo um livro. Televisão é incompatível com livro...</strong></p> <p><strong>90. No período, a conjunção em destaque estabelece relação entre as orações cujo sentido é de</strong></p> 
 <div class="options">  
     <label><input type="radio" name="q90" value="a">a- conclusão.</label>  
     <label><input type="radio" name="q90" value="b">b- tempo passado.</label>  
@@ -1273,7 +1282,7 @@ Acesso em 07.04.2013)
 </div>
 <div class="question">  
     <p><strong>Para responder às questões de números 04 e 05, considere
-        a seguinte passagem do primeiro parágrafo. <br><br>Nada disso, no <u>entanto</u>, impede que, quando cresçam, muitas pessoas sejam incapazes de negar um pedido, não importa de onde venha.</strong></p> <strong>93. A expressão destacada expressa o sentido de</strong>
+        a seguinte passagem do primeiro parágrafo. <br><br>Nada disso, no <u>entanto</u>, impede que, quando cresçam, muitas pessoas sejam incapazes de negar um pedido, não importa de onde venha.</strong></p> <p><strong>93. A expressão destacada expressa o sentido de</strong></p>
 <div class="options">  
     <label><input type="radio" name="q93" value="a">a- restrição e pode ser substituída por  <strong>assim sendo.</strong></label>  
     <label><input type="radio" name="q93" value="b">b- contrariedade e pode ser substituída por <strong>todavia.</strong></label>  
@@ -1354,7 +1363,7 @@ Acesso em 07.04.2013)
 </div>   
 </div>
 <div class="question">  
-    <p><strong>100. Assinale a alternativa em que a função sintática das orações destacadas (I) e (II) nas passagens a seguir está corretamente identificada.</strong></p>… não querem mais (I) <strong>mamar</strong>. (primeiro parágrafo) <p>A dificuldade de (II) <strong>negar ajuda ou pedido</strong> tem raízes na pré-história (segundo parágrafo)</p>
+    <p><strong>100. Assinale a alternativa em que a função sintática das orações destacadas (I) e (II) nas passagens a seguir está corretamente identificada.</strong></p><p>… não querem mais (I) <strong>mamar</strong>. (primeiro parágrafo)</p> <p>A dificuldade de (II) <strong>negar ajuda ou pedido</strong> tem raízes na pré-história (segundo parágrafo)</p>
  <div class="options">  
     <label><input type="radio" name="q100" value="a">a- (I) complemento nominal; (II) objeto direto.</label>  
     <label><input type="radio" name="q100" value="b">b- (I) objeto indireto; (II) sujeito.
@@ -1379,7 +1388,8 @@ Acesso em 07.04.2013)
 </div>
 <div class="question">  
     <p><strong>Leia a tira, para responder à questão.</strong></p> <img src="imag/charge.jpg" alt="#"> <p style="font-size: 9px;">(Ciça, Pagando o pato)</p>
-    <strong>102. É correto concluir que o efeito de sentido da tira está centrado</strong>
+    <p><strong>102. É correto concluir que o efeito de sentido da tira está centrado</strong>
+    </p>
  <div class="options">  
     <label><input type="radio" name="q102" value="a">a- no duplo sentido da expressão verbal “estou temendo”.</label>  
     <label><input type="radio" name="q102" value="b">b- na hesitação da personagem em se decidir pela palavra certa.</label>  
@@ -1391,8 +1401,7 @@ Acesso em 07.04.2013)
 </div>
 <div class="question">  
     <p><strong>103. Considere a passagem do primeiro parágrafo: Se uma delas tomava o bonde, três, quatro ou cinco jovens se arremessavam. E a boa e ofegante senhora tinha seu
-    canto, tinha seu espaço.</strong></p> Do ponto de vista semântico, a oração iniciada pela conjunção <strong>“E”</strong> introduz informação cuja noção é, em relação
-    à oração precedente, de
+    canto, tinha seu espaço.</strong></p> <p style="font-size: 14px;">Do ponto de vista semântico, a oração iniciada pela conjunção <strong>“E”</strong> introduz informação cuja noção é, em relação à oração precedente, de</p>
  <div class="options">  
     <label><input type="radio" name="q103" value="a">a- consequência.</label>  
     <label><input type="radio" name="q103" value="b">b- modo.</label>  
@@ -1455,6 +1464,757 @@ Acesso em 07.04.2013)
     <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
 </div>   
 </div>
+<div class="question">  
+    <p><strong>Leia a tira para responder às questões de números 108 a 110.</strong></p>
+    <img src="imag/tirinhas.jpg" alt="">
+    <p style="font-size: 11px;">(Caco Galhardo, Daiquiri. Em: Folha de S.Paulo, 11.05.2018)
+    </p> <p>108. Na história, a referência do personagem à “calça rancheira” funciona como</p>
+ <div class="options">  
+    <label><input type="radio" name="q108" value="a">a- uma crítica que ele faz à sua interlocutora, que vê como retrógrada.</label>  
+    <label><input type="radio" name="q108" value="b">b- uma sugestão de que ele e sua interlocutora não entendem a modernidade.</label>  
+    <label><input type="radio" name="q108" value="c">c- um indicativo de que ele seja ainda muito mais moderno do que disse.</label>  
+    <label><input type="radio" name="q108" value="d">d- um flagrante de que ele atribui a si mesmo uma qualidade que não tem.</label>  
+    <label><input type="radio" name="q108" value="e">e- uma alusão ao seu caráter de modéstia quando afirma que é moderno.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>109. No primeiro quadrinho, a expressão “estou super antenada” reporta ao sentido de</strong></p>
+ <div class="options">  
+    <label><input type="radio" name="q109" value="a">a- abolir a tecnologia.</label>  
+    <label><input type="radio" name="q109" value="b">b- informar-se acriticamente.</label>  
+    <label><input type="radio" name="q109" value="c">c- estar bem informada.</label>  
+    <label><input type="radio" name="q109" value="d">d- usar informações sigilosas.</label>  
+    <label><input type="radio" name="q109" value="e">e- usar equipamentos eletrônicos.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p>110. Na fala do personagem no segundo quadrinho <strong>“Apesar da</strong> aparência, sou um homem ultramoderno!”, a expressão destacada estabelece entre as informações relação de sentido de</p>
+ <div class="options">  
+    <label><input type="radio" name="q110" value="a">a- consequência.</label>  
+    <label><input type="radio" name="q110" value="b">b- concessão.</label>  
+    <label><input type="radio" name="q110" value="c">c- conclusão.</label>  
+    <label><input type="radio" name="q110" value="d">d- comparação.</label>  
+    <label><input type="radio" name="q110" value="e">e- finalidade.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>111. Assinale a alternativa que atende à norma-padrão de concordância verbal.
+</strong></p>
+ <div class="options">  
+    <label><input type="radio" name="q111" value="a">a- Quando se desconta os efeitos sazonais, vê-se que a taxa de desocupação não cai desde setembro do ano passado.</label>  
+    <label><input type="radio" name="q111" value="b">b- A falta de investimentos na construção civil e de criação de novos canteiros de obras reforça a inquietude econômica.</label>  
+    <label><input type="radio" name="q111" value="c">c- Na atual conjuntura, aumenta as vagas sem carteira assinada e também o trabalho por conta própria.</label>  
+    <label><input type="radio" name="q111" value="d">d- Os indicadores do mundo do emprego permite compreender os índices de confiança de consumidores e empresas.</label>  
+    <label><input type="radio" name="q111" value="e">e- As dúvidas em torno da força e da persistência da retomada do crescimento causa inquietude no país.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>112. Assinale a alternativa correta quanto ao emprego do acento indicativo da crase, de acordo com a norma-padrão.</strong></p>
+ <div class="options">  
+    <label><input type="radio" name="q112" value="a">a- A oferta de empregos com carteira assinada à população trabalhadora ainda é baixa.</label>  
+    <label><input type="radio" name="q112" value="b">b- Segundo as previsões, o crescimento da economia brasileira em 2018 irá à 3%, no máximo.</label>  
+    <label><input type="radio" name="q112" value="c">c- Considerada a inflação, o rendimento médio do país não chegou à superar o valor de 2017.</label>  
+    <label><input type="radio" name="q112" value="d">d- A construção civil não propõe à criação de novos postos de trabalho, por causa da crise.</label>  
+    <label><input type="radio" name="q112" value="e">e- No que tange à pesquisas do IBGE, vê-se que a situação econômica tem gerado certa inquietude.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>113. Assinale a alternativa que atende à norma-padrão de concordância nominal.
+</strong></p>
+ <div class="options">  
+    <label><input type="radio" name="q113" value="a">a- As atividades econômicas no início deste ano têm se mostrado, em geral, fraca, dados os indicadores do mundo do emprego.
+    </label>  
+    <label><input type="radio" name="q113" value="b">b- Permanece precária a oferta de empregos, os quais, em muitos casos, caracterizam-se por serem informal e mal remunerado.
+    </label>  
+    <label><input type="radio" name="q113" value="c">c- Bastante dúvidas em torno da força e da persistência da retomada do crescimento econômico se acentuaram com dados do IBGE.</label>  
+    <label><input type="radio" name="q113" value="d">d- Considerado o índice de inflação, o rendimento médio do país não passou de R$ 2.169 mensais – equivalente ao do mesmo período de 2017.</label>  
+    <label><input type="radio" name="q113" value="e">e- Os indicadores de confiança econômica utilizado na pesquisa detectaram ligeiro aumento do pessimismo em relação aos próximos meses.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p>114. Na frase que inicia – A construção civil não conseguiu se recuperar <strong>e</strong> ainda desemprega. –, além do sentido de adição, a conjunção “e” expressa também sentido de</p>
+ <div class="options">  
+    <label><input type="radio" name="q114" value="a">a- alternância.</label>  
+    <label><input type="radio" name="q114" value="b">b- explicação.</label>  
+    <label><input type="radio" name="q114" value="c">c- consequência</label>  
+    <label><input type="radio" name="q114" value="d">d- condição.</label>  
+    <label><input type="radio" name="q114" value="e">e- causa.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">
+    <p><strong>Leia a tira para responder às questões de números 115 a 117.</strong></p>
+    <img src="imag/gramatica.jpg" alt="#">
+    <p style="font-size: 11px;">(Bill Watterson, Calvin e Haroldo. http://cultura.estadao.com.br/galerias)</p>
+    <p><strong>115. A leitura do último quadrinho permite concluir que Calvin e Haroldo
+    </strong></p>
+ <div class="options">  
+    <label><input type="radio" name="q115" value="a">a- reconhecem que a vida será mais fácil no futuro, já que as pessoas não precisarão sair do conforto de suas casas.</label>  
+    <label><input type="radio" name="q115" value="b">b- têm ideias pouco precisas em relação ao tempo futuro, a ponto de o tigre dizer que as pessoas não viverão mais.</label>  
+    <label><input type="radio" name="q115" value="c">c- acreditam que as facilidades do futuro, apesar de esperadas, serão, ao final de contas, irrelevantes para as pessoas.</label>  
+    <label><input type="radio" name="q115" value="d">d- concordam quanto às facilidades da vida no futuro, mas discordam quanto à necessidade de interação humana.</label>  
+    <label><input type="radio" name="q115" value="e">e- têm opiniões divergentes em relação às facilidades proporcionadas pela tecnologia, engrandecidas pelo garoto.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>116. No 3o quadrinho, nas três ocorrências, o sentido da preposição “sem” e o das expressões que ela forma são, respectivamente, de</strong></p>
+ <div class="options">  
+    <label><input type="radio" name="q116" value="a">a- adição e condição.</label>  
+    <label><input type="radio" name="q116" value="b">b- ausência e modo.</label>  
+    <label><input type="radio" name="q116" value="c">c- negação e causa.</label>  
+    <label><input type="radio" name="q116" value="d">d- exceção e intensidade.</label>  
+    <label><input type="radio" name="q116" value="e">e- falta e consequência.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>117. A fala de Calvin no último quadrinho – A vida é muito inconveniente. – significa que o menino a considera</strong></p>
+ <div class="options">  
+    <label><input type="radio" name="q117" value="a">a- demasiadamente incômoda.</label>  
+    <label><input type="radio" name="q117" value="b">b- muito vantajosa.</label>  
+    <label><input type="radio" name="q117" value="c">c- eventualmente inoportuna.</label>  
+    <label><input type="radio" name="q117" value="d">d- provavelmente descomplicada.</label>  
+    <label><input type="radio" name="q117" value="e">e- bastante adequada.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>118. Observe as passagens:</strong></p> <p style="font-size: 15px;">• Tomou querosene? [...] Ontem esteve aqui uma que tomou com guaraná. Diz que melhorou o gosto. <strong>Não sei, nunca provei.</strong></p> <p style="font-size: 15px;">• Olha um homem! Homem é raro aqui. [...] Está desenganado. É câncer? Não sabe o que é. <strong> Quem foi que
+    desenganou?</strong></p><p style="font-size: 15px;"><strong>Considerando o emprego e a colocação de pronomes, em conformidade com a norma-padrão, as frases em destaque podem ser assim reescritas, respectivamente:</strong></p>
+ <div class="options">  
+    <label><input type="radio" name="q118" value="a">a- Não sei, nunca provei-o. / Quem foi que desenganou-lhe?</label>  
+    <label><input type="radio" name="q118" value="b">b- Não sei, nunca provei ele. / Quem foi que desenganou ele?</label>  
+    <label><input type="radio" name="q118" value="c">c- Não sei, nunca provei-lhe. / Quem foi que desenganou-lhe?</label>  
+    <label><input type="radio" name="q118" value="d">d- Não sei, nunca lhe provei. / Quem foi que desenganou você?</label>  
+    <label><input type="radio" name="q118" value="e">e- Não sei, nunca o provei. / Quem foi que o desenganou?</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>119. Nos trechos “Cuidado, não pise no fio do microfone.”, “Fica ali, à esquerda.” e “Mostra para nós como é que foi.”, o apresentador emprega o verbo no imperativo, respectivamente, com as seguintes finalidades:</strong></p> 
+ <div class="options">  
+    <label><input type="radio" name="q119" value="a">a- pedido, orientação e ordem.</label>  
+    <label><input type="radio" name="q119" value="b">b- advertência, solicitação e ordem.
+    </label>  
+    <label><input type="radio" name="q119" value="c">c- advertência, orientação e pedido.
+    </label>  
+    <label><input type="radio" name="q119" value="d">d- ordem, solicitação e orientação.
+    </label>  
+    <label><input type="radio" name="q119" value="e">e- solicitação, pedido e pedido.
+    </label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>120. Assinale a alternativa que atende à norma-padrão de regência.</strong></p> 
+ <div class="options">  
+    <label><input type="radio" name="q120" value="a">a- As pessoas que vão ao Clube dão seu depoimento e estão aptas a ganhar um brinde.</label>  
+    <label><input type="radio" name="q120" value="b">b- O apresentador está convicto que a menina tomou querosene porque apanhou sem razão.
+    </label>  
+    <label><input type="radio" name="q120" value="c">c- A mulher discordava com a atitude do marido, que a agredia quando bebia.
+    </label>  
+    <label><input type="radio" name="q120" value="d">d- O homem confiou do diagnóstico dos médicos e, assim, nem anseia mais de se curar.
+    </label>  
+    <label><input type="radio" name="q120" value="e">e- A família da moça que tomou ri-do-rato avisou o apresentador que ela morreu.
+    </label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>121. Observe as frases:</strong></p> <p>• Dez comprimidos. E o que foi que sentiu? Uma tontura gostosa! Vejam só, uma tontura gostosa! <strong>Não é notável?</strong></p> <p>• Que idade tem ela? Dez. <strong>Tomou querosene?</strong></p>
+    <p>• <strong>Por que a senhora bateu nela?</strong> A senhora não bate mais, ouviu?</p>
+    <p style="font-size: 15px;">No contexto em que estão empregadas, as orações interrogativas revelam as seguintes intenções comunicativas ou reações do entrevistador, respectivamente:
+</p>
+ <div class="options">  
+    <label><input type="radio" name="q121" value="a">a- ironia; confirmação de uma informação; busca de uma informação.</label>  
+    <label><input type="radio" name="q121" value="b">b- busca de uma informação; espanto; advertência.</label>  
+    <label><input type="radio" name="q121" value="c">c- advertência; busca de uma informação; busca de uma informação..</label>  
+    <label><input type="radio" name="q121" value="d">d- humor; indignação; confirmação de uma informação.</label>  
+    <label><input type="radio" name="q121" value="e">e- crítica; bom humor; confirmação de uma informação.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>Leia o texto para responder às questões de números 122 a 126.</strong></p>
+    <p><i>Veteranos criminosos</i></p> <p>A Guerra do Vietnã se faz presente até hoje. De acordo
+        com uma dissertação de Jason Lindo e Charles Stoecker, a violência vivida e praticada pelos soldados dos EUA no Vietnã se manifesta até hoje em sua vida civil. A probabilidade de um veterano branco ser preso por um crime violento é significativamente mais alta do que para alguém que não tenha sido convocado naquele período – apesar de os tribunais serem mais lenientes com veteranos em transgressões menos graves do que com os não combatentes. Os autores do texto presumem que o trauma de guerra não modifica tanto a personalidade, mas diminui o limiar do senso
+        de violência dos ex-soldados. Desde os anos 1960, o Exército dos Estados Unidos vem promovendo o “Programa de Dessentivização” – um esforço para aumentar o limite do que é suportável para os ex-soldados. Isso é feito especialmente por meio de simulações de guerra muito realistas,_______ o inimigo se parece com um iraquiano.</p><p style="font-size: 11px;">(Geo, N.º 40, 2012)</p>
+        <p><strong>122. Em conformidade com a norma-padrão da língua portuguesa, a lacuna na última frase do texto deve ser preenchida com:</strong></p>
+ <div class="options">  
+    <label><input type="radio" name="q122" value="a">(A) nas quais.</label>  
+    <label><input type="radio" name="q122" value="b">(B) aonde.</label>  
+    <label><input type="radio" name="q122" value="c">(C) para a qual.</label>  
+    <label><input type="radio" name="q122" value="d">(D) que.</label>  
+    <label><input type="radio" name="q122" value="e">(E) cujo.</label>
+    <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+</div>   
+</div>
+<div class="question">  
+    <p><strong>123. A ideia central do texto é que os veteranos de guerra</strong></p>  
+    <div class="options">  
+        <label><input type="radio" name="q123" value="a">(A) levam uma vida normal após a exposição à violência intensa.</label>  
+        <label><input type="radio" name="q123" value="b">(B) preferem ser presos a tornarem-se pessoas menos violentas.</label>  
+        <label><input type="radio" name="q123" value="c">(C) são mais propensos a desenvolver comportamento violento.</label>  
+        <label><input type="radio" name="q123" value="d">(D) praticam atos violentos estritamente nos períodos de guerra.</label>  
+        <label><input type="radio" name="q123" value="e">(E) têm o senso de violência mais equilibrado depois de irem à guerra.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question">  
+    <p><strong>124. Sem que haja alteração do sentido original do texto, a passagem – ... apesar de os tribunais serem mais lenientes com veteranos em transgressões menos graves do que com os não combatentes. – pode ser reescrita da seguinte forma:</strong></p>  
+    <div class="options">  
+        <label><input type="radio" name="q124" value="a">(A) ... embora os tribunais sejam mais brandos com veteranos em transgressões menos graves do que com os não combatentes.
+        </label>  
+        <label><input type="radio" name="q124" value="b">(B) ... mesmo que os tribunais sejam mais rigorosos com veteranos em transgressões menos graves do que com os não combatentes.</label>  
+        <label><input type="radio" name="q124" value="c">(C) ... não obstante os tribunais sejam mais controladores com veteranos em transgressões menos graves do que com os não combatentes.</label>  
+        <label><input type="radio" name="q124" value="d">(D) ... ainda que os tribunais sejam mais intransigentes com veteranos em transgressões menos graves do que com os não combatentes.</label>  
+        <label><input type="radio" name="q124" value="e">(E) ... caso os tribunais sejam mais cautelosos com veteranos em transgressões menos graves do que com os não combatentes.
+        </label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question">  
+    <p><strong>125. Sem que haja alteração do sentido original do texto, a passagem – ... apesar de os tribunais serem mais lenientes com veteranos em transgressões menos graves do que com os não combatentes. – pode ser reescrita da seguinte forma:</strong></p>  
+    <div class="options">  
+        <label><input type="radio" name="q125" value="a">(A) Em sua dissertação, Jason Lindo e Charles Stoecker expõem que se manifestam até hoje, na vida civil dos soldados dos EUA, a violência vivida e praticada por estes no Vietnã.</label>  
+        <label><input type="radio" name="q125" value="b">(B) Se manifesta até hoje, na vida civil dos soldados dos EUA, a violência vivida e praticada por eles no Vietnã,
+        segundo expõem Jason Lindo e Charles Stoecker em sua dissertação.</label>  
+        <label><input type="radio" name="q125" value="c">(C) Em sua dissertação, Jason Lindo e Charles Stoecker expõe que manifesta-se até hoje, na vida civil dos soldados dos EUA, a violência vivida e praticada por estes no Vietnã.</label>  
+        <label><input type="radio" name="q125" value="d">(D) Se manifestam até hoje, na vida civil dos soldados dos EUA, a violência vivida e praticada por eles no Vietnã,
+        segundo expõe Jason Lindo e Charles Stoecker em sua dissertação.</label>  
+        <label><input type="radio" name="q125" value="e">(E) Manifesta-se até hoje, na vida civil dos soldados dos EUA, a violência vivida e praticada por eles no Vietnã,
+        segundo Jason Lindo e Charles Stoecker expõem em sua dissertação.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question">  
+    <p><strong>126. Observe os enunciados:</strong></p><p>• A Guerra do Vietnã se faz presente até <strong>hoje</strong>.</p><p>• A probabilidade de um veterano branco ser preso
+        por um crime violento é <strong>significativamente</strong> mais alta
+        do que...</p><p>Os advérbios em destaque expressam, respectivamente, circunstâncias de
+    </p> 
+    <div class="options">  
+        <label><input type="radio" name="q126" value="a">(A) lugar e modo.</label>  
+        <label><input type="radio" name="q126" value="b">(B) tempo e intensidade</label>  
+        <label><input type="radio" name="q126" value="c">(C) modo e intensidade.</label>  
+        <label><input type="radio" name="q126" value="d">(D) tempo e causa.</label>  
+        <label><input type="radio" name="q126" value="e">(E) tempo e modo.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question">  
+    <p><strong>127. Leia a charge.</strong></p>
+    <img src="imag/chage.jpg" alt=""><p style="font-size: 11px;">(Diário Catarinense, 14.08.2012)</p><p>Na perspectiva da personagem, o desempenho do Brasil no ranking das medalhas nas Olimpíadas está muito bom, porque</p>
+    <div class="options">  
+        <label><input type="radio" name="q127" value="a">(A) os esportes têm resultados excepcionais, assim como aqueles obtidos na educação, no IDH e na inclusão
+        digital.</label>  
+        <label><input type="radio" name="q127" value="b">(B) o resultado está aquém do que o país obtém na qualidade da educação, no IDH e na inclusão digital.</label>  
+        <label><input type="radio" name="q127" value="c">(C) é melhor ter um desempenho pior nos esportes, mas melhor em qualidade da educação, IDH e inclusão digital.</label>  
+        <label><input type="radio" name="q127" value="d">(D) isso equipara os resultados nos esportes aos que o país tem em qualidade da educação, IDH e inclusão digital.</label>  
+        <label><input type="radio" name="q127" value="e">(E) o resultado é superior aos obtidos na educação, no IDH e na inclusão digital.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>Leia o texto para responder às questões de números 128 a 130.</strong></p>
+    <p>_______ tenho privado com alcoólatras em vários estágios de dependência. Todos resistentes a tratamento. Um deles nem admitia o assunto, mesmo quando os vômitos
+    matinais de sangue já tornavam sua situação desesperadora. A eventualidade de uma internação, com a interrupção do fornecimento de bebida, lhe era intolerável.
+    Quando se trata de álcool, a dependência leva anos para se instalar, durante os quais o bebedor tem tempo para constituir família, aprender um ofício e afirmar-se profissionalmente – até que a progressão da doença acabe com tudo. _______ vezes, uma última centelha de consciência _______ faz procurar ajuda. Se esta _______ a tempo, e o processo destrutivo for interrompido e controlado, a pessoa, com esforço e sorte, pode retomar sua vida e tentar devolvê-la ao que era antes de a dependência ter se instalado.
+    </p><p style="font-size: 11px;">(Ruy Castro, “Sem começo ou meio”. Folha de S.Paulo, 17.10.2012. Adaptado)</p>
+    <p><strong>128. De acordo com a norma-padrão da língua portuguesa, as lacunas do texto devem ser preenchidas, respectivamente, com:</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q128" value="a">(A) Há ... Às ... o ... vier</label>  
+        <label><input type="radio" name="q128" value="b">(B) À ... Às ... o ... vir</label>  
+        <label><input type="radio" name="q128" value="c">(C) À ... As ... lhe ... veio</label>  
+        <label><input type="radio" name="q128" value="d">(D) A ... Às ... o ... vir</label>  
+        <label><input type="radio" name="q128" value="e">(E) Há ... As ... lhe ... vim</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>129. Assinale a alternativa correta quanto à pontuação e à colocação pronominal.</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q129" value="a">(A) Um deles, mesmo quando os vômitos matinais de sangue já tornavam-lhe a situação desesperadora nem admitia o assunto.
+        </label>  
+        <label><input type="radio" name="q129" value="b">(B) Um deles, mesmo quando os vômitos matinais de sangue já lhe tornavam a situação desesperadora, nem admitia o assunto.
+        </label>  
+        <label><input type="radio" name="q129" value="c">(C) Um deles, mesmo quando os vômitos matinais de sangue já lhe tornavam a situação desesperadora nem admitia o assunto.
+        </label>  
+        <label><input type="radio" name="q129" value="d">(D) Um deles mesmo quando os vômitos matinais de sangue já tornavam-lhe a situação desesperadora nem admitia o assunto.
+        </label>  
+        <label><input type="radio" name="q129" value="e">(E) Um deles mesmo quando os vômitos matinais de sangue já lhe tornavam a situação desesperadora, nem admitia o assunto.
+        </label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>130. Assinale a alternativa correta quanto à regência nominal e verbal.
+    </strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q130" value="a">(A) Quando o bebedor tem consciência que precisa de ajuda, não se opõe interromper e controlar o processo destrutivo, o que lhe permitirá retomar o ritmo de uma vida saudável.</label>  
+        <label><input type="radio" name="q130" value="b">(B) Quando o bebedor tem consciência de que precisa de ajuda, não se opõe de interromper e controlar o processo destrutivo, o que o permitirá retomar o ritmo de uma vida saudável.</label>  
+        <label><input type="radio" name="q130" value="c">(C) Quando o bebedor tem consciência que precisa de ajuda, não se opõe em interromper e controlar o processo destrutivo, o que lhe permitirá retomar o ritmo de uma vida saudável.</label>  
+        <label><input type="radio" name="q130" value="d">(D) Quando o bebedor tem consciência de que precisa de ajuda, não se opõe a interromper e controlar o processo
+        destrutivo, o que lhe permitirá retomar o ritmo de uma vida saudável.</label>  
+        <label><input type="radio" name="q130" value="e">(E) Quando o bebedor tem consciência de que precisa de ajuda, não se opõe contra interromper e controlar o processo destrutivo, o que o permitirá retomar o ritmo de uma vida saudável.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>131.</strong> O último voo dos ônibus espaciais já aconteceu. <br> E deixou um gosto amargo na boca dos fãs da exploração espacial. <br> O que acontece agora? Em uma palavra: nada. <br> Todas
+    aquelas ideias de concluir a construção de uma estação <br> espacial e então usá-la como espaçoporto e campo de provas, antes <br> do lançamento de tripulações na direção da Lua
+    e Marte, culminando <br> com a efetiva colonização do sistema solar, se esvaíram pelo ralo. <br> Ficaram só na promessa. É o fim da era espacial como a conhecemos.</p><p style="font-size: 11px;">(Superinteressante, agosto de 2011)</p>
+    <p>No texto, está empregada em sentido figurado a expressão</p>
+    <div class="options">  
+        <label><input type="radio" name="q131" value="a">(A) “ralo”, significando escoamento de resíduos.</label>  
+        <label><input type="radio" name="q131" value="b">(B) “voo”, significando viagem perigosa.</label>  
+        <label><input type="radio" name="q131" value="c">(C) “gosto amargo”, significando dissabor.</label>  
+        <label><input type="radio" name="q131" value="d">(D) “estação espacial”, significando devaneio humano.</label>  
+        <label><input type="radio" name="q131" value="e">(E) “colonização”, significando exploração desenfreada.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>Leia a tira para responder às questões de números 132 a 135.
+    </strong></p><img src="imag/qportugues.jpg" alt="#">
+    <p style="font-size: 11px;">(Folha de S.Paulo, 28.11.2013)</p>
+    <p>132. O segundo quadrinho deixa claro que o cachorro</p>
+    <div class="options">  
+        <label><input type="radio" name="q132" value="a">(A) agride seu dono para que este pague as contas.</label>  
+        <label><input type="radio" name="q132" value="b">(B) exige uma ração melhor do que a que come.</label>  
+        <label><input type="radio" name="q132" value="c">(C) foi contra a ideia de uma ração mais barata.</label>  
+        <label><input type="radio" name="q132" value="d">(D) espera que o dono se livre das despesas e da ração.</label>  
+        <label><input type="radio" name="q132" value="e">(E) fica feliz com a ideia do dono de cortar despesas.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>133. Considerando-se os sentidos expressos pelas frases no primeiro quadrinho, elas podem ser agrupadas corretamente em um único período com a seguinte redação:</strong>
+    </p>
+    <div class="options">  
+        <label><input type="radio" name="q133" value="a">(A) Estou cheio de contas, embora terei que comprar uma ração um pouco mais barata.</label>  
+        <label><input type="radio" name="q133" value="b">(B) Estou cheio de contas, porque terei que comprar uma ração um pouco mais barata.</label>  
+        <label><input type="radio" name="q133" value="c">(C) Estou cheio de contas, enquanto terei que comprar uma ração um pouco mais barata.</label>  
+        <label><input type="radio" name="q133" value="d">(D) Estou cheio de contas, portanto terei que comprar uma ração um pouco mais barata.</label>  
+        <label><input type="radio" name="q133" value="e">(E) Estou cheio de contas, entretanto terei que comprar uma ração um pouco mais barata.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>134. Assinale a alternativa correta quanto à concordância verbal, à concordância nominal e ao emprego de pronome.</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q134" value="a">(A) Existem muitas contas para eu pagar. Para ter menos despesa, vou comprar uma ração mais barata.</label>  
+        <label><input type="radio" name="q134" value="b">(B) Existem muitas contas para mim pagar. Para ter menas despesa, vou comprar uma ração mais barata.</label>  
+        <label><input type="radio" name="q134" value="c">(C) Há muitas contas para mim pagar. Para ter menos despesa, vou comprar uma ração mais barata.</label>  
+        <label><input type="radio" name="q134" value="d">(D) Há muitas contas para eu pagar. Para ter menas despesa, vou comprar uma ração mais barata.</label>  
+        <label><input type="radio" name="q134" value="e">(E) Existe muitas contas para mim pagar. Para ter menos despesa, vou comprar uma ração mais barata.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>135. No último quadrinho, Cães é a flexão no plural do substantivo Cão. Assim como esse substantivo, outros que fazem o plural com a terminação “ães” são:</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q135" value="a">(A) mão, mamão, filão.</label>  
+        <label><input type="radio" name="q135" value="b">(B) pão, capitão, escrivão.</label>  
+        <label><input type="radio" name="q135" value="c">(C) anão, órgão, chão.</label>  
+        <label><input type="radio" name="q135" value="d">(D) órfão, telão, melão.</label>  
+        <label><input type="radio" name="q135" value="e">(E) alemão, vilão, cidadão.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>Leia o texto para responder às questões de números 136 e 137.</strong></p>
+    <p>A Copa do Mundo começa em 12 de junho. Está _______ apenas seis meses de distância. As obras em muitos dos estádios da Copa estão muito atrasadas. E os custos de acomodação e viagem para os torcedores que irão _______ Copa já são previstos como astronômicos. A Copa do Mundo é um dos poucos eventos internacionais que atrai pessoas em todo o planeta. E em junho o mundo todo estará observando o Brasil.</p>
+    <p style="font-size: 11px;">(Kenneth Maxwell, O ano que nos aguarda. Folha de S.Paulo, 28.11.2013. Adaptado)</p><p><strong>136. As lacunas do texto devem ser preenchidas, correta e respectivamente, com:</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q136" value="a">(A) à … a</label>  
+        <label><input type="radio" name="q136" value="b">(B) à … à</label>  
+        <label><input type="radio" name="q136" value="c">(C) há … a</label>  
+        <label><input type="radio" name="q136" value="d">(D) a … a</label>  
+        <label><input type="radio" name="q136" value="e">(E) a … à</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>137. No trecho – <i>As obras em muitos dos estádios da </i> Copa estão
+       <i>muito atrasadas</i>. –, o termo atrasadas é sinônimo de</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q137" value="a">(A) prematuras.</label>  
+        <label><input type="radio" name="q137" value="b">(B) antecipadas.</label>  
+        <label><input type="radio" name="q137" value="c">(C) demoradas.</label>  
+        <label><input type="radio" name="q137" value="d">(D) antepostas.</label>  
+        <label><input type="radio" name="q137" value="e">(E) concomitantes.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>138. Assinale a alternativa em que o termo em destaque está
+        empregado em sentido figurado.</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q138" value="a">(A) A recente estiagem secou os reservatórios de água, <strong>comeu</strong> o verde das pastagens…</label>  
+        <label><input type="radio" name="q138" value="b">(B) … quando o município serviu de <strong>cenário</strong> para o longa-metragem Vidas Secas…</label>  
+        <label><input type="radio" name="q138" value="c">(C) … o comércio local prospera como em nenhum outro <strong>momento</strong> de sua história.</label>  
+        <label><input type="radio" name="q138" value="d">(D) Cada real transferido pelo governo gera 2,4 reais no <strong>consumo</strong> final das famílias…</label>  
+        <label><input type="radio" name="q138" value="e">(E) Cada real gasto pelo <strong>programa</strong>  resulta no incremento de 1,78 real no PIB.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>139. Na frase –<i>Muitos moradores atribuem o feito ao Bolsa
+        Família…</i>  –, a expressão “o feito” refere-se</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q139" value="a">(A) à gravação do longa-metragem Vidas Secas.</label>  
+        <label><input type="radio" name="q139" value="b">(B) à estiagem vivida pela população.
+        </label>  
+        <label><input type="radio" name="q139" value="c">(C) ao aumento do valor do Bolsa-Família.</label>  
+        <label><input type="radio" name="q139" value="d">(D) ao progresso do comércio na cidade.
+        </label>  
+        <label><input type="radio" name="q139" value="e">(E) à distribuição de renda pelo governo federal.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>140. No período –<i>“Não fosse essa renda, muita gente teria morrido de fome”
+    </i> . –, sem que haja mudança do modo e do tempo verbal, o tempo verbal composto “teria morrido” pode ser substituído por</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q140" value="a">(A) morreria.</label>  
+        <label><input type="radio" name="q140" value="b">(B) morreu.</label>  
+        <label><input type="radio" name="q140" value="c">(C) morria.</label>  
+        <label><input type="radio" name="q140" value="d">(D) morrera.</label>  
+        <label><input type="radio" name="q140" value="e">(E) morrerá.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>141. Observe as passagens do texto:</strong></p><p>A planície avermelhada, pontuada por mandacarus e palmas, é a mesma de 50 anos atrás, <strong>quando</strong> o município serviu de cenário para o longa-metragem Vidas Secas…</p><p>“<strong>Se</strong> não chove, não tem nada”.</p><p>Cada real transferido pelo governo gera 2,4 reais no consumo final das famílias, <strong>segundo</strong>  um estudo divulgado pelo Instituto de Pesquisa Econômica Aplicada (Ipea) no dia 15.</p> <p>As conjunções em destaque nas passagens estabelecem entre as orações relações cujos sentidos são, respectivamente, de</p>
+    <div class="options">  
+        <label><input type="radio" name="q141" value="a">(A) consequência, causa e conformidade.</label>  
+        <label><input type="radio" name="q141" value="b">(B) tempo, conclusão e comparação
+        </label>  
+        <label><input type="radio" name="q141" value="c">(C) causa, conclusão e comparação.
+        </label>  
+        <label><input type="radio" name="q141" value="d">(D) conclusão, condição e finalidade.
+        </label>  
+        <label><input type="radio" name="q141" value="e">(E) tempo, condição e conformidade.
+        </label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>142. De acordo com a norma-padrão da língua portuguesa, a frase–<i>Minador do Negrão, no interior de Alagoas, está acostumada a conviver com o drama da seca.</i>  – está corretamente reescrita quanto à regência em:</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q142" value="a">(A) Minador do Negrão, no interior de Alagoas, está habituada sobre o drama da seca.</label>  
+        <label><input type="radio" name="q142" value="b">(B) Minador do Negrão, no interior de Alagoas, está habituada ao drama da seca.</label>  
+        <label><input type="radio" name="q142" value="c">(C) Minador do Negrão, no interior de Alagoas, está habituada pelo drama da seca.</label>  
+        <label><input type="radio" name="q142" value="d">(D) Minador do Negrão, no interior de Alagoas, está habituada no drama da seca.</label>  
+        <label><input type="radio" name="q142" value="e">(E) Minador do Negrão, no interior de Alagoas, está habituada ante o drama da seca.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>143. Assinale a alternativa correta quanto à pontuação.</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q143" value="a">(A) A prefeita de Minador do Negrão afirma que: A mulher recebe o benefício, faz uma feirinha na cidade e alimenta a economia.</label>  
+        <label><input type="radio" name="q143" value="b">(B) A prefeita de Minador do Negrão, afirma. “A mulher recebe o benefício, faz uma feirinha na cidade e alimenta a economia”.</label>  
+        <label><input type="radio" name="q143" value="c">(C) A prefeita de Minador do Negrão afirma: “A mulher recebe o benefício, faz uma feirinha na cidade e alimenta a economia”.
+        </label>  
+        <label><input type="radio" name="q143" value="d">(D) A prefeita, de Minador do Negrão, afirma que, a mulher recebe o benefício, faz uma feirinha na cidade e alimenta a economia.</label>  
+        <label><input type="radio" name="q143" value="e">(E) A prefeita de Minador do Negrão, afirma: A mulher recebe o benefício, faz uma feirinha na cidade e alimenta a economia.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>144. Assinale a alternativa correta quanto à colocação pronominal.</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q144" value="a">(A) A economia prospera, quando garante-se renda mínima aos mais pobres.</label>  
+        <label><input type="radio" name="q144" value="b">(B) Não produz-se nada com a agricultura, se não chove na cidade.</label>  
+        <label><input type="radio" name="q144" value="c">(C) A cidade estimulou que filmasse-se ali o longa-metragem <i>Vidas Secas.</i></label>  
+        <label><input type="radio" name="q144" value="d">(D) Se convive com o drama da seca em Minador do Negrão.</label>  
+        <label><input type="radio" name="q144" value="e">(E) Atualmente se atendem 13,8 milhões de famílias brasileiras com o programa.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>145. Leia a charge.</strong></p><img src="imag/qportug.jpg" alt="#"><p style="font-size: 11px;">(Piracicaba – 30 anos de humor. São Paulo: Imprensa Oficial do Estado: Instituto do Memorial de Artes Gráficas do Brasil, 2003)</p><p>A fala do pai contém um tom</p>
+    <div class="options">  
+        <label><input type="radio" name="q145" value="a">(A) elogioso.</label>  
+        <label><input type="radio" name="q145" value="b">(B) generoso.</label>  
+        <label><input type="radio" name="q145" value="c">(C) pessimista.</label>  
+        <label><input type="radio" name="q145" value="d">(D) duvidoso.</label>  
+        <label><input type="radio" name="q145" value="e">(E) otimista.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>146. Leia a tirinha.</strong></p><img src="imag/qporttira.jpg" alt="#"><p style="font-size: 11px;">(Bill Watterson. Felino selvagem psicopata homicida.
+        São Paulo: Best News, 1996)</p><p>Assinale a alternativa que completa, correta e respectivamente, as lacunas do texto.</p>
+    <div class="options">  
+        <label><input type="radio" name="q146" value="a">(A) pôr ... secava</label>  
+        <label><input type="radio" name="q146" value="b">(B) poria ... secou</label>  
+        <label><input type="radio" name="q146" value="c">(C) porá ... seca</label>  
+        <label><input type="radio" name="q146" value="d">(D) punha ... secará</label>  
+        <label><input type="radio" name="q146" value="e">(E) puser ... secasse</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>Leia o texto para responder às questões de números 147 a 160.
+    </strong></p><p style="font-size: 16px;"><i>Ortotanásia e eutanásia</i></p><p id="textoOculto" class="oculto">O que é a vida, afinal? É simplesmente um conjunto de reações bioquímicas? Ou algo maior, sagrado e eterno? A nossa perplexidade diante desse tema tão polêmico, que é a eutanásia, advém das incertezas que cercam o sentido da existência humana. Sou oncologista e imunologista. Faz 28 anos que busco mais
+    vida com qualidade para os pacientes com câncer e portadores de Aids com câncer. Os pacientes que já na primeira consulta me dizem que querem morrer antes de tentar os tratamentos são exceções. Mas existem. Todos os pacientes, tanto os que querem
+    enfrentar tratamentos antes de morrer como os que não querem, têm um elemento comum, que é a falta de esperança, a depressão e o medo do sofrimento. Independentemente das novas e eficientes técnicas de tratamento, há instantes em que se perde a batalha contra as doenças. É então que uma pergunta se faz necessária: até quando é lícito prolongar com medidas artificiais a manutenção da vida vegetativa? Existe grande confusão entre os diversos tipos de eutanásia – ou boa morte. Uma é a eutanásia ativa, na qual o médico ou alguém causa ativamente a morte do indivíduo. Ela é proibida por lei no Brasil, mas é prática regulamentada, em alguns outros países, como Holanda e Dinamarca.
+    Em um outro extremo, há a distanásia que, segundo o especialista em bioética padre Leo Pessini, “é um procedimento médico que prolonga inútil e sofridamente o processo de morrer
+    procurando distanciar a morte”. Sou contra a distanásia. E como seria a verdadeira boa morte? Creio que é aquela denominada morte assistida que prefiro denominar de ortotanásia. É cuidar dos sintomas sem recorrer a medidas intervencionistas de suporte em quadros irreversíveis. É respeitar o descanso merecido do corpo, o momento da limpeza da caixa preta de mágoas e rancores; é a hora de dizer coisas boas, os agradecimentos que
+    não fizemos antes. É a hora da despedida e da partida. Então, talvez possamos acreditar no escritor Jorge Luis Borges: “Morrer é como uma curva na estrada, é não ser visto”.</p><p style="font-size: 11px;">(Nise Hitomi Yamaguchi, doutora pela Faculdade de Medicina da USP. Folha de S.Paulo, Tendências/Debates, 26 de março de 2005. Adaptado)</p><button id="botaoToggle" onclick="toggleTexto()">Mostrar Texto</button>
+    <p><strong>147. Considerando as informações do texto, é correto afirmar que</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q147" value="a">(A) os pacientes terminais, em sua totalidade, já na primeira consulta, desistem do tratamento.</label>  
+        <label><input type="radio" name="q147" value="b">(B) poucos são os pacientes que desejam morrer antes de fazer os tratamentos.</label>  
+        <label><input type="radio" name="q147" value="c">(C) uma grande parte dos pacientes da Dr.ª Nise não quer enfrentar os tratamentos.</label>  
+        <label><input type="radio" name="q147" value="d">(D) a falta de esperança acomete pacientes mesmo com doenças que têm cura.</label>  
+        <label><input type="radio" name="q147" value="e">(E) depressão e medo do sofrimento atingem poucos doentes terminais.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>148. Assinale a alternativa que contém uma afirmação de acordo com o texto.
+    </strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q148" value="a">(A) Padre Leo Pessini é a favor da distanásia porque ela apressa a morte.</label>  
+        <label><input type="radio" name="q148" value="b">(B) Eutanásia e ortotanásia são procedimentos idênticos.</label>  
+        <label><input type="radio" name="q148" value="c">(C) Dr.ª Nise condena a distanásia, que torna mais distante o processo da morte. </label>  
+        <label><input type="radio" name="q148" value="d">(D) No Brasil, é permitida a eutanásia.</label>  
+        <label><input type="radio" name="q148" value="e">(E) Holanda e Dinamarca são países onde a eutanásia é proibida.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>149. De acordo com o texto, a distanásia consiste</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q149" value="a">(A) em afastar, por meios médicos, pelo maior tempo possível, a morte de um doente terminal.</label>  
+        <label><input type="radio" name="q149" value="b">(B) na tentativa obstinada de acabar com as dores nos últimos instantes de um doente com doença irreversível.</label>  
+        <label><input type="radio" name="q149" value="c">(C) no método sofrido de atender à vontade que os doentes têm de morrer, pois já não têm esperanças de cura.</label>  
+        <label><input type="radio" name="q149" value="d">(D) no empenho dos médicos em abreviar a vida dos pacientes em estado terminal por meio de tratamentos alternativos.</label>  
+        <label><input type="radio" name="q149" value="e">(E) em deixar o doente terminal sem os procedimentos médicos, tentando, dessa forma, apressar a morte.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>150. As informações textuais mostram que a perplexidade do homem, quando o assunto é a eutanásia, está relacionada</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q150" value="a">(A) à inexistência de métodos que prolonguem a vida.</label>  
+        <label><input type="radio" name="q150" value="b">(B) à falta de apoio por parte dos familiares do doente.</label>  
+        <label><input type="radio" name="q150" value="c">(C) ao receio de complicações perante a lei.</label>  
+        <label><input type="radio" name="q150" value="d">(D) às dúvidas quanto ao sentido da vida.</label>  
+        <label><input type="radio" name="q150" value="e">(E) à desconfiança nos médicos.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p>151. Assinale a alternativa em que a preposição em destaque nas
+        frases estabelece, entre as palavras, sentido de <strong>oposição.</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q151" value="a">(A) Independentemente da diversidade de visões <strong>sobre</strong> a existência... (4.º parágrafo)</label>  
+        <label><input type="radio" name="q151" value="b">(B) Faz 28 anos que busco mais vida <strong>com</strong> qualidade para os pacientes com câncer... (2.º parágrafo)</label>  
+        <label><input type="radio" name="q151" value="c">(C) Faz 28 anos que busco mais vida com qualidade <strong>para</strong> os pacientes com câncer... (2.º parágrafo)</label>  
+        <label><input type="radio" name="q151" value="d">(D) ... todos os pacientes têm um elemento comum: a falta <strong>de</strong> esperança, depressão... (3.º parágrafo)</label>  
+        <label><input type="radio" name="q151" value="e">(E) ... há instantes em que se perde a batalha <strong>contra</strong> as doenças. (4.º parágrafo)</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p>Considere o seguinte trecho do texto para responder às questões de números <strong>152
+    </strong> e <strong>153</strong>.</p><p style="font-size: 16px;">A nossa perplexidade diante desse tema tão polêmico, que é a eutanásia, <strong>advém</strong> das incertezas que cercam o sentido da existência humana.
+    </p><p><strong>152. Considerando a concordância verbal, e mantendo o mesmo sentido do texto, assinale a alternativa que substitui corretamente a forma verbal 'advém'.</strong>
+    </p>
+    <div class="options">  
+        <label><input type="radio" name="q152" value="a">(A) procede.</label>  
+        <label><input type="radio" name="q152" value="b">(B) necessitam.</label>  
+        <label><input type="radio" name="q152" value="c">(C) utilizam-se.</label>  
+        <label><input type="radio" name="q152" value="d">(D) precisa.</label>  
+        <label><input type="radio" name="q152" value="e">(E) discordam.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p>153. Considerando-se o uso do pronome e a colocação pronominal, a expressão em destaque no trecho – ... que cercam <strong>o sentido da existência humana</strong>... (1.º parágrafo) – está corretamente substituída pelo pronome, de acordo com a norma-padrão da
+    língua portuguesa, na alternativa:</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q153" value="a">(A) ... que cercam-<strong>lo</strong>...</label>  
+        <label><input type="radio" name="q153" value="b">(B) ... que cercam-<strong>no</strong>...</label>  
+        <label><input type="radio" name="q153" value="c">(C) ... que <strong>o</strong>  cercam...</label>  
+        <label><input type="radio" name="q153" value="d">(D) ... que <strong>lhe</strong> cercam...</label>  
+        <label><input type="radio" name="q153" value="e">(E) ... que cercam-<strong>lhe</strong>...</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>154. Considerando a regência verbal, assinale a alternativa que completa, de acordo com a norma-padrão da língua portuguesa, a lacuna do texto.</strong></p><p style="font-size: 16px;">Os pacientes me dizem que preferem morrer ____________ tentar os tratamentos.</p>
+    <div class="options">  
+        <label><input type="radio" name="q154" value="a">(A) à que</label>  
+        <label><input type="radio" name="q154" value="b">(B) à</label>  
+        <label><input type="radio" name="q154" value="c">(C) ao que</label>  
+        <label><input type="radio" name="q154" value="d">(D) em</label>  
+        <label><input type="radio" name="q154" value="e">(E) a</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>155. Releia o seguinte trecho do texto.</strong></p><p><strong>Independentemente da diversidade</strong> de visões sobre a existência e também das novas e eficientes técnicas de tratamento, há instantes em que se perde a batalha contra as doenças.</p><p>Mantendo-se o mesmo sentido do texto, é correta a substituição da expressão em destaque por:</p>
+    <div class="options">  
+        <label><input type="radio" name="q155" value="a">(A) Relacionando-se a diversidade
+        </label>  
+        <label><input type="radio" name="q155" value="b">(B) Levando-se em consideração a diversidade</label>  
+        <label><input type="radio" name="q155" value="c">(C) Sem discriminar a diversidade
+        </label>  
+        <label><input type="radio" name="q155" value="d">(D) Sem levar em conta a diversidade
+        </label>  
+        <label><input type="radio" name="q155" value="e">(E) Considerando-se a diversidade
+        </label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>156. Reescrevendo-se algumas frases do texto, o emprego do acento indicativo da crase está correto na alternativa:</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q156" value="a">(A) É cuidar dos sintomas sem recorrer <strong>às</strong> medidas intervencionistas de suporte em quadros irreversíveis.</label>  
+        <label><input type="radio" name="q156" value="b">(B) O padre Leo Passini definiu <strong>à</strong> distanásia como uma intervenção que não beneficia o doente em fase terminal.</label>  
+        <label><input type="radio" name="q156" value="c">(C) ... busco oferecer mais qualidade de vida <strong>à</strong> pacientes com câncer e portadores de Aids com câncer.
+        </label>  
+        <label><input type="radio" name="q156" value="d">(D) É respeitar <strong>à</strong> paz merecida do corpo, o momento...</label>  
+        <label><input type="radio" name="q156" value="e">(E) Um elemento comum <strong>à</strong> todos é a falta de esperança, depressão e medo do sofrimento.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>157. Assinale a alternativa em que a expressão em destaque indica circunstância de tempo.</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q157" value="a">(A) Os pacientes me dizem que querem morrer <strong>antes</strong> de tentar os tratamentos...
+        </label>  
+        <label><input type="radio" name="q157" value="b">(B) <strong>Independentemente</strong> da diversidade de visões sobre a existência...</label>  
+        <label><input type="radio" name="q157" value="c">(C) ... causa ativamente a morte do indivíduo e que é proibida por lei <strong>no Brasil</strong>.</label>  
+        <label><input type="radio" name="q157" value="d">(D) É <strong>simplesmente</strong> um conjunto de reações bioquímicas?</label>  
+        <label><input type="radio" name="q157" value="e">(E) ... e que prolonga inútil e <strong>sofridamente</strong> o processo de morrer...</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p>158. Releia o trecho: É respeitar o descanso merecido do corpo, o momento da <strong>limpeza da caixa preta</strong> de mágoas e rancores;... (último parágrafo).
+    </p><p><strong>A expressão “caixa preta” é uma referência a um dispositivo que há nos aviões, onde é registrado tudo o que acontece em uma viagem.</strong></p><p>No contexto em que foi empregada, a expressão em destaque – <strong>limpeza da caixa preta</strong> – significa</p>
+    <div class="options">  
+        <label><input type="radio" name="q158" value="a">(A) limpar cuidadosamente o corpo.
+        </label>  
+        <label><input type="radio" name="q158" value="b">(B) guardar para si os desentendimentos.</label>  
+        <label><input type="radio" name="q158" value="c">(C) proporcionar ao corpo o repouso físico.</label>  
+        <label><input type="radio" name="q158" value="d">(D) registrar na mente os dissabores da vida.</label>  
+        <label><input type="radio" name="q158" value="e">(E) libertar os sentimentos impuros guardados.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>159. Assinale a alternativa que preenche, correta e respectivamente, as lacunas da frase, de acordo com a norma-padrão da língua portuguesa.</strong></p>
+    <p> _______situações _______ a batalha contra as doenças torna-se um fracasso.</p>
+    <div class="options">  
+        <label><input type="radio" name="q159" value="a">(A) Existe ... em que</label>  
+        <label><input type="radio" name="q159" value="b">(B) Existem ... em que</label>  
+        <label><input type="radio" name="q159" value="c">(C) Existem ... a qual</label>  
+        <label><input type="radio" name="q159" value="d">(D) Existem ... em cuja</label>  
+        <label><input type="radio" name="q159" value="e">(E) Existe ... as quais</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>160. Em – Ela é proibida por lei no Brasil, mas é prática regulamentada, em alguns outros países,... – a conjunção em destaque pode ser substituída, sem alteração de sentido do texto, por:</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q160" value="a">(A) isto é.</label>  
+        <label><input type="radio" name="q160" value="b">(B) pois.</label>  
+        <label><input type="radio" name="q160" value="c">(C) porque.</label>  
+        <label><input type="radio" name="q160" value="d">(D) porém.</label>  
+        <label><input type="radio" name="q160" value="e">(E) portanto.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>161. Assinale a alternativa cuja frase tem a pontuação correta, de acordo com a norma-padrão da língua portuguesa.</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q161" value="a">(A) A Dr.ª Nise oncologista, e imunologista, procura, há 28 anos, dar mais qualidade de vida, aos seus pacientes.
+        </label>  
+        <label><input type="radio" name="q161" value="b">(B) A Dr.ª Nise oncologista e imunologista procura há 28 anos, dar mais qualidade de vida, aos seus pacientes.</label>  
+        <label><input type="radio" name="q161" value="c">(C) A Dr.ª Nise, oncologista e imunologista, procura, há 28 anos, dar mais qualidade de vida aos seus pacientes.</label>  
+        <label><input type="radio" name="q161" value="d">(D) A Dr.ª Nise, oncologista e imunologista procura, há 28 anos dar mais qualidade de vida, aos seus pacientes.</label>  
+        <label><input type="radio" name="q161" value="e">(E) A Dr.ª Nise oncologista e imunologista, procura, há 28 anos, dar mais qualidade de vida aos seus pacientes.
+        </label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>162. No contexto em que ocorre, a palavra em destaque na frase – Ou algo maior, sagrado e <span class="texto-colorido">eterno</span>. (1.º parágrafo) – tem como antônimo (sentido contrário):</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q162" value="a">(A) constante.</label>  
+        <label><input type="radio" name="q162" value="b">(B) efêmero.</label>  
+        <label><input type="radio" name="q162" value="c">(C) duradouro.</label>  
+        <label><input type="radio" name="q162" value="d">(D) definitivo.</label>  
+        <label><input type="radio" name="q162" value="e">(E) durável.</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>163. Assinale a alternativa em que a palavra em destaque na frase pertence à classe dos adjetivos (palavra que qualifica um substantivo).</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q163" value="a">(A) Existe grande <strong>confusão</strong> entre os diversos tipos de eutanásia...</label>  
+        <label><input type="radio" name="q163" value="b">(B) ... o médico ou <strong>alguém</strong> causa ativamente a morte...</label>  
+        <label><input type="radio" name="q163" value="c">(C) prolonga o processo de morrer procurando distanciar a <strong>morte</strong>.</label>  
+        <label><input type="radio" name="q163" value="d">(D) Ela é proibida por <strong>lei</strong> no Brasil,...</label>  
+        <label><input type="radio" name="q163" value="e">(E) E como seria a <strong>verdadeira</strong> boa morte?</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+    <p><strong>164. A frase com a forma verbal no tempo futuro, expressando uma hipótese, está na alternativa:</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q164" value="a">(A) E como <strong>seria</strong> a verdadeira boa morte?</label>  
+        <label><input type="radio" name="q164" value="b">(B) ... os agradecimentos que não  <strong>fizemos</strong> antes.</label>  
+        <label><input type="radio" name="q164" value="c">(C) Morrer <strong>é</strong> como uma curva na estrada...</label>  
+        <label><input type="radio" name="q164" value="d">(D) <strong>Faz</strong> 28 anos que busco mais vida com qualidade para os pacientes...</label>  
+        <label><input type="radio" name="q164" value="e">(E) ... <strong>prefiro</strong> denominar de ortotanásia</label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question">
+     <p>Leia o poema de Mario Quintana para responder às questões de números <strong>165</strong> e <strong>166</strong>.</p> 
+     <p style="font-size: 16px;">Quando eu for...</p> 
+     <p style="font-size: 11px;">Mario Quintana</p>
+      <p>Quando eu for, um dia desses,<br> Poeira ou folha levada <br> No vento da madrugada, <br> Serei um pouco do nada <br> Invisível, delicioso <br> Que faz com que o teu ar <br> Pareça mais um olhar, <br> Suave mistério amoroso,<br> Cidade de meu andar (Deste já tão longo andar!)<br> E talvez de meu repouso... </p> 
+    <p><strong>165. No poema, alguém</strong></p>
+    <div class="options">  
+        <label><input type="radio" name="q165" value="a">(A) faz elogios à madrugada.</label>  
+        <label><input type="radio" name="q165" value="b">(B) imagina uma situação futura.
+        </label>  
+        <label><input type="radio" name="q165" value="c">(C) se diverte com as folhas ao vento.</label>  
+        <label><input type="radio" name="q165" value="d">(D) sente saudade de sua cidade natal.
+        </label>  
+        <label><input type="radio" name="q165" value="e">(E) relembra momentos do seu passado.
+        </label>
+        <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+  </div>   
+  </div>
+  <div class="question"> 
+   <p><strong>166. Na frase – Pareça mais um <span class="texto-colorido">olhar</span> (7.º verso) –, a palavra em destaque é um substantivo, como na frase:</strong></p>
+   <div class="options">  
+       <label><input type="radio" name="q166" value="a">(A) Quero <strong>olhar</strong> bem em seus olhos e dizer tudo o que sinto.</label>  
+       <label><input type="radio" name="q166" value="b">(B) O jovem nem se dignou <strong>olhar</strong> para trás.
+       </label>  
+       <label><input type="radio" name="q166" value="c">(C) Ela se pôs a <strong>olhar</strong> carinhosamente para o amado.</label>  
+       <label><input type="radio" name="q166" value="d">(D) Esse teu <strong>olhar</strong>, quando encontra o meu, fala de tantas coisas...</label>  
+       <label><input type="radio" name="q166" value="e">(E) Quando você <strong>olhar</strong> para mim serei a pessoa mais feliz do mundo.</label>
+       <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+ </div>   
+ </div>
     <nav>
         <ul>
             <li>
@@ -1573,7 +2333,69 @@ Acesso em 07.04.2013)
         q105: 'a', // A preferência no atendimento será dada àquelas pessoas que fizeram agendamento pelo site, como convém à ordem dos trabalhos.
         q106: 'd', // Não se considera privilégio o bônus, já que é concessão por mérito.
         q107: 'b', // gerundismo, pleonasmo e barbarismo.
-
+        q108: 'd', // um flagrante de que ele atribui a si mesmo uma qualidade que não tem.
+        q109: 'c', // estar bem informada.
+        q110: 'b', // concessão.
+        q111: 'b', // A falta de investimentos na construção civil e de criação de novos canteiros de obras reforça a inquietude econômica.
+        q112: 'a', // A oferta de empregos com carteira assinada à população trabalhadora ainda é baixa.
+        q113: 'd', // Considerado o índice de inflação, o rendimento médio do país não passou de R$ 2.169 mensais – equivalente ao do mesmo período de 2017.
+        q114: 'c', // consequência.
+        q115: 'e', // têm opiniões divergentes em relação às facilidades proporcionadas pela tecnologia, engrandecidas pelo garoto.
+        q116: 'b', // ausência e modo.
+        q117: 'a', // demasiadamente incômoda.
+        q118: 'e', // Não sei, nunca o provei. / Quem foi que o desenganou?
+        q119: 'c', // advertência, orientação e pedido.
+        q120: 'a', // As pessoas que vão ao Clube dão seu depoimento e estão aptas a ganhar um brinde.
+        q121: 'a', // ironia; confirmação de uma informação; busca de uma informação.
+        q122: 'a', // nas quais
+        q123: 'c', // são mais propensos a desenvolver comportamento violento.
+        q124: 'a', // ... embora os tribunais sejam mais brandos com veteranos em transgressões menos graves do que com os não combatentes.
+        q125: 'e', // Manifesta-se até hoje, na vida civil dos soldados dos EUA, a violência vivida e praticada por eles no Vietnã, segundo Jason Lindo e Charles Stoecker expõem em sua dissertação.
+        q126: 'b', // tempo e intensidade.
+        q127: 'e', // o resultado é superior aos obtidos na educação, no IDH e na inclusão digital.
+        q128: 'a', // Há ... Às ... o ... vier
+        q129: 'b', // Um deles, mesmo quando os vômitos matinais de sangue já lhe tornavam a situação desesperadora, nem admitia o assunto.
+        q130: 'd', // Quando o bebedor tem consciência de que precisa de ajuda, não se opõe a interromper e controlar o processo destrutivo, o que lhe permitirá retomar o ritmo de uma vida saudável.
+        q131: 'c', // “gosto amargo”, significando dissabor.
+        q132: 'c', // foi contra a ideia de uma ração mais barata.
+        q133: 'd', // Estou cheio de contas, portanto terei que comprar uma ração um pouco mais  barata.
+        q134: 'a', // Existem muitas contas para eu pagar. Para ter menos despesa, vou comprar uma ração mais barata.
+        q135: 'b', // pão, capitão, escrivão.
+        q136: 'e', // a … à
+        q137: 'c', // demoradas.
+        q138: 'a', // A recente estiagem secou os reservatórios de água, comeu o verde das pastagens…
+        q139: 'd', // ao progresso do comércio na cidade.
+        q140: 'a', // morreria.
+        q141: 'e', // tempo, condição e conformidade
+        q142: 'b', //  Minador do Negrão, no interior de Alagoas, está habituada ao drama da seca.
+        q143: 'c', // A prefeita de Minador do Negrão afirma: “A mulher recebe o benefício, faz uma feirinha na cidade e alimenta a economia”.
+        q144: 'e', // Atualmente se atendem 13,8 milhões de famílias brasileiras com o programa.
+        q145: 'c', // pessimista. 
+        q146: 'e', // puser ... secasse
+        q147: 'b', // poucos são os pacientes que desejam morrer antes de  fazer os tratamentos.
+        q148: 'c', // Dr.ª Nise condena a distanásia, que torna mais distante o processo da morte. 
+        q149: 'a', // em afastar, por meios médicos, pelo maior tempo possível, a morte de um doente terminal. 
+        q150: 'd', // às dúvidas quanto ao sentido da vida
+        q151: 'e', // ... há instantes em que se perde a batalha contra as doenças. (4.º parágrafo)
+        q152: 'a', // procede. 
+        q153: 'c', // ... que o cercam...
+        q154: 'e', // a
+        q155: 'd', // Sem levar em conta a diversidade
+        q156: 'a', // É cuidar dos sintomas sem recorrer às medidas intervencionistas de suporte em quadros irreversíveis
+        q157: 'a', // Os pacientes me dizem que querem morrer antes de tentar os tratamentos...
+        q158: 'e', // libertar os sentimentos impuros guardados.
+        q159: 'b', // Existem ... em que 
+        q160: 'd', // porém.
+        q161: 'c', // A Dr.ª Nise, oncologista e imunologista, procura, há 28 anos, dar mais qualidade de vida aos seus pacientes.
+        q162: 'b', // efêmero.
+        q163: 'e', // E como seria a verdadeira boa morte?
+        q164: 'a', // E como seria a verdadeira boa morte?
+        q165: 'b', // imagina uma situação futura.
+        q166: 'd', // Esse teu olhar, quando encontra o meu, fala de tantas coisas...
+        q167: '', //
+        q168: '', //
+        q169: '', //
+        q170: '', //
 
 
     };  
@@ -1607,13 +2429,25 @@ if (query) {
 window.location.href = `search_results.html?q=${encodeURIComponent(query)}`;  
 }  
 });  
+function toggleTexto() {
+            var texto = document.getElementById("textoOculto");
+            var botao = document.getElementById("botaoToggle");
+            if (texto.classList.contains("oculto")) {
+                texto.classList.remove("oculto");
+                texto.classList.add("mostrar");
+                botao.textContent = "Ocultar Texto";
+            } else {
+                texto.classList.remove("mostrar");
+                texto.classList.add("oculto");
+                botao.textContent = "Mostrar Texto";
+            }
+        }
 
-
-
-    </script>  
+</script>  
 <body>
-    
 </html>
+
+
 
 
 

@@ -1,0 +1,252 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <title>Questões Medicina</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <script defer src="script.js"></script>
+    <style>  
+body {
+     color: black;
+     background-color: gray;
+     font-family: Arial, Helvetica, sans-serif;
+} 
+a {
+    color: black;
+    text-decoration: none;
+}
+    .question {  
+        margin: 20px 0;  
+    }  
+    .options label {  
+        display: block;  
+        margin: 7px 0;  
+        cursor: pointer;  
+    }  
+    .correct {  
+        color: green;  
+    }  
+    .incorrect {  
+        color: red;  
+    }  
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        padding: 16px;            
+    }
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: greenyellow; 
+    }
+    button {
+        background-color: rgb(20, 20, 20);
+        color: green;
+        padding: 5px 20px; 
+    }
+    .question {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #b7b1b1;
+      text-align: justify; /* Adiciona justificação ao texto */
+    }
+    .container{
+      padding: 0px 50px;
+    }
+    </style>  
+</head>  
+<body> 
+    <div class="container">
+        <h1><span class="highlight">X</span>DaQuestão</h1>
+        <h1>Questões Medicina e Odontologia Legal</h1>  
+
+        <div class="question">  
+            <p><strong>1. Um eminente médico e professor de medicina legal de renomada universidade recebeu uma consulta sobre determinado assunto de sua especialidade. Portanto, ao responder por escrito, objetivando esclarecer dúvidas existentes em um relatório médico legal, ele emitirá um documento denominado: </strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q1" value="a">(A) Atestado.</label>  
+                <label><input type="radio" name="q1" value="b">(B) Comunicação.</label>  
+                <label><input type="radio" name="q1" value="c">(C) Auto.</label>  
+                <label><input type="radio" name="q1" value="d">(D) Declaração.</label>  
+                <label><input type="radio" name="q1" value="e">(E) Parecer</label>
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>2. Em um exame necroscópico, o médico legista observou na região posterior da perna direita uma lesão arroxeada, com presença de infiltração hemática nas malhas do tecido decorrente de ruptura de vaso sanguíneo. Dessa análise, é correto afirmar que se trata de</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q2" value="a">(A) equimose e a lesão é vital.
+                </label>  
+                <label><input type="radio" name="q2" value="b">(B) hematoma e a lesão é vital.
+                </label>  
+                <label><input type="radio" name="q2" value="c">(C) livor (ou hipóstase) cadavérico fixo.</label>  
+                <label><input type="radio" name="q2" value="d">(D) livor (ou hipóstase) cadavérico móvel.</label>
+                <label><input type="radio" name="q2" value="e">(E) equimose e a lesão é pós-mortal.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+    
+          
+        <div class="question">  
+            <p><strong>3. Como resultado do processo natural da putrefação do corpo após a morte, em determinada fase, ocorre uma dissolução dos tecidos, por ação conjunta de microrganismos e fauna cadavérica, a qual é composta de larvas e insetos. Esse fenômeno ocorre na fase:</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q3" value="a">(A) mumificação.</label>  
+                <label><input type="radio" name="q3" value="b">(B) esqueletização.</label>  
+                <label><input type="radio" name="q3" value="c">(C) enfisematosa.</label>  
+                <label><input type="radio" name="q3" value="d">(D) coliquativa.</label>
+                <label><input type="radio" name="q3" value="e">(E) cromática.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button> 
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>4. No exame antropológico forense de uma ossada humana completa, correspondente a um indivíduo adulto, com finalidade de definir altura e sexo, os ossos mais indicados para essa análise são, respectivamente:</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q4" value="a">(A) clavícula e rádio.</label>  
+                <label><input type="radio" name="q4" value="b">(B) fêmur e pelve.</label>  
+                <label><input type="radio" name="q4" value="c">(C) crânio e úmero.</label>  
+                <label><input type="radio" name="q4" value="d">(D) crânio e fíbula.</label>
+                <label><input type="radio" name="q4" value="e">(E) fêmur e clavícula.</label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>5. No incêndio e desabamento de um prédio, algumas vítimas tiveram seus corpos fragmentados e carbonizados. Considerando-se os recursos utilizados pela odontologia legal para a identificação de indivíduos, é correto afirmar:</strong>
+            </p>  
+            <div class="options">  
+                <label><input type="radio" name="q5" value="a">(A) se a vítima for criança, a análise dentária para estimativa da faixa etária tem pouco valor.</label>  
+                <label><input type="radio" name="q5" value="b">(B) os exames imaginológicos dentais geralmente não auxiliam na identificação.</label>  
+                <label><input type="radio" name="q5" value="c">(C) componentes dentais como esmalte, dentina e cemento podem resistir a altas temperaturas.</label>  
+                <label><input type="radio" name="q5" value="d">(D) são necessários pelo menos 12 pontos dentais de coincidência para a identificação.</label>
+                <label><input type="radio" name="q5" value="e">(E) a identificação pela análise da arcada dental tem pouca contribuição diagnóstica.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>6. Homem de 25 anos de idade, internado na UTI (Unidade de Terapia Intensiva), em coma há 5 meses por trauma craniencefálico secundário a atropelamento, morre por tromboembolia pulmonar decorrente da estase sanguínea pela imobilidade prolongada.</strong></p><p>A natureza da morte e a instituição que deverá emitir a declaração de óbito são, respectivamente:</p>  
+            <div class="options">  
+                <label><input type="radio" name="q6" value="a">(A) violenta; Instituto Médico Legal.</label>  
+                <label><input type="radio" name="q6" value="b">(B) natural; Instituto Médico Legal.</label>  
+                <label><input type="radio" name="q6" value="c">(C) violenta; hospital de internação.</label>  
+                <label><input type="radio" name="q6" value="d">(D) natural; Serviço de Verificação de Óbitos.</label>
+                <label><input type="radio" name="q6" value="e">(E) violenta; Serviço de Verificação de Óbitos.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>7. A classificação da impressão digital representada a seguir é do tipo
+            </strong></p><img src="imag/digital.jpg" alt="#">  
+            <div class="options">  
+                <label><input type="radio" name="q7" value="a">(A) presilha interna.</label>  
+                <label><input type="radio" name="q7" value="b">(B) delta interno.</label>  
+                <label><input type="radio" name="q7" value="c">(C) presilha externa.</label>  
+                <label><input type="radio" name="q7" value="d">(D) arco.</label>
+                <label><input type="radio" name="q7" value="e">(E) verticilo.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>8. É considerada um fenômeno cadavérico transformativo destrutivo a
+            </strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q8" value="a">(A) saponificação.</label>  
+                <label><input type="radio" name="q8" value="b">(B) calcificação.</label>  
+                <label><input type="radio" name="q8" value="c">(C) corificação.</label>  
+                <label><input type="radio" name="q8" value="d">(D) putrefação.</label>
+                <label><input type="radio" name="q8" value="e">(E) mumificação.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>9. Observe o esquema seguinte, que representa o orifício de entrada de um projétil de arma de fogo, disparado de uma distância de cerca de 50,0 cm do alvo (região dorsal do tronco humano).</strong></p><img src="imag/m.o.l.jpg" alt="#">
+            <p>A região assinalada pelo número 3 (três) corresponde, neste contexto, à</p>  
+            <div class="options">  
+                <label><input type="radio" name="q9" value="a">(A) orla de escoriação (derme).
+                </label>  
+                <label><input type="radio" name="q9" value="b">(B) orla de contusão (epiderme).
+                </label>  
+                <label><input type="radio" name="q9" value="c">(C) orla de enxugo.</label>  
+                <label><input type="radio" name="q9" value="d">(D) zona de esfumaçamento.</label>
+                <label><input type="radio" name="q9" value="e">(E) zona de tatuagem.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>
+        <div class="question">  
+            <p><strong>10. A expulsão de um concepto do útero materno, com menos de 20 semanas de gestação, devido à presença de um leiomioma uterino, é considerada um aborto
+            </strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q10" value="a">(A) eugênico.</label>  
+                <label><input type="radio" name="q10" value="b">(B) econômico.</label>  
+                <label><input type="radio" name="q10" value="c">(C) espontâneo.</label>  
+                <label><input type="radio" name="q10" value="d">(D) acidental.</label>
+                <label><input type="radio" name="q10" value="e">(E) terapêutico.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>    
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"> Voltar</a>
+            </li>
+        </ul>
+    </nav> 
+
+    <script>  
+        function checkAnswers() {  
+    // Respostas corretas  
+    const correctAnswers = {  
+        q1: 'e', // Parecer 
+        q2: 'a', // equimose e a lesão é vital
+        q3: 'd', // coliquativa.
+        q4: 'b', // fêmur e pelve.
+        q5: 'c', // componentes dentais como esmalte, dentina e cemento podem resistir a altas temperaturas.
+        q6: 'a', // violenta; Instituto Médico Legal.
+        q7: 'e', // verticilo.
+        q8: 'd', // putrefação.
+        q9: 'a', // orla de escoriação (derme).
+        q10: 'c', // espontâneo.
+        q11: '', //
+    };  
+
+    // Verificar cada pergunta  
+    for (let question in correctAnswers) {  
+        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);  
+        const options = document.querySelectorAll(`input[name="${question}"]`);  
+
+        options.forEach(option => {  
+            option.parentNode.classList.remove('correct', 'incorrect');  
+        });  
+
+        if (selectedOption) {  
+            if (selectedOption.value === correctAnswers[question]) {  
+                selectedOption.parentNode.classList.add('correct');  
+            } else {  
+                selectedOption.parentNode.classList.add('incorrect');  
+                const correctOption = Array.from(options).find(option => option.value === correctAnswers[question]);  
+                if (correctOption) {  
+                    correctOption.parentNode.classList.add('correct');  
+                }  
+            }  
+        }  
+    }  
+}  
+document.getElementById('search-button').addEventListener('click', function() {  
+const query = document.getElementById('search-input').value;  
+if (query) {  
+// Redirecione para uma página de busca, ou faça uma busca em sua aplicação  
+window.location.href = `search_results.html?q=${encodeURIComponent(query)}`;  
+}  
+});
+    </script>  
+
+</body>  
+</html>

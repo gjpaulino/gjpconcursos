@@ -1,0 +1,334 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+    <title>Questões Física</title>  
+    <link rel="stylesheet" href="styles.css">
+    <style>  
+body {
+     color: black;
+     background-color: gray;
+     font-family: Arial, Helvetica, sans-serif;
+} 
+a {
+    color: black;
+    text-decoration: none;
+}
+    .question {  
+        margin: 20px 0;  
+    }  
+    .options label {  
+        display: block;  
+        margin: 7px 0;  
+        cursor: pointer;  
+    }  
+    .correct {  
+        color: green;  
+    }  
+    .incorrect {  
+        color: red;  
+    }  
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        padding: 16px;            
+    }
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: greenyellow; 
+    }
+    button {
+        background-color: rgb(20, 20, 20);
+        color: green;
+        padding: 5px 20px; 
+    }
+    .question {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #b7b1b1;
+      text-align: justify; /* Adiciona justificação ao texto */
+    }
+    .container{
+      padding: 0px 50px;
+    }
+    </style>  
+</head>  
+<body> 
+    <div class="container">
+        <h1><span class="highlight">X</span>DaQuestão</h1>
+        <h1>Questões Física</h1>  
+
+        <div class="question">  
+            <p><strong>1. O gráfico qualitativo da velocidade (v), em função do tempo (t), da figura a seguir representa o movimento de um carro que se desloca em linha reta. 
+            </strong></p><img src="imgfisica/qfisica.jpg" alt="#"><p>Considerando que sua posição inicial era o marco zero da trajetória, o correspondente gráfico horário de sua posição (S), em função do tempo (t), é</p><br>  
+            <div class="options">  
+                <label><input type="radio" name="q1" value="a">(A) <img src="imgfisica/f1.jpg" alt="#"></label>  
+                <label><input type="radio" name="q1" value="b">(B) <img src="imgfisica/f2.jpg" alt="#">
+                </label>  
+                <label><input type="radio" name="q1" value="c">(C) <img src="imgfisica/f3.jpg" alt="#"></label>  
+                <label><input type="radio" name="q1" value="d">(D) <img src="imgfisica/f4.jpg" alt="#"></label>  
+                <label><input type="radio" name="q1" value="e">(E) <img src="imgfisica/f5.jpg" alt="#"></label>
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+    
+        <div class="question">  
+            <p><strong>2. A polia dentada do motor de uma motocicleta em movimento, também chamada de pinhão, gira com frequência de 3600 rpm. Ela tem um diâmetro de 4 cm e nela está acoplada uma corrente que transmite esse giro para a coroa, solidária com a roda traseira. O diâmetro da coroa é de 24 cm e o diâmetro externo da roda, incluindo o pneu, é de 50 cm. A figura a seguir ilustra as partes citadas.
+            </strong></p><img src="imgfisica/q2fisica.jpg" alt="#"><p>Use π = 3, considere que a moto não derrapa e que a transmissão do movimento de rotação seja integralmente dirigida ao seu deslocamento linear</p><p>A velocidade da moto, em relação ao solo e em km/h, é de</p> 
+            <div class="options">  
+                <label><input type="radio" name="q2" value="a">(A) 54.</label>  
+                <label><input type="radio" name="q2" value="b">(B) 72.</label>  
+                <label><input type="radio" name="q2" value="c">(C) 90.</label>  
+                <label><input type="radio" name="q2" value="d">(D) 62.</label>
+                <label><input type="radio" name="q2" value="e">(E) 66.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+    
+        <div class="question">  
+            <p><strong>3. Ao ser expelido do cano de 50 cm de comprimento de uma arma em repouso relativamente ao solo, um projétil leva 0,10 s para percorrer, em linha reta e com velocidade constante, a distância de 100 m. Supondo que a massa do projétil seja de 25 g e que seu movimento no interior do cano seja realizado com aceleração constante, a intensidade da força propulsora resultante sobre ele no interior do
+            cano deve ser, em newtons, de</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q3" value="a">(A) 4,0.10.<sup>3</sup></label>  
+                <label><input type="radio" name="q3" value="b">(B) 2,5.10.<sup>5</sup></label>  
+                <label><input type="radio" name="q3" value="c">(C) 2,5.10.<sup>3</sup></label>  
+                <label><input type="radio" name="q3" value="d">(D) 4,0.10.<sup>4</sup></label>
+                <label><input type="radio" name="q3" value="e">(E) 2,5.10.<sup>4</sup></label> 
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>  
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>4. Em um trecho curvilíneo de uma rodovia horizontal, o R A U
+            motorista de determinado veículo, dirigindo em velocidade excessiva, perdeu o controle da direção e, atravessando a pista, caiu na vala que havia além do acostamento. Chovia muito naquele momento e várias hipóteses foram levantadas para explicar o fato. Em relação a um referencial inercial, assinale a alternativa que apresenta a hipótese correta.</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q4" value="a">(A) A repentina diminuição do atrito entre os pneus do carro e o asfalto da pista fez com que ele prosseguisse
+                em linha reta ao invés de completar a curva.</label>  
+                <label><input type="radio" name="q4" value="b">(B) A potência do motor do veículo foi insuficiente para corrigir a trajetória original a ser descrita e resultou na derrapagem observada.</label>  
+                <label><input type="radio" name="q4" value="c">(C) A repentina diminuição do atrito entre os pneus do carro e o asfalto da pista fez com que ele derrapasse
+                para fora da pista descrevendo uma trajetória curvilínea.</label>  
+                <label><input type="radio" name="q4" value="d">(D) A força centrífuga sobre o carro foi mais intensa que a força centrípeta e empurrou o carro para fora da pista, seguindo uma trajetória curvilínea.</label>
+                <label><input type="radio" name="q4" value="e">(E) A energia cinética do veículo era maior do que a energia potencial elástica da borracha dos pneus, daí a
+                derrapagem.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        
+        <div class="question">  
+            <p><strong>5. Um projétil, de massa m = 10 g, feito de metal de calor
+                específico c = 0,10 cal/(g.ºC), atinge um colete à prova de bala com velocidade v = 600 m/s, parando antes de atravessá-lo. O equivalente mecânico do calor é admitido com o valor 4,2 J/cal e o colete é tido como adiabático. A quantidade de calor dissipada integralmente no projétil deve elevar a temperatura dele, em ºC, de aproximadamente</strong></p>  
+            <div class="options">  
+                <label><input type="radio" name="q5" value="a">(A) 360.</label>  
+                <label><input type="radio" name="q5" value="b">(B) 430.</label>  
+                <label><input type="radio" name="q5" value="c">(C) 480.</label>  
+                <label><input type="radio" name="q5" value="d">(D) 300.</label>
+                <label><input type="radio" name="q5" value="e">(E) 390.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>6. Dois chuveiros elétricos apresentam as seguintes especificações:
+            </strong></p><p>chuveiro A – 5 600 W-240 V; chuveiro B – 2 800 W-120 V.</p> <p>Sabendo que seus resistores ôhmicos e cilíndricos são feitos do mesmo material e têm o mesmo comprimento, a razão entre suas áreas de secção transversal, S<sub>A</sub>/S<sub>B</sub>, vale</p> 
+        <div class="options">  
+                <label><input type="radio" name="q6" value="a">(A) 1/2.</label>  
+                <label><input type="radio" name="q6" value="b">(B) 1.</label>  
+                <label><input type="radio" name="q6" value="c">(C) 4.</label>  
+                <label><input type="radio" name="q6" value="d">(D) 2.</label>
+                <label><input type="radio" name="q6" value="e">(E) 1/4.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>7. “Princípio (...) que se reveste de autoaplicabilidade, não é – enquanto postulado fundamental de nossa ordem político-jurídica – suscetível de regulamentação ou de complementação normativa. Esse princípio – cuja observância vincula, incondicionalmente, todas as manifestações do Poder Público – deve ser considerado, em sua precípua função de obstar discriminações e de extinguir privilégios (...)”</strong></p> <p style="font-size: 12px;">(STF – MI n. 58-DF – Pleno – Rel. Min. Celso de Mello)</p><p>O excerto de julgado acima reproduzido trata de um princípio intimamente relacionado com os direitos humanos e que é explicitamente protegido em nossa Constituição Federal, denominado expressamente de princípio da </p>
+        <div class="options">  
+                <label><input type="radio" name="q7" value="a">(A) moralidade.</label>  
+                <label><input type="radio" name="q7" value="b">(B) isonomia.</label>  
+                <label><input type="radio" name="q7" value="c">(C) legalidade.</label>  
+                <label><input type="radio" name="q7" value="d">(D) segurança jurídica.</label>
+                <label><input type="radio" name="q7" value="e">(E) lealdade.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>8. Em determinadas investigações, o uso de aparelhos emissores de ondas eletromagnéticas torna-se imprescindível. Considere uma sequência de frentes de ondas planas deslocando-se no ar e incidindo sobre um grande cubo de vidro maciço formando um ângulo α com a face de incidência, como mostra a figura.</strong></p> 
+        <div class="options">
+            <img src="imgfisica/q3fisica.jpg" alt="#"><p>Parte dessas ondas é refletida pela face do cubo de vidro e outra parte é refratada. A figura ilustra as frentes incidentes e as refratadas.</p><p>Com base nessas informações, é correto afirmar que, em relação às frentes de ondas incidentes, as frentes de ondas</p>  
+                <label><input type="radio" name="q8" value="a">(A) refletidas diminuem o comprimento de onda, mantendo a frequência de vibração e o ângulo de reflexão
+                com a face.</label>  
+                <label><input type="radio" name="q8" value="b">(B) refratadas diminuem a velocidade de propagação e a frequência de vibração.</label>  
+                <label><input type="radio" name="q8" value="c">(C) refratadas aumentam o comprimento de onda e o ângulo de refração com a face, mantendo a frequência
+                de vibração.</label>  
+                <label><input type="radio" name="q8" value="d">(D) refletidas mantêm a velocidade de propagação e o ângulo de reflexão com a face, diminuindo a frequência de vibração.</label>
+                <label><input type="radio" name="q8" value="e">(E) refratadas diminuem o comprimento de onda e o ângulo de refração com a face, mantendo a frequência
+                de vibração.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>9. Ao percorrer uma curva horizontal, em forma de quarto de circunferência, com velocidade escalar constante, um veículo sofre, relativamente a um referencial inercial, uma força resultante centrípeta de</strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q9" value="a">(A) intensidade variável, mas de direção e sentido constantes.</label>  
+                <label><input type="radio" name="q9" value="b">(B) intensidade, direção e sentido constantes.</label>  
+                <label><input type="radio" name="q9" value="c">(C) intensidade constante, apenas.</label>  
+                <label><input type="radio" name="q9" value="d">(D) intensidade, direção e sentido variáveis.</label>
+                <label><input type="radio" name="q9" value="e">(E) intensidade e direção constantes, mas de sentido variável.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>10. A figura ilustra a roda traseira de uma motocicleta.</strong></p><img src="imag/qfisica1.jpg" alt="#"><p style="font-size: 12px;">coroa de transmissão</p><p style="font-size: 12px;">(http:∕∕fdr.com.br∕form...)</p><p>Considerando-a em movimento e com a coroa girando solidariamente com a roda, é correto afirmar que, em um mesmo intervalo de tempo e relativamente ao eixo comum de ambas,</p> 
+        <div class="options">  
+                <label><input type="radio" name="q10" value="a">(A) a velocidade linear dos pontos periféricos da coroa e da roda, em relação ao eixo comum de ambas, é a mesma.</label>  
+                <label><input type="radio" name="q10" value="b">(B) a coroa gira com frequência maior do que a roda.</label>  
+                <label><input type="radio" name="q10" value="c">(C) a velocidade angular da coroa é maior do que a da roda.</label>  
+                <label><input type="radio" name="q10" value="d">(D) o deslocamento angular da coroa é igual ao da roda</label>
+                <label><input type="radio" name="q10" value="e">(E) o deslocamento linear dos pontos periféricos da coroa é maior do que o da roda.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>11. No campo de provas de uma montadora de automóveis há uma pista horizontal e retilínea. Durante a realização de um teste, um de seus veículos, de massa total 1 200 kg, incluindo a do motorista, parte do repouso e atinge a velocidade de 144 km∕h ao fim de um percurso de 400 m. Se o movimento do veículo é realizado com aceleração constante, a força resultante sobre ele tem intensidade, em newtons, de</strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q11" value="a">(A) 3 600.</label>  
+                <label><input type="radio" name="q11" value="b">(B) 4 800.</label>  
+                <label><input type="radio" name="q11" value="c">(C) 2 400.</label>  
+                <label><input type="radio" name="q11" value="d">(D) 1 800.</label>
+                <label><input type="radio" name="q11" value="e">(E) 1 200.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>12. No interior de São Paulo ocorre uma tragédia familiar. Um
+                garoto de 26 kg de massa cai em queda livre do 14.º andar de um prédio, projetando-se no solo de uma altura de 42 m. No impacto com o solo, toda a energia cinética é convertida em energia térmica para aquecimento do corpo do garoto em 2 o C. A aceleração da gravidade local tem o valor 10 m∕s2 e
+                o equivalente mecânico do calor é de 4,2 J/cal. A capacidade térmica do corpo do garoto, em cal/o C, deve ser de</strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q12" value="a">(A) 1,3•10<sup>3</sup></label>  
+                <label><input type="radio" name="q12" value="b">(B) 6,5•10<sup>2</sup></label>  
+                <label><input type="radio" name="q12" value="c">(C) 1,3•10<sup>2</sup></label>  
+                <label><input type="radio" name="q12" value="d">(D) 1,3•10<sup>4</sup></label>
+                <label><input type="radio" name="q12" value="e">(E) 6,5•10</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>13. Ao investigar determinado crime, um perito precisava determinar o comportamento do som proveniente do estampido de uma arma usada nesse crime. Para tanto, o perito raciocinou corretamente que, ao atravessar uma janela de vidro, em
+            relação ao seu comportamento no ar, as ondas sonoras</strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q13" value="a">(A) mantiveram seu comprimento de onda constante.</label>  
+                <label><input type="radio" name="q13" value="b">(B) tiveram sua velocidade de propagação alterada.</label>  
+                <label><input type="radio" name="q13" value="c">(C) tiveram sua frequência de vibração alterada.</label>  
+                <label><input type="radio" name="q13" value="d">(D) mantiveram sua energia mecânica constante.</label>
+                <label><input type="radio" name="q13" value="e">(E) mantiveram sua quantidade de movimento constante.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>14.Duas lâmpadas idênticas, de especificações 15 W – 220 V
+                cada, são ligadas em paralelo a uma rede elétrica alimentada por uma fonte de tensão de 220 V. A intensidade da corrente elétrica através de cada lâmpada será, em ampéres, mais próxima de</strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q14" value="a">(A) 0,05.</label>  
+                <label><input type="radio" name="q14" value="b">(B) 0,07.</label>  
+                <label><input type="radio" name="q14" value="c">(C) 0,03.</label>  
+                <label><input type="radio" name="q14" value="d">(D) 0,10.</label>
+                <label><input type="radio" name="q14" value="e">(E) 0,14.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div> 
+        <div class="question">  
+            <p><strong>15.Um cilindro de ferro, de altura considerável, é mantido penso por um fio na posição vertical, totalmente submerso em um tanque cheio de água, como mostra a figura</strong></p><img src="imag/qfisica-.jpg" alt="#"><p>Nessas condições, é correto afirmar que</p>
+        <div class="options">  
+                <label><input type="radio" name="q15" value="a">(A) o empuxo atuante sobre o cilindro como um todo depende de sua massa específica.</label>  
+                <label><input type="radio" name="q15" value="b">(B) a pressão da água sobre o cilindro como um todo é a mesma em qualquer ponto dele.</label>  
+                <label><input type="radio" name="q15" value="c">(C) o empuxo atuante sobre a base inferior do cilindro é maior do que sobre sua base superior.</label>  
+                <label><input type="radio" name="q15" value="d">(D) a pressão da água sobre o cilindro como um todo depende da massa específica dele.</label>
+                <label><input type="radio" name="q15" value="e">(E) a pressão da água sobre a base inferior do cilindro é maior do que sobre sua base superior.</label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+        <div class="question">  
+            <p><strong>16.No intuito de observar o comportamento de certa massa de gás ideal, confinada em um frasco cilíndrico dotado de uma base móvel, um investigador diminui isotermicamente seu volume. O gráfico qualitativo da pressão (p) que esse gás
+            exerce sobre as paredes do recipiente, em função do volume (V) por ele ocupado está melhor representado em</strong></p>
+        <div class="options">  
+                <label><input type="radio" name="q16" value="a">(A) <img src="imag/rfis1.jpg" alt="#"></label>  
+                <label><input type="radio" name="q16" value="b">(B) <img src="imag/rfis2.jpg" alt="#"></label>  
+                <label><input type="radio" name="q16" value="c">(C) <img src="imag/rfis3.jpg" alt="#"></label>  
+                <label><input type="radio" name="q16" value="d">(D) <img src="imag/rfis4.jpg" alt="#"></label>
+                <label><input type="radio" name="q16" value="e">(E) <img src="imag/rfis5.jpg" alt="#"></label>  
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>         
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"> Voltar</a>
+            </li>
+        </ul>
+    </nav> 
+
+    <script>  
+      function checkAnswers() {  
+    // Respostas corretas  
+    const correctAnswers = {  
+        q1: 'b', // imagem b  
+        q2: 'a', // 54. 
+        q3: 'e', // 2,5.104.
+        q4: 'a', // A repentina diminuição do atrito entre os pneus do carro e o asfalto da pista fez com que ele prosseguisse em linha reta ao invés de completar a curva.
+        q5: 'b', // 430. 
+        q6: 'a', // 1/2.
+        q7: '', //  
+        q8: 'e', // refratadas diminuem o comprimento de onda e o ângulo de refração com a face, mantendo a frequência de vibração.
+        q9: 'c', // intensidade constante, apenas.
+        q10: 'd', // o deslocamento angular da coroa é igual ao da roda.
+        q11: 'c', // 2 400.
+        q12: 'a', // 1,3•103
+        q13: 'b', // tiveram sua velocidade de propagação alterada.
+        q14: 'b', // 0,07.
+        q15: 'e', // a pressão da água sobre a base inferior do cilindro é maior do que sobre sua base superior.
+        q16: 'c', // c imagem.
+
+
+
+    };  
+
+    // Verificar cada pergunta  
+    for (let question in correctAnswers) {  
+        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);  
+        const options = document.querySelectorAll(`input[name="${question}"]`);  
+
+        options.forEach(option => {  
+            option.parentNode.classList.remove('correct', 'incorrect');  
+        });  
+
+        if (selectedOption) {  
+            if (selectedOption.value === correctAnswers[question]) {  
+                selectedOption.parentNode.classList.add('correct');  
+            } else {  
+                selectedOption.parentNode.classList.add('incorrect');  
+                const correctOption = Array.from(options).find(option => option.value === correctAnswers[question]);  
+                if (correctOption) {  
+                    correctOption.parentNode.classList.add('correct');  
+                }  
+            }  
+        }  
+    }  
+}  
+document.getElementById('search-button').addEventListener('click', function() {  
+const query = document.getElementById('search-input').value;  
+if (query) {  
+// Redirecione para uma página de busca, ou faça uma busca em sua aplicação  
+window.location.href = `search_results.html?q=${encodeURIComponent(query)}`;  
+}  
+});  
+    </script>  
+
+</body>  
+</html>

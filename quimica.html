@@ -1,0 +1,160 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <title>Questões Biologia</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <script defer src="script.js"></script>
+    <style>  
+body {
+     color: black;
+     background-color: gray;
+     font-family: Arial, Helvetica, sans-serif;
+} 
+a {
+    color: black;
+    text-decoration: none;
+}
+    .question {  
+        margin: 20px 0;  
+    }  
+    .options label {  
+        display: block;  
+        margin: 7px 0;  
+        cursor: pointer;  
+    }  
+    .correct {  
+        color: green;  
+    }  
+    .incorrect {  
+        color: red;  
+    }  
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        padding: 16px;            
+    }
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: greenyellow; 
+    }
+    button {
+        background-color: rgb(20, 20, 20);
+        color: green;
+        padding: 5px 20px; 
+    }
+    .question {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #b7b1b1;
+      text-align: justify; /* Adiciona justificação ao texto */
+    }
+    .container{
+      padding: 0px 50px;
+    }
+    </style>  
+</head>  
+<body> 
+    <div class="container">
+        <h1><span class="highlight">X</span>DaQuestão</h1>
+        <h1>Questões de Química</h1>  
+
+        <div class="question">  
+            <p><strong>1. A figura ilustra uma possível sequência no processo evolutivo celular, a partir de um procarionte ancestral.</strong></p>
+            <img src="imag/biologia_.jpg" alt="#">
+            <P style="font-size: 11px;">(www.cientic.com. Adaptado)</P>
+            <P style="font-size: 16px;">Tendo em vista o processo ilustrado e as características das células mais evoluídas atuais, é correto afirmar que, ao longo do tempo, houve
+            </P>  
+            <div class="options">  
+                <label><input type="radio" name="q1" value="a">(A) surgimento espontâneo e abrupto de estruturas internas mais complexas, tais como o núcleo e as
+                organelas.</label>  
+                <label><input type="radio" name="q1" value="b">(B) modificações de estruturas já existentes, relacionadas à captação de luz, tais como as mitocôndrias.</label>  
+                <label><input type="radio" name="q1" value="c">(C) a fagocitose e a pinocitose de organelas relacionadas à respiração, tais como os cloroplastos.</label>  
+                <label><input type="radio" name="q1" value="d">(D) mutações genéticas responsáveis pela formação imediata dos cloroplastos e mitocôndrias.</label>  
+                <label><input type="radio" name="q1" value="e">(E) desenvolvimento de membranas internas, assim como a internalização de estruturas energéticas.</label>
+                <button onclick="checkAnswers()"><strong>Corrigir</strong></button>
+            </div>  
+        </div>  
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"> Voltar</a>
+                </li>
+            </ul>
+        </nav> 
+    
+        <script>  
+            function checkAnswers() {  
+        // Respostas corretas  
+        const correctAnswers = {  
+            q1: '', // 
+            q2: '', // 
+            q3: '', // 
+            q4: '', // 
+            q5: '', // 
+            q6: '', // 
+            q7: '', // 
+            q8: '', // 
+            q9: '', // 
+            q10: '', // 
+            q11: '', // 
+            q12: '', // 
+            q13: '', // 
+            q14: '', // 
+            q15: '', // 
+            q16: '', // 
+            q17: '', // 
+            q18: '', // 
+            q19: '', // 
+            q20: '', // 
+            q21: '', // 
+            q22: '', // 
+            q23: '', // 
+            q24: '', // 
+            q25: '', //
+            
+        };  
+    
+        // Verificar cada pergunta  
+        for (let question in correctAnswers) {  
+            const selectedOption = document.querySelector(`input[name="${question}"]:checked`);  
+            const options = document.querySelectorAll(`input[name="${question}"]`);  
+    
+            options.forEach(option => {  
+                option.parentNode.classList.remove('correct', 'incorrect');  
+            });  
+    
+            if (selectedOption) {  
+                if (selectedOption.value === correctAnswers[question]) {  
+                    selectedOption.parentNode.classList.add('correct');  
+                } else {  
+                    selectedOption.parentNode.classList.add('incorrect');  
+                    const correctOption = Array.from(options).find(option => option.value === correctAnswers[question]);  
+                    if (correctOption) {  
+                        correctOption.parentNode.classList.add('correct');  
+                    }  
+                }  
+            }  
+        }  
+    }  
+    document.getElementById('search-button').addEventListener('click', function() {  
+    const query = document.getElementById('search-input').value;  
+    if (query) {  
+    // Redirecione para uma página de busca, ou faça uma busca em sua aplicação  
+    window.location.href = `search_results.html?q=${encodeURIComponent(query)}`;  
+    }  
+    });
+        </script>  
+    
+    </body>  
+    </html>
