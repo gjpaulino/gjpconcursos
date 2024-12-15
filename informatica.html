@@ -8,23 +8,59 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <style> 
-body{
-  color: black;
-  background-color: gray;
-  font-family: Arial, Helvetica, sans-serif;
-}    
+bbody {
+    color: black;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+} 
 a {
-color: black;
-text-decoration: none;
-} 
-.options label { 
-    display: flex; 
-    align-items: center;
-     margin: 5px 0; 
-} 
-.options img { 
-    margin-left: 10px; 
+    color: black;
+    text-decoration: none;
 }
+    .question {  
+        margin: 20px 0;  
+    }  
+    .options label {  
+        display: block;  
+        margin: 7px 0;  
+        cursor: pointer;  
+    }  
+    .correct {  
+        color: green;  
+    }  
+    .incorrect {  
+        color: red;  
+    }  
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        padding: 16px;            
+    }
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: greenyellow; 
+    }
+    button {
+        background-color: rgb(20, 20, 20);
+        color: green;
+        padding: 5px 20px; 
+    }
+    .question {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #b7b1b1;
+      text-align: justify; /* Adiciona justificação ao texto */
+    }
+    .container{
+      padding: 0px 50px;
+    }
 
     </style>  
 </head>  
