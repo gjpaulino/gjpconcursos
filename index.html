@@ -4,94 +4,168 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>GJPConcurso</title>
+  <title>XDaquestão</title>
   <link rel="stylesheet" href="styles.css">
-  
-  <style>
-    .container button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background-color: #007BFF;
-  border: none;
-  cursor: pointer;
-}
-  </style>
+  <script defer src="script.js"></script>
+
+  <!-- deslizador css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- ícones de caixa -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- css personalizado -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>  
-  <div class="container">
-    <nav>
-      <ul>
-        <li>
-            <a href="direitoconstitucional.html">Direito Constitucional</a>
-        </li>
-        <li>
-            <a href="direitopenal.html">Direito Penal</a>
-        </li>
-        <li>
-            <a href="#"></a>
-       </li>
-       <li>
-        <a href="direitodepp.html">Direito Processual Penal</a>
-       </li>
-       <li>
-        <a href="criminologia.html">Criminologia</a>
-       </li>
-       <li>
-        <a href="legislaçãoesp.html">Legislação Especial</a>
-       </li>
-       <li>
-        <a href="direitosh.html">Direitos Humanos</a>
-       </li>
-       <li>
-        <a href="informatica.html">Informática</a>
-       </li>
-       <li>
-        <a href="raciocinio.html">Raciocínio Lógico</a>
-       </li>
-       <li>
-        <a href="portugues.html">Português</a>
-       </li>
-      </ul>
-    </nav>
-    <header>
-      <div class="center">
-        <img src="favicon.ico"></img>
-        <nav>
-          <ul>
-              <li>
-                  <a href="index.html"></a>
-                  <a href="#"></a>
-                  <a href="cadastro.html"></a>
-              </li>
-          </ul>
-      </div>
-      <div class="container">
-        <h1>Assine Nosso Serviço</h1>
-        <p>Faça sua assinatura e tenha acesso a conteúdo exclusivo!</p>
-        <a href="URL_DO_LINK_DE_PAGAMENTO_DA_HOTMART" target="_blank">
-            <button class="blinking-button">Assinar Agora</button>
-        </a>
-    </div>
-       </header>
-       <main>
-        <section>
-          <h3>Bem-vindo à Plataforma GJPQuestões!</h3>
-          <p>Na GJPQuestões, você encontra a solução ideal para se preparar de maneira eficaz para seus concursos. Somos especialistas em oferecer uma vasta gama de questões para que você possa praticar, testar seus conhecimentos e se preparar para qualquer desafio.</p>
-          <h3>Resolva Questões</h3>
-          <p>Nossa plataforma disponibiliza um banco de questões de provas anteriores, permitindo que você se familiarize com o estilo e o nível de dificuldade das perguntas que poderá enfrentar. A prática com questões passadas é uma estratégia comprovada para reforçar o aprendizado e identificar áreas que necessitam de mais atenção. <br><br>
-          Além das questões anteriores, oferecemos questões inéditas elaboradas por especialistas nas diversas áreas de conhecimento. Estas perguntas são projetadas para simular os novos formatos e tendências dos exames, garantindo que você esteja sempre atualizado e preparado para qualquer surpresa.</p>
-        </section>
-        <section>
-          <h3>Quem Somos?</h3>
-          <p>A GJPQuestões é o seu parceiro de estudos confiável, trazendo materiais de alta qualidade para aprimorar suas habilidades e aumentar suas chances de sucesso nos concursos. Venha estudar conosco e transforme seu sonho em realidade! <br><br>
-          Estamos aqui para apoiar seu caminho rumo à aprovação.</p>
-        </section>
-       </main>
-       <footer>
-        <p>&copy; 2024 Plataforma de Questões GJPConcurso</p>
-       </footer>
+<body> 
+  <div class="main-nav">
+    <ul class="nav">
+      <li class="name"><span class="highlight"><strong>X</strong></span><strong>DAQUESTÃO</strong></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experiencia.html">Matérias de Direito</a></li>
+      <li><a href="direitoconstitucional.html"></a></li>
+      <li><a href="direitopenal.html"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="direitodepp.html"></a></li>
+      <li><a href="criminologia.html"></a></li>
+      <li><a href="legislaçãoesp.html"></a></li>
+      <li><a href="direitosh.html"></a></li>
+      <li><a href="informatica.html"></a></li>
+      <li><a href="raciocinio.html"></a></li>
+      <li><a href="portugues.html"></a></li>
+    </ul>
   </div>
+  <header>
+    <img src="imag/Xdaquestão.jpg" alt="A glance at me!" class="profile-image">
+    <h1 class="tag name">Olá! bem-vindo ao <span class="highlight"><strong>X</strong></span><strong>DAQUESTÃO</strong></h1>
+  </header>
+  <!-- design da seção de serviços -->
+  <section class="serviços" id="serviços">
+    <h2 class="heading">Exercite seus <span>Conhecimentos</span></h2>
+
+    <div class="serviços-container">
+        <div class="serviços-box">
+            <i class='bx bxs-book-open'></i>
+            <h3>Questões Criminologia</h3>
+            <img src="imag/ciminologia.jpg" alt="Criminologia">
+            <a href="criminologia.html" class="btn">Resolva Questões</a>
+        </div>
+  
+          <div class="serviços-box">
+              <i class='bx bxs-book-open'></i>
+              <h3>Questões Direito Penal</h3>
+              <img src="imag/direito penal.jpg" alt="Direito Penal">
+              <a href="direitopenal.html" class="btn">Resolva Questões</a>
+          </div>
+          
+            <div class="serviços-box">
+                <i class='bx bxs-book-open'></i>
+                <h3>Questões Processo Penal</h3>
+                <img src="imag/processo penal.jpg" alt="Processo Penal">
+                <a href="direitodepp.html" class="btn">Resolva Questões</a>
+            </div>
+            
+              <div class="serviços-box">
+                  <i class='bx bxs-book-open'></i>
+                  <h3>Questões Direito Constitucional</h3>
+                  <img src="imag/constitucional.jpg" alt="Direito Constitucional">
+                  <a href="direitoconstitucional.html" class="btn">Resolva Questões</a>
+              </div>
+              
+        <div class="serviços-box">
+            <i class='bx bxs-book-open'></i>
+            <h3>Questões Direitos Humanos</h3>
+            <img src="imag/direito humano.jpg" alt="Direitos Humanos">
+            <a href="direitosh.html" class="btn">Resolva Questões</a>
+        </div>
+
+        <div class="serviços-box">
+          <i class='bx bxs-book-open'></i>
+          <h3>Questões Legislação Especial</h3>
+          <img src="imag/legislação especial.jpg" alt="Legislação Especial">
+          <a href="legislaçãoesp.html" class="btn">Resolva Questões</a>
+      </div>
+
+      <div class="serviços-box">
+        <i class='bx bxs-book-open'></i>
+        <h3>Questões Informática</h3>
+        <img src="imag/informatica_.jpg" alt="Informática">
+        <a href="informatica.html" class="btn">Resolva Questões</a>
+    </div>
+
+    <div class="serviços-box">
+        <i class='bx bxs-book-open'></i>
+        <h3>Questões Português</h3>
+        <img src="imag/portugues_.jpg" alt="Português">
+        <a href="portugues.html" class="btn">Resolva Questões</a>
+    </div>
+
+    <div class="serviços-box">
+        <i class='bx bxs-book-open'></i>
+        <h3>Questões Raciocínio Lógico</h3>
+        <img src="imag/raciocinio.jpg" alt="Raciocínio Lógico">
+        <a href="raciocinio.html" class="btn">Resolva Questões</a>
+    </div>
+    
+    <div class="serviços-box">
+      <i class='bx bxs-book-open'></i>
+      <h3>Medicina e Odontologia Legal</h3>
+      <img src="imag/medicina.jpg" alt="Medicina e Odontologia Legal">
+      <a href="medicina.html" class="btn">Resolva Questões</a>
+  </div>
+
+  <div class="serviços-box">
+    <i class='bx bxs-book-open'></i>
+    <h3>Biologia</h3>
+    <img src="imag/biologia.jpg" alt="Biologia">
+    <a href="biologia.html" class="btn">Resolva Questões</a>
+</div>
+
+<div class="serviços-box">
+  <i class='bx bxs-book-open'></i>
+  <h3>Indentificação e Criminalistica</h3>
+  <img src="imag/indentificação criminalistica.png" alt="indentificaçâo e criminalistica">
+  <a href="indentificação.html" class="btn">Resolva Questões</a>
+</div>
+
+<div class="serviços-box">
+  <i class='bx bxs-book-open'></i>
+  <h3>Física</h3>
+  <img src="imag/fisica_.jpg" alt="Física">
+  <a href="fisica.html" class="btn">Resolva Questões</a>
+</div>
+
+<div class="serviços-box">
+  <i class='bx bxs-book-open'></i>
+  <h3>Química</h3>
+  <img src="imag/quima_.jpg" alt="Química">
+  <a href="quimica.html" class="btn">Resolva Questões</a>
+</div>
+
+<div class="serviços-box">
+  <i class='bx bxs-book-open'></i>
+  <h3>Matemática</h3>
+  <img src="imag/matemativa.jpg" alt="Matemática">
+  <a href="#" class="btn">Resolva Questões</a>
+</div>
+
+  </section>
+  <main class="flex">
+    <div class="card">
+      <h2>Bem-vindo à Plataforma XDAQUESTÃO!</h2>
+      <p>No XDAQUESTÃO, você encontra a solução ideal para se preparar de maneira eficaz para seus concursos. Somos especialistas em oferecer uma vasta gama de questões para que você possa praticar, testar seus conhecimentos e se preparar para qualquer desafio.</p><h3>Resolva Questões</h3>
+      <p>Nossa plataforma disponibiliza um banco de questões de provas anteriores, permitindo que você se familiarize com o estilo e o nível de dificuldade das perguntas que poderá enfrentar. A prática com questões passadas é uma estratégia comprovada para reforçar o aprendizado e identificar áreas que necessitam de mais atenção. <br><br>
+      Além das questões anteriores, oferecemos questões inéditas elaboradas por especialistas nas diversas áreas de conhecimento. Estas perguntas são projetadas para simular os novos formatos e tendências dos exames, garantindo que você esteja sempre atualizado e preparado para qualquer surpresa.</p>
+    </div>
+    <div class="card">
+      <h3>Quem Somos?</h3>
+        <p>O XDAQUESTÃO é o seu parceiro de estudos confiável, trazendo materiais de alta qualidade para aprimorar suas habilidades e aumentar suas chances de sucesso nos concursos. Venha estudar conosco e transforme seu sonho em realidade! <br><br>
+        Estamos aqui para apoiar seu caminho rumo à aprovação.</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Plataforma de Questões XDAQUESTÃO</p>
+  </footer>
   
 </body>
 </html>
